@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "epilation-laser-combien-de-seances.html",
+    "title": "Épilation laser : combien de séances faut-il vraiment ?",
+    "desc": "Le nombre de séances d'épilation laser dépend de la zone, du poil et de la peau. On vous explique ce qui fait varier ce chiffre et à quoi vous attendre.",
+    "tag": "Épilation laser",
+    "date": "Janvier 2026",
+    "readTime": "7 min",
+    "image": "../assets/machinelaserlunettes.webp"
+  },
+  {
+    "slug": "epilation-laser-peau-bronzee.html",
+    "title": "Épilation laser et peau bronzée : ce qu'il faut savoir avant l'été",
+    "desc": "Bronzage et laser ne font pas bon ménage. On explique pourquoi, combien de temps attendre, et comment organiser ses séances avant et après l'été.",
+    "tag": "Épilation laser",
+    "date": "Février 2026",
+    "readTime": "6 min",
+    "image": "../assets/ambiance-2.jpg"
+  },
+  {
+    "slug": "epilation-laser-ou-lumiere-pulsee.html",
+    "title": "Épilation laser ou lumière pulsée : quelles différences ?",
+    "desc": "Laser et lumière pulsée (IPL) reposent sur des principes proches mais ne se valent pas. On compare efficacité, précision et usage en institut.",
+    "tag": "Épilation laser",
+    "date": "Mars 2026",
+    "readTime": "7 min",
+    "image": "../assets/machinelaser.webp"
+  },
+  {
+    "slug": "epilation-laser-homme.html",
+    "title": "Épilation laser homme : torse, dos, barbe",
+    "desc": "L'épilation laser n'est pas réservée aux femmes. Torse, dos, épaules, nuque ou contour de barbe : ce que les hommes peuvent traiter et comment ça se passe.",
+    "tag": "Épilation laser",
+    "date": "Avril 2026",
+    "readTime": "6 min",
+    "image": "../assets/laserhomme.webp"
+  },
+  {
+    "slug": "preparer-premiere-seance-epilation-laser.html",
+    "title": "Préparer sa première séance d'épilation laser",
+    "desc": "Bilan, rasage, soleil, médicaments : tout ce qu'il faut faire (et éviter) avant votre première séance d'épilation laser pour qu'elle se passe au mieux.",
+    "tag": "Conseils",
+    "date": "Mai 2026",
+    "readTime": "6 min",
+    "image": "../assets/brochure.jpg"
+  },
+  {
+    "slug": "taches-visage-comprendre-attenuer.html",
+    "title": "Taches sur le visage : comprendre et atténuer",
+    "desc": "Mélasma, taches solaires, taches de l'âge : d'où viennent les taches du visage et comment les atténuer durablement, notamment avec le protocole Cosmelan.",
+    "tag": "Soins du visage",
+    "date": "Juin 2026",
+    "readTime": "8 min",
+    "image": "../assets/cosmelan.jpg"
+  }
+]

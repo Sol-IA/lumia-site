@@ -1,0 +1,17 @@
+# Fichiers PHP sensibles — déploiement FTP uniquement, jamais sur git
+php/config.php
+php/send.php
+php/ratelimit.php
+
+# Système
+.DS_Store
+*.log
+
+# Sources images brutes (non publiées)
+assets/scrape/
+assets/lumiere_files/
+assets/lumiere.html
+assets/laserday_files/
+assets/laserday.html
+assets/vidéoentrée_files/
+assets/vidéoentrée.html
