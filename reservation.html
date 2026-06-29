@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prendre rendez-vous | LUMIA</title>
+<meta name="description" content="Réservez votre rendez-vous à l'institut LUMIA, Manosque : épilation laser, soins du visage, LPG, Cosmelan. Réservation en ligne sécurisée.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://lumia-salon.fr/reservation.html">
+<meta name="theme-color" content="#A63524">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.min.css">
+<style>
+.booking { max-width: 820px; margin: 0 auto; }
+.steps { display:flex; gap:.5rem; justify-content:center; margin-bottom:2rem; flex-wrap:wrap; }
+.steps li { list-style:none; font-size:.8rem; color:var(--text-secondary); display:flex; align-items:center; gap:.4rem; }
+.steps li .n { width:26px;height:26px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-weight:700;}
+.steps li.active .n { background:var(--accent); color:#fff; border-color:var(--accent); }
+.steps li.done .n { background:var(--accent-deep); color:#fff; border-color:var(--accent-deep); }
+.b-step { display:none; } .b-step.active { display:block; }
+.svc-cat { margin-bottom:1.5rem; }
+.svc-cat h3 { color:var(--accent-deep); border-bottom:1px solid var(--line); padding-bottom:.4rem; margin-bottom:.75rem; }
+.svc { width:100%; text-align:left; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:.9rem 1.1rem; margin-bottom:.5rem; cursor:pointer; display:flex; justify-content:space-between; gap:1rem; transition:all .2s; min-height:48px; }
+.svc:hover, .svc:focus-visible { border-color:var(--accent); box-shadow:var(--shadow); }
+.svc .svc-meta { color:var(--text-secondary); font-size:.9rem; white-space:nowrap; }
+.cal-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:.75rem; }
+.cal-head button { border:1px solid var(--line); border-radius:var(--radius); width:40px;height:40px; cursor:pointer; font-size:1.1rem; background:var(--surface); }
+.cal-head button:disabled { opacity:.35; cursor:not-allowed; }
+.cal-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:.3rem; }
+.cal-grid .dow { text-align:center; font-size:.72rem; color:var(--text-secondary); text-transform:uppercase; padding:.3rem 0; }
+.cal-day { aspect-ratio:1; border:1px solid var(--line); border-radius:var(--radius); background:var(--surface); cursor:pointer; font-weight:600; }
+.cal-day:disabled { opacity:.3; cursor:not-allowed; background:transparent; border-color:transparent; }
+.cal-day.sel { background:var(--accent); color:#fff; border-color:var(--accent); }
+.cal-day.empty { border:none; background:transparent; cursor:default; }
+.slots { display:grid; grid-template-columns:repeat(auto-fill,minmax(84px,1fr)); gap:.5rem; margin-top:1.25rem; }
+.slot { min-height:48px; border:1px solid var(--accent-deep); color:var(--accent-deep); background:transparent; border-radius:var(--radius); cursor:pointer; font-weight:600; }
+.slot:hover { background:var(--accent-deep); color:#fff; }
+.b-summary { background:var(--rose-soft); border-radius:var(--radius); padding:1rem 1.25rem; margin-bottom:1.5rem; }
+.b-back { background:none; border:none; color:var(--accent-deep); cursor:pointer; font-weight:600; padding:.5rem 0; margin-top:1rem; }
+.b-note { font-size:.85rem; color:var(--text-secondary); }
+.b-done { text-align:center; padding:2rem 0; }
+.b-done .ok { width:64px;height:64px;border-radius:50%;background:var(--success);color:#fff;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 1rem; }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Aller au contenu principal</a>
+
+<div class="topbar"><div class="container">
+  <div class="topbar__left"><a href="tel:+33492876372">04 92 87 63 72</a><span class="topbar__hours">Du lundi au vendredi, 10h-19h</span></div>
+  <div class="topbar__right"><a href="https://www.instagram.com/lumiamanosque" target="_blank" rel="noopener noreferrer" aria-label="Instagram de LUMIA"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a></div>
+</div></div>
+
+<nav id="nav" aria-label="Navigation principale">
+  <div class="container">
+    <a href="./" class="nav__logo" aria-label="LUMIA, accueil"><img src="assets/logo.png" alt="LUMIA, institut de beauté à Manosque" width="132" height="33" loading="eager"></a>
+    <div class="nav__menu" id="nav-menu">
+      <a href="./">Accueil</a>
+      <div class="nav__dropdown">
+        <a href="./#prestations">Prestations</a>
+        <div class="nav__dropdown-menu">
+          <a href="epilation-laser-manosque.html">Épilation laser</a>
+          <a href="soins-visage-manosque.html">Soins du visage</a>
+          <a href="lpg-cellu-m6-manosque.html">LPG endermologie</a>
+          <a href="soin-cosmelan-taches-manosque.html">Soins dépigmentants Cosmelan</a>
+        </div>
+      </div>
+      <a href="a-propos.html">À propos</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="reservation.html" class="btn-cta-nav">Prendre rendez-vous</a>
+    </div>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="./">Accueil</a> <span>›</span> Prendre rendez-vous</nav>
+    <h1>Prendre rendez-vous</h1>
+    <p>Réservez en quelques clics à l'institut LUMIA, Manosque.</p>
+  </div>
+</header>
+
+<main id="main">
+<section class="section"><div class="container booking">
+  <ol class="steps">
+    <li data-step="1" class="active"><span class="n">1</span> Prestation</li>
+    <li data-step="2"><span class="n">2</span> Date</li>
+    <li data-step="3"><span class="n">3</span> Coordonnées</li>
+    <li data-step="4"><span class="n">4</span> Confirmation</li>
+  </ol>
+
+  <div id="b-error" class="form__message form__message--error" role="alert" style="display:none"></div>
+
+  <!-- Étape 1 -->
+  <div class="b-step active" id="step-1" aria-label="Choix de la prestation">
+    <div id="svc-list"><p class="b-note">Chargement des prestations…</p></div>
+  </div>
+
+  <!-- Étape 2 -->
+  <div class="b-step" id="step-2" aria-label="Choix de la date">
+    <div class="b-summary" id="sum-2"></div>
+    <div id="bilan-note"></div>
+    <div class="cal-head">
+      <button type="button" id="cal-prev" aria-label="Mois précédent">‹</button>
+      <strong id="cal-label"></strong>
+      <button type="button" id="cal-next" aria-label="Mois suivant">›</button>
+    </div>
+    <div class="cal-grid" id="cal-grid"></div>
+    <div id="slots-wrap"></div>
+    <button type="button" class="b-back" data-goto="1">‹ Changer de prestation</button>
+  </div>
+
+  <!-- Étape 3 -->
+  <div class="b-step" id="step-3" aria-label="Vos coordonnées">
+    <div class="b-summary" id="sum-3"></div>
+    <form id="b-form" class="form" novalidate>
+      <div class="hp-field" aria-hidden="true"><label>Ne pas remplir<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <div class="form__row">
+        <div class="form__group"><label class="form__label" for="f-first">Prénom</label><input class="form__input" id="f-first" name="first" required autocomplete="given-name"></div>
+        <div class="form__group"><label class="form__label" for="f-last">Nom</label><input class="form__input" id="f-last" name="last" required autocomplete="family-name"></div>
+      </div>
+      <div class="form__row">
+        <div class="form__group"><label class="form__label" for="f-email">Email</label><input class="form__input" type="email" id="f-email" name="email" required autocomplete="email"></div>
+        <div class="form__group"><label class="form__label" for="f-phone">Téléphone</label><input class="form__input" type="tel" id="f-phone" name="phone" required autocomplete="tel" placeholder="06 12 34 56 78"></div>
+      </div>
+      <div class="form__group"><label class="form__label" for="f-msg">Message (facultatif)</label><textarea class="form__textarea" id="f-msg" name="message"></textarea></div>
+      <div class="form__group"><label class="form__checkbox"><input type="checkbox" id="f-consent" name="consent" required> J'accepte que mes informations soient utilisées pour gérer mon rendez-vous, conformément à la <a href="politique-confidentialite.html" target="_blank" rel="noopener">politique de confidentialité</a>.</label></div>
+      <button type="submit" class="btn btn-primary" id="b-submit">Confirmer le rendez-vous</button>
+      <button type="button" class="b-back" data-goto="2">‹ Changer de créneau</button>
+    </form>
+  </div>
+
+  <!-- Étape 4 -->
+  <div class="b-step" id="step-4">
+    <div class="b-done">
+      <div class="ok" aria-hidden="true">✓</div>
+      <h2 class="section__title-rule">Rendez-vous confirmé</h2>
+      <p id="done-msg"></p>
+      <p class="b-note">Un email de confirmation vous a été envoyé, avec un lien d'annulation.</p>
+      <p class="mt-2"><a href="./" class="btn btn-outline">Retour à l'accueil</a></p>
+    </div>
+  </div>
+
+</div></section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer__brand">
+        <img src="assets/logo-blanc.png" alt="LUMIA" width="150" height="38" loading="lazy" style="margin-bottom:.5rem;">
+        <p>Institut de beauté et centre d'épilation laser à Manosque, réalisé par une infirmière diplômée d'État.</p>
+      </div>
+      <nav class="footer__col" aria-label="Prestations">
+        <p class="footer__title">Prestations</p>
+        <ul class="footer__links">
+          <li><a href="epilation-laser-manosque.html">Épilation laser</a></li>
+          <li><a href="soins-visage-manosque.html">Soins du visage</a></li>
+          <li><a href="lpg-cellu-m6-manosque.html">LPG endermologie</a></li>
+          <li><a href="soin-cosmelan-taches-manosque.html">Soins Cosmelan</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-label="Navigation">
+        <p class="footer__title">Navigation</p>
+        <ul class="footer__links">
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <p class="footer__title">Contact</p>
+        <p>10 Bis avenue Jean Giono</p>
+        <p>04100 Manosque</p>
+        <p><a href="tel:+33492876372">04 92 87 63 72</a></p>
+        <p>Lun-ven, 10h-19h</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 LUMIA &middot; Site réalisé par <a href="https://sol-ia.tech" target="_blank" rel="noopener">Sol&middot;IA</a></p>
+      <p><a href="mentions-legales.html">Mentions légales</a> &middot; <a href="politique-confidentialite.html">Confidentialité</a></p>
+    </div>
+  </div>
+</footer>
+
+<nav class="mobile-cta" aria-label="Actions rapides">
+  <a href="tel:+33492876372" class="btn btn-outline"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.27a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z"/></svg> Appeler</a>
+  <a href="reservation.html" class="btn btn-primary">Prendre RDV</a>
+</nav>
+
+<script src="js/main.min.js" defer></script>
+<script src="js/reservation.js" defer></script>
+</body>
+</html>

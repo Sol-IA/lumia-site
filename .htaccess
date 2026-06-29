@@ -98,9 +98,14 @@ RewriteRule "(^|/)\." - [F]
 # ==========================================================================
 # Blocage des fichiers sensibles
 # ==========================================================================
-<FilesMatch "(config|\.env|\.gitignore|ratelimit|\.bak|\.old|~$|\.log|\.sql)">
+<FilesMatch "(config|\.env|\.gitignore|ratelimit|\.bak|\.old|~$|\.log|\.sql|\.sqlite|service-account)">
   Require all denied
 </FilesMatch>
+
+# Module de réservation : refuser tout accès direct au dossier privé _secure/
+# (en prod il doit idéalement vivre AU-DESSUS du webroot ; ceci est un filet).
+RewriteRule "^_secure/" - [F]
+RedirectMatch 404 "(?i)\.sqlite(-wal|-shm)?$"
 
 # Limite de taille des POST (1 Mo)
 LimitRequestBody 1048576

@@ -15,3 +15,12 @@ assets/laserday_files/
 assets/laserday.html
 assets/vidéoentrée_files/
 assets/vidéoentrée.html
+_secure/
+api/
+admin/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Propale / docs internes (non publics)
+docs/
