@@ -101,16 +101,16 @@ tarifs_body = header_block(
 <details>
 <summary>Voir les 4 soins LED et leurs tarifs</summary>
 <div class="table-wrap"><table class="data"><thead><tr><th>Soin</th><th>Détail</th><th>Tarif</th></tr></thead><tbody>
-<tr><td>Soin anti-âge + LED</td><td>1h</td><td class="price">95 euros</td></tr><tr><td>Nettoyage &amp; hydratation + LED</td><td>60 min (cure 10+2 offertes)</td><td class="price">80 euros</td></tr><tr><td>Séance LED visage</td><td>30 min</td><td class="price">35 euros</td></tr><tr><td>Cure LED visage 10+2</td><td>12 séances</td><td class="price">350 euros</td></tr>
+<tr><td>Soin anti-âge + LED</td><td>1h</td><td class="price">95 euros</td></tr><tr><td>Nettoyage &amp; hydratation + LED</td><td>1h (cure 10+2 offertes)</td><td class="price">80 euros</td></tr><tr><td>Séance LED visage</td><td>30 min</td><td class="price">35 euros</td></tr><tr><td>Cure LED visage 10+2</td><td>12 séances</td><td class="price">350 euros</td></tr>
 </tbody></table></div>
 </details>
 
 <h2>Micro-stimulation, microneedling Mesoestetic</h2>
-<p>Stimulation de la peau par micro-perforations contrôlées, avec des actifs Mesoestetic aux exosomes. Sans injection de produit. La LED est incluse lors de la pose du masque.</p>
+<p>Stimulation de la peau par micro-perforations contrôlées, avec des actifs Mesoestetic composés d'exosomes et de PDRN. Sans injection de produit. La LED est incluse lors de la pose du masque.</p>
 <details>
 <summary>Voir les 2 prestations et leurs tarifs</summary>
 <div class="table-wrap"><table class="data"><thead><tr><th>Prestation</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
-<tr><td>RDV diagnostic visage</td><td>30 min</td><td class="price">20 euros</td></tr><tr><td>Microneedling visage et cou</td><td>60 min</td><td class="price">145 euros</td></tr>
+<tr><td>RDV diagnostic visage</td><td>30 min</td><td class="price">20 euros</td></tr><tr><td>Microneedling visage et cou</td><td>1h</td><td class="price">145 euros</td></tr>
 </tbody></table></div>
 </details>
 <p>Recommandé en cure, une séance tous les quinze jours pendant six séances, puis un entretien tous les deux mois.</p>

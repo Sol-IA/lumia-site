@@ -125,7 +125,7 @@ mn_body = header_block(
 
 <h2>Comment se déroule une séance</h2>
 <p>Tout commence par un rendez-vous de diagnostic du visage de 30 minutes. Nous discutons de votre projet et de vos problématiques, et nous définissons ensemble le protocole personnalisé. Un questionnaire de santé, un consentement mutuel et une fiche d'information sur le microneedling sont signés avant de pouvoir débuter les soins.</p>
-<p>La séance de microneedling dure ensuite 60 minutes et traite le visage et le cou. La LED est incluse lors de la pose du masque, pour apaiser la peau et potentialiser les résultats. Il est également possible de traiter uniquement le décolleté.</p>
+<p>La séance de microneedling dure ensuite une heure et traite le visage et le cou. La LED est incluse lors de la pose du masque, pour apaiser la peau et potentialiser les résultats. Il est également possible de traiter uniquement le décolleté.</p>
 
 <img src="assets/microneedling-soin.webp" class="portrait" alt="Séance de microneedling du visage à l'institut LUMIA à Manosque, stylo de micro-stimulation et luminothérapie" width="898" height="1600" loading="lazy">
 
