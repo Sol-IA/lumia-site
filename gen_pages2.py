@@ -90,58 +90,85 @@ tarifs_body = header_block(
 <p class="lead">Bilan / diagnostic laser : 20 euros, offert pour tout achat de séance ou de cure.</p>
 
 <h2>Soins du visage LUMINEA (EsthéSkin)</h2>
+<details>
+<summary>Voir les 5 soins LUMINEA et leurs tarifs</summary>
 <div class="table-wrap"><table class="data"><thead><tr><th>Soin</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
 <tr><td>LUMINEA Express nettoyage</td><td>30 min</td><td class="price">45 euros</td></tr><tr><td>LUMINEA Express radiofréquence (visage ou cou)</td><td>30 min</td><td class="price">49 euros</td></tr><tr><td>LUMINEA Découverte</td><td>1h15</td><td class="price">95 euros</td></tr><tr><td>LUMINEA Avancé</td><td>1h15</td><td class="price">115 euros</td></tr><tr><td>LUMINEA Prestige LPG Visage OU LED</td><td>1h30</td><td class="price">135 euros</td></tr>
 </tbody></table></div>
+</details>
 
 <h2>Soins du visage avec LED</h2>
+<details>
+<summary>Voir les 4 soins LED et leurs tarifs</summary>
 <div class="table-wrap"><table class="data"><thead><tr><th>Soin</th><th>Détail</th><th>Tarif</th></tr></thead><tbody>
 <tr><td>Soin anti-âge + LED</td><td>1h</td><td class="price">95 euros</td></tr><tr><td>Nettoyage &amp; hydratation + LED</td><td>60 min (cure 10+2 offertes)</td><td class="price">80 euros</td></tr><tr><td>Séance LED visage</td><td>30 min</td><td class="price">35 euros</td></tr><tr><td>Cure LED visage 10+2</td><td>12 séances</td><td class="price">350 euros</td></tr>
 </tbody></table></div>
+</details>
 
 <h2>Micro-stimulation, microneedling Mesoestetic</h2>
 <p>Stimulation de la peau par micro-perforations contrôlées, avec des actifs Mesoestetic aux exosomes. Sans injection de produit. La LED est incluse lors de la pose du masque.</p>
+<details>
+<summary>Voir les 2 prestations et leurs tarifs</summary>
 <div class="table-wrap"><table class="data"><thead><tr><th>Prestation</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
 <tr><td>RDV diagnostic visage</td><td>30 min</td><td class="price">20 euros</td></tr><tr><td>Microneedling visage et cou</td><td>60 min</td><td class="price">145 euros</td></tr>
 </tbody></table></div>
+</details>
 <p>Recommandé en cure, une séance tous les quinze jours pendant six séances, puis un entretien tous les deux mois.</p>
 
 <h2>Cure Expertise Silhouette</h2>
 <p>Cure de six séances associant 45 minutes de drainage lymphatique et 30 minutes de LPG, soit une séance complète d'1h15, avec un bilan de 20 minutes avant la cure. Disponible pour le bas du corps ou pour le ventre et la taille. Cure réalisée avec Emana Massages.</p>
+<details>
+<summary>Voir le détail de la cure et son tarif</summary>
 <div class="table-wrap"><table class="data"><thead><tr><th>Prestation</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
 <tr><td>Première séance : drainage lymphatique 45 min et LPG 30 min</td><td>1h15</td><td class="price">120 euros</td></tr>
 </tbody></table></div>
+</details>
 <p class="lead">120 euros d'économies pour l'achat de la cure, jusqu'au 31 décembre 2026.</p>
 
 <h2>Soins dépigmentants COSMELAN</h2>
+<details>
+<summary>Voir les 3 prestations et leurs tarifs</summary>
 <div class="table-wrap"><table class="data"><thead><tr><th>Prestation</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
 <tr><td>Diagnostic de peau</td><td>RDV préalable</td><td class="price">20 euros (déductible)</td></tr><tr><td>Soin cabine (diagnostic + home pack)</td><td>45 min</td><td class="price">650 euros</td></tr><tr><td>Soin apaisant post-COSMELAN</td><td>45 min</td><td class="price">50 euros</td></tr>
 </tbody></table></div>
+</details>
 
 <h2>LPG Cellu M6, corps</h2>
+<details>
+<summary>Voir les 6 soins du corps et leurs tarifs</summary>
 <div class="table-wrap"><table class="data"><thead><tr><th>Soin</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
 <tr><td>Bilan personnalisé</td><td>30 min</td><td class="price">40 euros (offert pour un forfait)</td></tr><tr><td>Anti-cellulite</td><td>30 min</td><td class="price">60 euros</td></tr><tr><td>Jeune maman</td><td>30 min</td><td class="price">60 euros</td></tr><tr><td>Relaxation</td><td>30 min</td><td class="price">60 euros</td></tr><tr><td>Détox drainant</td><td>40 min</td><td class="price">70 euros</td></tr><tr><td>Tenue Endermowear</td><td>obligatoire pour le corps</td><td class="price">20 euros (offerte pour tout achat de soin corps)</td></tr>
 </tbody></table></div>
+</details>
 
 <h2>LPG Cellu M6, visage</h2>
 <p>Soins zones, de 1 à 9 zones au choix (front, regard anti-rides, poches et cernes, bouche, double menton, ovale, cou, décolleté, mains), facturés selon la durée.</p>
+<details>
+<summary>Voir les tarifs par durée de séance</summary>
 <div class="table-wrap"><table class="data"><thead><tr><th>Durée</th><th>Tarif</th></tr></thead><tbody>
 <tr><td>10 minutes</td><td class="price">20 euros</td></tr>
 <tr><td>20 minutes</td><td class="price">40 euros</td></tr>
 <tr><td>30 minutes</td><td class="price">60 euros</td></tr>
 <tr><td>40 minutes</td><td class="price">80 euros</td></tr>
 </tbody></table></div>
+</details>
 
 <h3>Soins classiques visage</h3>
+<details>
+<summary>Voir les 5 soins classiques et leurs tarifs</summary>
 <div class="table-wrap"><table class="data"><thead><tr><th>Soin</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
 <tr><td>Éclat</td><td>15 min</td><td class="price">35 euros</td></tr><tr><td>Détox</td><td>sur mesure</td><td class="price">45 euros</td></tr><tr><td>Anti-âge repulpant</td><td>sur mesure</td><td class="price">65 euros</td></tr><tr><td>Anti-âge fermeté</td><td>sur mesure</td><td class="price">65 euros</td></tr><tr><td>Anti-âge affinant</td><td>sur mesure</td><td class="price">65 euros</td></tr>
 </tbody></table></div>
+</details>
 
 <h3>Forfaits LPG, corps et visage</h3>
 <p>Forfaits Booster et Optimisation, au même tarif, selon la durée de la séance.</p>
+<details>
+<summary>Voir la grille des forfaits</summary>
 <div class="table-wrap"><table class="data"><thead><tr><th>Durée de séance</th><th>Forfait Booster</th><th>Forfait Optimisation</th></tr></thead><tbody>
 <tr><td>10 minutes</td><td class="price">200 euros</td><td class="price">sur devis</td></tr><tr><td>20 minutes</td><td class="price">400 euros</td><td class="price">400 euros</td></tr><tr><td>30 minutes</td><td class="price">600 euros</td><td class="price">600 euros</td></tr><tr><td>40 minutes</td><td class="price">800 euros</td><td class="price">800 euros</td></tr>
 </tbody></table></div>
+</details>
 <p>Le bilan LPG de 40 euros est offert pour tout achat de forfait.</p>
 
 <h2>Modelage</h2>
