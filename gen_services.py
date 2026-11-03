@@ -98,7 +98,7 @@ print("services OK")
 
 # ============================ MICRONEEDLING ============================
 mn_faq = [
- ("Le microneedling, est-ce une injection ?", "Non, il n'y a aucune injection de produit. Le stylo crée de micro-perforations contrôlées à la surface de la peau, qui déclenchent sa régénération naturelle et font pénétrer les actifs appliqués."),
+ ("Le microneedling, est-ce une injection ?", "Non, il n'y a aucune injection de produit. Le stylo crée de micro-perforations contrôlées à la surface de la peau, à une profondeur de 0,25 mm, qui déclenchent sa régénération naturelle et font pénétrer les actifs appliqués."),
  ("Est-ce que c'est douloureux ?", "La sensation est celle de petits picotements, variable selon la zone et la profondeur réglée. La profondeur est adaptée à votre peau et à la zone traitée, et la séance reste confortable."),
  ("Combien de séances faut-il prévoir ?", "Le protocole conseillé est une cure de six séances, à raison d'une séance tous les quinze jours, pour une régénération complète et des résultats durables. Des séances d'entretien tous les deux mois sont ensuite vivement recommandées."),
  ("Est-ce adapté à ma peau ?", "Le microneedling convient à tous les phototypes, des peaux claires aux peaux foncées. Un rendez-vous de diagnostic préalable permet de vérifier qu'aucune contre-indication ne s'applique et de choisir les actifs adaptés à votre peau."),
@@ -110,7 +110,7 @@ mn_body = header_block(
   "Microneedling à Manosque",
   "La micro-stimulation de la peau avec les actifs Mesoestetic aux exosomes : rides, éclat, pores dilatés et cicatrices d'acné.") + """
 <main id="main"><article class="article-body"><div class="container">
-<p>Le microneedling, ou micro-stimulation, est un soin de régénération de la peau proposé à l'institut LUMIA à Manosque. Grâce à de micro-perforations contrôlées, il stimule la production naturelle de collagène et d'élastine, pour une peau plus lisse, plus ferme, plus lumineuse et un grain de peau affiné. Il est réalisé par une infirmière diplômée d'État, avec des actifs brevetés de la marque Mesoestetic.</p>
+<p>Le microneedling, ou micro-stimulation, est un soin de régénération de la peau proposé à l'institut LUMIA à Manosque. Grâce à de micro-perforations contrôlées, réalisées à une profondeur de 0,25 mm, il stimule la production naturelle de collagène et d'élastine, pour une peau plus lisse, plus ferme, plus lumineuse et un grain de peau affiné. Il est réalisé par une infirmière diplômée d'État, avec des actifs brevetés de la marque Mesoestetic.</p>
 <div class="hero__actions"><a href="" + PLANITY + "" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a><a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA">04 92 87 63 72</a></div>
 
 <div class="callout"><h3>Sans aucune injection</h3><p>Le microneedling ne comporte <strong>aucune injection de produit</strong>. Le stylo médical crée de minuscules canaux à la surface de la peau : c'est la réponse naturelle de régénération de votre peau qui fait le travail, aidée par les actifs appliqués en surface.</p></div>

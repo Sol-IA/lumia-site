@@ -106,7 +106,7 @@ tarifs_body = header_block(
 </details>
 
 <h2>Micro-stimulation, microneedling Mesoestetic</h2>
-<p>Stimulation de la peau par micro-perforations contrôlées, avec des actifs Mesoestetic composés d'exosomes et de PDRN. Sans injection de produit. La LED est incluse lors de la pose du masque.</p>
+<p>Stimulation de la peau par micro-perforations contrôlées à une profondeur de 0,25 mm, avec des actifs Mesoestetic composés d'exosomes et de PDRN. Sans injection de produit. La LED est incluse lors de la pose du masque.</p>
 <details>
 <summary>Voir les 2 prestations et leurs tarifs</summary>
 <div class="table-wrap"><table class="data"><thead><tr><th>Prestation</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
