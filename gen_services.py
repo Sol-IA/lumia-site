@@ -109,7 +109,7 @@ mn_body = header_block(
   "La micro-stimulation de la peau avec les actifs Mesoestetic aux exosomes : rides, éclat, pores dilatés et cicatrices d'acné.") + """
 <main id="main"><article class="article-body"><div class="container">
 <p>Le microneedling, ou micro-stimulation, est un soin de régénération de la peau proposé à l'institut LUMIA à Manosque. Grâce à de micro-perforations contrôlées, il stimule la production naturelle de collagène et d'élastine, pour une peau plus lisse, plus ferme, plus lumineuse et un grain de peau affiné. Il est réalisé par une infirmière diplômée d'État, avec des actifs brevetés de la marque Mesoestetic.</p>
-<div class="hero__actions"><a href="reservation.html" class="btn btn-primary">Prendre rendez-vous</a><a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA">04 92 87 63 72</a></div>
+<div class="hero__actions"><a href="" + PLANITY + "" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a><a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA">04 92 87 63 72</a></div>
 
 <div class="callout"><h3>Sans aucune injection</h3><p>Le microneedling ne comporte <strong>aucune injection de produit</strong>. Le stylo médical crée de minuscules canaux à la surface de la peau : c'est la réponse naturelle de régénération de votre peau qui fait le travail, aidée par les actifs appliqués en surface.</p></div>
 
@@ -125,7 +125,7 @@ mn_body = header_block(
 <p>Tout commence par un rendez-vous de diagnostic du visage de 30 minutes. Nous discutons de votre projet et de vos problématiques, et nous définissons ensemble le protocole personnalisé. Un questionnaire de santé, un consentement mutuel et une fiche d'information sur le microneedling sont signés avant de pouvoir débuter les soins.</p>
 <p>La séance de microneedling dure ensuite 60 minutes et traite le visage et le cou. La LED est incluse lors de la pose du masque, pour apaiser la peau et potentialiser les résultats. Il est également possible de traiter uniquement le décolleté.</p>
 
-<p class="text-center mt-2"><a href="reservation.html" class="btn btn-primary">Réservez votre diagnostic visage</a></p>
+<p class="text-center mt-2"><a href="" + PLANITY + "" target="_blank" rel="noopener" class="btn btn-primary">Réservez votre diagnostic visage</a></p>
 
 <h2>Le protocole recommandé</h2>
 <p>Pour une régénération complète et des résultats durables, le microneedling se pratique en cure : une séance tous les quinze jours, pendant six séances. Des séances d'entretien, une fois tous les deux mois, sont ensuite fortement conseillées pour maintenir le bénéfice.</p>
