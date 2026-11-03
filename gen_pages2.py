@@ -63,34 +63,57 @@ tarifs_body = header_block(
 <div class="callout"><h3>Bon à savoir</h3><p>Carte bancaire et espèces acceptées. Le bilan laser (20 euros) et le bilan LPG (40 euros) sont offerts pour tout achat de séance, de cure ou de forfait. Le diagnostic de peau Cosmelan (20 euros) est déductible du soin en cabine.</p></div>
 
 <h2>Épilation laser</h2>
-<p>Tarifs à la séance et forfait 8 séances, pour les femmes et les hommes. Les zones non listées sont précisées lors du bilan.</p>
-<div class="table-wrap"><table class="data"><thead><tr><th>Zone</th><th>À la séance</th><th>Forfait 8 séances</th></tr></thead><tbody>
-%s
+<p>Tarifs à la séance. Un bilan personnalisé est obligatoire avant la première séance.</p>
+
+<h3>Femme</h3>
+<div class="table-wrap"><table class="data"><thead><tr><th>Zone</th><th>Tarif à la séance</th></tr></thead><tbody>
+<tr><td>Inter-sourcils</td><td class="price">31 euros</td></tr><tr><td>Lèvre supérieure</td><td class="price">39 euros</td></tr><tr><td>Menton</td><td class="price">37 euros</td></tr><tr><td>Tempes ou joues</td><td class="price">55 euros</td></tr><tr><td>Aisselles</td><td class="price">54 euros</td></tr><tr><td>Aréoles des seins</td><td class="price">47 euros</td></tr><tr><td>Bas du ventre</td><td class="price">51 euros</td></tr><tr><td>Bas du dos</td><td class="price">61 euros</td></tr><tr><td>Sillon inter-fessier</td><td class="price">44 euros</td></tr><tr><td>Maillot simple</td><td class="price">65 euros</td></tr><tr><td>Maillot échancré</td><td class="price">100 euros</td></tr><tr><td>Maillot intégral</td><td class="price">133 euros</td></tr><tr><td>Avant-bras</td><td class="price">99 euros</td></tr><tr><td>Cuisses</td><td class="price">202 euros</td></tr><tr><td>Demi-jambes</td><td class="price">153 euros</td></tr><tr><td>Jambes entières</td><td class="price">274 euros</td></tr>
 </tbody></table></div>
+
+<h3>Homme</h3>
+<div class="table-wrap"><table class="data"><thead><tr><th>Zone</th><th>Tarif à la séance</th></tr></thead><tbody>
+<tr><td>Inter-sourcils</td><td class="price">31 euros</td></tr><tr><td>Oreilles</td><td class="price">39 euros</td></tr><tr><td>Col de chemise</td><td class="price">58 euros</td></tr><tr><td>Barbe</td><td class="price">110 euros</td></tr><tr><td>Aisselles</td><td class="price">63 euros</td></tr><tr><td>Épaules</td><td class="price">103 euros</td></tr><tr><td>Avant-bras</td><td class="price">106 euros</td></tr><tr><td>Bras complets</td><td class="price">159 euros</td></tr><tr><td>Torse</td><td class="price">121 euros</td></tr><tr><td>Ventre</td><td class="price">121 euros</td></tr><tr><td>Fesses</td><td class="price">121 euros</td></tr><tr><td>Dos</td><td class="price">223 euros</td></tr><tr><td>Cuisses</td><td class="price">202 euros</td></tr><tr><td>Demi-jambes</td><td class="price">206 euros</td></tr><tr><td>Jambes entières</td><td class="price">303 euros</td></tr>
+</tbody></table></div>
+
+<p>Des cures et forfaits existent sur la plupart des zones : le tarif vous est communiqué lors du bilan, en fonction de votre peau et du nombre de séances nécessaires.</p>
 <p class="lead">Bilan / diagnostic laser : 20 euros, offert pour tout achat de séance ou de cure.</p>
 
 <h2>Soins du visage LUMINEA (EsthéSkin)</h2>
 <div class="table-wrap"><table class="data"><thead><tr><th>Soin</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
-%s
+<tr><td>LUMINEA Express nettoyage</td><td>30 min</td><td class="price">45 euros</td></tr><tr><td>LUMINEA Express radiofréquence (visage ou cou)</td><td>30 min</td><td class="price">49 euros</td></tr><tr><td>LUMINEA Découverte</td><td>1h15</td><td class="price">95 euros</td></tr><tr><td>LUMINEA Avancé</td><td>1h15</td><td class="price">115 euros</td></tr><tr><td>LUMINEA Prestige + LPG visage</td><td>1h30</td><td class="price">135 euros</td></tr><tr><td>LUMINEA Prestige + LED</td><td>1h30</td><td class="price">135 euros</td></tr>
 </tbody></table></div>
 
 <h2>Soins du visage avec LED</h2>
 <div class="table-wrap"><table class="data"><thead><tr><th>Soin</th><th>Détail</th><th>Tarif</th></tr></thead><tbody>
-%s
+<tr><td>Soin anti-âge + LED</td><td>1h</td><td class="price">95 euros</td></tr><tr><td>Nettoyage &amp; hydratation + LED</td><td>60 min (cure 10+2 offertes)</td><td class="price">80 euros</td></tr><tr><td>Séance LED visage</td><td>30 min</td><td class="price">35 euros</td></tr><tr><td>Cure LED visage 10+2</td><td>12 séances</td><td class="price">350 euros</td></tr>
 </tbody></table></div>
+
+<h2>Micro-stimulation, microneedling Mesoestetic</h2>
+<p>Stimulation de la peau par micro-perforations contrôlées, avec des actifs Mesoestetic aux exosomes. Sans injection de produit. La LED est incluse lors de la pose du masque.</p>
+<div class="table-wrap"><table class="data"><thead><tr><th>Prestation</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
+<tr><td>RDV diagnostic visage</td><td>30 min</td><td class="price">20 euros</td></tr><tr><td>Microneedling visage et cou</td><td>60 min</td><td class="price">145 euros</td></tr>
+</tbody></table></div>
+<p>Recommandé en cure, une séance tous les quinze jours pendant six séances, puis un entretien tous les deux mois.</p>
+
+<h2>Cure Expertise Silhouette</h2>
+<p>Cure de six séances associant 45 minutes de drainage lymphatique et 30 minutes de LPG, soit une séance complète d'1h15, avec un bilan de 20 minutes avant la cure. Disponible pour le bas du corps ou pour le ventre et la taille. Cure réalisée avec Emana Massages.</p>
+<div class="table-wrap"><table class="data"><thead><tr><th>Prestation</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
+<tr><td>Première séance : drainage lymphatique 45 min et LPG 30 min</td><td>1h15</td><td class="price">120 euros</td></tr>
+</tbody></table></div>
+<p class="lead">120 euros d'économies pour l'achat de la cure, jusqu'au 31 décembre 2026.</p>
 
 <h2>Soins dépigmentants Cosmelan</h2>
 <div class="table-wrap"><table class="data"><thead><tr><th>Prestation</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
-%s
+<tr><td>Diagnostic de peau</td><td>RDV préalable</td><td class="price">20 euros (déductible)</td></tr><tr><td>Soin cabine (diagnostic + home pack)</td><td>45 min</td><td class="price">650 euros</td></tr><tr><td>Soin apaisant post-Cosmelan</td><td>45 min</td><td class="price">50 euros</td></tr>
 </tbody></table></div>
 
 <h2>LPG Cellu M6, corps</h2>
 <div class="table-wrap"><table class="data"><thead><tr><th>Soin</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
-%s
+<tr><td>Bilan personnalisé</td><td>30 min</td><td class="price">40 euros (offert pour un forfait)</td></tr><tr><td>Anti-cellulite</td><td>30 min</td><td class="price">60 euros</td></tr><tr><td>Jeune maman</td><td>30 min</td><td class="price">60 euros</td></tr><tr><td>Relaxation</td><td>30 min</td><td class="price">60 euros</td></tr><tr><td>Détox drainant</td><td>40 min</td><td class="price">70 euros</td></tr><tr><td>Tenue Endermowear</td><td>obligatoire pour le corps</td><td class="price">20 euros (offerte pour tout achat de soin corps)</td></tr>
 </tbody></table></div>
 
 <h2>LPG Cellu M6, visage</h2>
-<p>Soins zones, de 1 à 9 zones, selon la durée.</p>
+<p>Soins zones, de 1 à 9 zones au choix (front, regard anti-rides, poches et cernes, bouche, double menton, ovale, cou, décolleté, mains), facturés selon la durée.</p>
 <div class="table-wrap"><table class="data"><thead><tr><th>Durée</th><th>Tarif</th></tr></thead><tbody>
 <tr><td>10 minutes</td><td class="price">20 euros</td></tr>
 <tr><td>20 minutes</td><td class="price">40 euros</td></tr>
@@ -98,35 +121,24 @@ tarifs_body = header_block(
 <tr><td>40 minutes</td><td class="price">80 euros</td></tr>
 </tbody></table></div>
 
+<h3>Soins classiques visage</h3>
+<div class="table-wrap"><table class="data"><thead><tr><th>Soin</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
+<tr><td>Éclat</td><td>15 min</td><td class="price">35 euros</td></tr><tr><td>Détox</td><td>sur mesure</td><td class="price">45 euros</td></tr><tr><td>Anti-âge repulpant</td><td>sur mesure</td><td class="price">65 euros</td></tr><tr><td>Anti-âge fermeté</td><td>sur mesure</td><td class="price">65 euros</td></tr><tr><td>Anti-âge affinant</td><td>sur mesure</td><td class="price">65 euros</td></tr>
+</tbody></table></div>
+
+<h3>Forfaits LPG, corps et visage</h3>
+<p>Forfaits Booster et Optimisation, au même tarif, selon la durée de la séance.</p>
+<div class="table-wrap"><table class="data"><thead><tr><th>Durée de séance</th><th>Forfait Booster</th><th>Forfait Optimisation</th></tr></thead><tbody>
+<tr><td>10 minutes</td><td class="price">200 euros</td><td class="price">sur devis</td></tr><tr><td>20 minutes</td><td class="price">400 euros</td><td class="price">400 euros</td></tr><tr><td>30 minutes</td><td class="price">600 euros</td><td class="price">600 euros</td></tr><tr><td>40 minutes</td><td class="price">800 euros</td><td class="price">800 euros</td></tr>
+</tbody></table></div>
+<p>Le bilan LPG de 40 euros est offert pour tout achat de forfait.</p>
+
 <h2>Modelage</h2>
 <p>Modelage visage, buste et épaules (30 minutes) : 39 euros, forfait 5 séances plus une offerte.</p>
-<p class="lead">À venir : soins du visage PEELING de Mesoestetic.</p>
 <p>Une question sur un tarif ou un forfait ? <a href="contact.html">Contactez-nous</a> ou réservez votre bilan en ligne.</p>
 </div></article>
 %s</main>
-""" % (
-"".join([trow("Inter-sourcils","31 euros","217 euros"),trow("Lèvre supérieure","39 euros","273 euros"),
- trow("Menton","37 euros","259 euros"),trow("Tempes ou joues","55 euros","385 euros"),
- trow("Oreilles (homme)","39 euros","273 euros"),trow("Col de chemise (homme)","58 euros","406 euros"),
- trow("Barbe (homme)","110 euros","770 euros"),
- '<tr><td>Autres zones (aisselles, maillot, jambes, dos...)</td><td class="price">sur bilan</td><td class="price">sur bilan</td></tr>']),
-"".join(['<tr><td>Radiofréquence cou</td><td>30 min</td><td class="price">49 euros</td></tr>',
- '<tr><td>LUMINEA Découverte</td><td>1h15</td><td class="price">95 euros</td></tr>',
- '<tr><td>LUMINEA Avancé</td><td>1h15</td><td class="price">115 euros</td></tr>',
- '<tr><td>LUMINEA Prestige + LPG visage</td><td>1h30</td><td class="price">135 euros</td></tr>',
- '<tr><td>LUMINEA Prestige + LED</td><td>1h30</td><td class="price">135 euros</td></tr>']),
-"".join(['<tr><td>Soin anti-âge + LED</td><td>1h</td><td class="price">95 euros</td></tr>',
- '<tr><td>Nettoyage &amp; hydratation + LED</td><td>60 min (cure 10+2 offertes)</td><td class="price">80 euros</td></tr>',
- '<tr><td>Séance LED visage</td><td>20 min</td><td class="price">35 euros</td></tr>',
- '<tr><td>Cure LED visage 10+2</td><td>12 séances</td><td class="price">350 euros</td></tr>']),
-"".join(['<tr><td>Diagnostic de peau</td><td>RDV préalable</td><td class="price">20 euros (déductible)</td></tr>',
- '<tr><td>Soin cabine (diagnostic + home pack)</td><td>45 min</td><td class="price">650 euros</td></tr>',
- '<tr><td>Soin apaisant post-Cosmelan</td><td>45 min</td><td class="price">50 euros</td></tr>']),
-"".join(['<tr><td>Bilan personnalisé</td><td>30 min</td><td class="price">40 euros (offert pour un forfait)</td></tr>',
- '<tr><td>Anti-cellulite / jeune maman / relaxation</td><td>30 min</td><td class="price">60 euros</td></tr>',
- '<tr><td>Détox drainant</td><td>35 min</td><td class="price">70 euros</td></tr>',
- '<tr><td>Forfaits 10 séances</td><td>cure</td><td class="price">sur devis</td></tr>']),
-cta('Prête à <span class="accent">réserver</span> ?', "Premier bilan offert pour tout achat. Réservez en ligne ou appelez-nous."))
+""" % cta('Prête à <span class="accent">réserver</span> ?', "Premier bilan offert pour tout achat. Réservez en ligne ou appelez-nous.")
 page("tarifs.html",
      "Tarifs & forfaits | LUMIA Manosque",
      "Tarifs de l'institut LUMIA à Manosque : épilation laser, soins du visage LUMINEA et LED, Cosmelan, LPG. Forfaits dégressifs, paiement en 3 fois sans frais.",

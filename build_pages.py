@@ -32,6 +32,7 @@ def nav(p):
 '<a href="%sepilation-laser-manosque.html">Épilation laser</a>'
 '<a href="%ssoins-visage-manosque.html">Soins du visage</a>'
 '<a href="%slpg-cellu-m6-manosque.html">LPG endermologie</a>'
+'<a href="%smicroneedling-manosque.html">Microneedling</a>'
 '<a href="%ssoin-cosmelan-taches-manosque.html">Soins dépigmentants Cosmelan</a></div></div>'
 '<a href="%sa-propos.html">À propos</a>'
 '<a href="%starifs.html">Tarifs</a>'
@@ -39,7 +40,7 @@ def nav(p):
 '<a href="%scontact.html">Contact</a>'
 '<a href="%s" target="_blank" rel="noopener" class="btn-cta-nav">Prendre rendez-vous</a></div>'
 '<button class="nav__toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>'
-'</div></nav>' % (p, p, p, p, p, p, p, p, p, p, p, p, PLANITY))
+'</div></nav>' % (p, p, p, p, p, p, p, p, p, p, p, p, p, PLANITY))
 
 def footer(p):
     return (
@@ -50,6 +51,7 @@ def footer(p):
 '<li><a href="%sepilation-laser-manosque.html">Épilation laser</a></li>'
 '<li><a href="%ssoins-visage-manosque.html">Soins du visage</a></li>'
 '<li><a href="%slpg-cellu-m6-manosque.html">LPG endermologie</a></li>'
+'<li><a href="%smicroneedling-manosque.html">Microneedling</a></li>'
 '<li><a href="%ssoin-cosmelan-taches-manosque.html">Soins Cosmelan</a></li></ul></nav>'
 '<nav class="footer__col" aria-label="Navigation"><p class="footer__title">Navigation</p><ul class="footer__links">'
 '<li><a href="%sa-propos.html">À propos</a></li>'
@@ -63,7 +65,7 @@ def footer(p):
 '</div><div class="footer__bottom">'
 '<p>&copy; 2026 LUMIA &middot; Site réalisé par <a href="https://sol-ia.tech" target="_blank" rel="noopener">Sol&middot;IA</a></p>'
 '<p><a href="%smentions-legales.html">Mentions légales</a> &middot; <a href="%spolitique-confidentialite.html">Confidentialité</a></p>'
-'</div></div></footer>' % (p, p, p, p, p, p, p, p, p, IG, IG_SVG, p, p))
+'</div></div></footer>' % (p, p, p, p, p, p, p, p, p, p, IG, IG_SVG, p, p))
 
 def mobile_cta():
     return (

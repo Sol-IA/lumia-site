@@ -92,3 +92,56 @@ page("soin-cosmelan-taches-manosque.html",
      "https://lumia-salon.fr/soin-cosmelan-taches-manosque.html", cos_body, cos_schema)
 
 print("services OK")
+
+
+# ============================ MICRONEEDLING ============================
+mn_faq = [
+ ("Le microneedling, est-ce une injection ?", "Non, il n'y a aucune injection de produit. Le stylo crée de micro-perforations contrôlées à la surface de la peau, qui déclenchent sa régénération naturelle et font pénétrer les actifs appliqués."),
+ ("Est-ce que c'est douloureux ?", "La sensation est celle de petits picotements, variable selon la zone et la profondeur réglée. La profondeur est adaptée à votre peau et à la zone traitée, et la séance reste confortable."),
+ ("Combien de séances faut-il prévoir ?", "Le protocole conseillé est une cure de six séances, à raison d'une séance tous les quinze jours, pour une régénération complète et des résultats durables. Des séances d'entretien tous les deux mois sont ensuite vivement recommandées."),
+ ("Est-ce adapté à ma peau ?", "Le microneedling convient à tous les phototypes, des peaux claires aux peaux foncées. Un rendez-vous de diagnostic préalable permet de vérifier qu'aucune contre-indication ne s'applique et de choisir les actifs adaptés à votre peau."),
+ ("Quelles sont les précautions à prendre ?", "Aucune exposition au soleil dans les sept jours qui précèdent et les sept jours qui suivent la séance, avec une protection SPF 50+ obligatoire. Le soin est contre-indiqué en cas de grossesse ou d'allaitement, d'acné inflammatoire, de traitement à l'isotrétinoïne, de plaie ouverte, d'herpès, de traitement anticoagulant, ou de radiothérapie et cancer de moins de cinq ans. Tout est vérifié lors du diagnostic."),
+]
+
+mn_body = header_block(
+  [("Accueil","./"),("Microneedling",None)],
+  "Microneedling à Manosque",
+  "La micro-stimulation de la peau avec les actifs Mesoestetic aux exosomes : rides, éclat, pores dilatés et cicatrices d'acné.") + """
+<main id="main"><article class="article-body"><div class="container">
+<p>Le microneedling, ou micro-stimulation, est un soin de régénération de la peau proposé à l'institut LUMIA à Manosque. Grâce à de micro-perforations contrôlées, il stimule la production naturelle de collagène et d'élastine, pour une peau plus lisse, plus ferme, plus lumineuse et un grain de peau affiné. Il est réalisé par une infirmière diplômée d'État, avec des actifs brevetés de la marque Mesoestetic.</p>
+<div class="hero__actions"><a href="reservation.html" class="btn btn-primary">Prendre rendez-vous</a><a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA">04 92 87 63 72</a></div>
+
+<div class="callout"><h3>Sans aucune injection</h3><p>Le microneedling ne comporte <strong>aucune injection de produit</strong>. Le stylo médical crée de minuscules canaux à la surface de la peau : c'est la réponse naturelle de régénération de votre peau qui fait le travail, aidée par les actifs appliqués en surface.</p></div>
+
+<h2>Ce que le microneedling traite</h2>
+<p>Ce soin agit sur les rides et les ridules, le teint terne ou fatigué, le manque d'éclat, le relâchement cutané du visage, les pores dilatés, l'excès de sébum et les cicatrices d'acné. Il est adapté à tous les phototypes de peau, des plus claires aux plus foncées.</p>
+
+<img src="assets/microneedling.webp" class="portrait" alt="Stylo de microneedling réglé à 0,25 mm, utilisé pour la micro-stimulation du visage à l'institut LUMIA à Manosque" width="904" height="1600" loading="lazy">
+
+<h2>Les actifs Mesoestetic aux exosomes</h2>
+<p>Les actifs utilisés sont de la marque Mesoestetic, brevetés pour leur efficacité grâce aux exosomes et au PDRN présents dans leur formule. Le choix des actifs se fait avec vous avant la séance, selon votre objectif : anti-âge fermeté, anti-âge global, contour des yeux pour les cernes, les poches, les pattes d'oie et la pigmentation, ou dépigmentation pour les taches, le mélasma et les marques post-inflammatoires.</p>
+
+<h2>Comment se déroule une séance</h2>
+<p>Tout commence par un rendez-vous de diagnostic du visage de 30 minutes. Nous discutons de votre projet et de vos problématiques, et nous définissons ensemble le protocole personnalisé. Un questionnaire de santé, un consentement mutuel et une fiche d'information sur le microneedling sont signés avant de pouvoir débuter les soins.</p>
+<p>La séance de microneedling dure ensuite 60 minutes et traite le visage et le cou. La LED est incluse lors de la pose du masque, pour apaiser la peau et potentialiser les résultats. Il est également possible de traiter uniquement le décolleté.</p>
+
+<p class="text-center mt-2"><a href="reservation.html" class="btn btn-primary">Réservez votre diagnostic visage</a></p>
+
+<h2>Le protocole recommandé</h2>
+<p>Pour une régénération complète et des résultats durables, le microneedling se pratique en cure : une séance tous les quinze jours, pendant six séances. Des séances d'entretien, une fois tous les deux mois, sont ensuite fortement conseillées pour maintenir le bénéfice.</p>
+
+<div class="callout"><h3>Avant et après la séance</h3><p>Aucune exposition au soleil ni aux UV dans les sept jours avant et les sept jours après la séance. Une protection solaire SPF 50+ est <strong>obligatoire</strong>. Les contre-indications, notamment la grossesse et l'allaitement, l'acné inflammatoire, les traitements à base d'isotrétinoïne, les plaies ouvertes, l'herpès, les tatouages sur la zone, les anticoagulants, les maladies auto-immunes à expression cutanée et les antécédents de radiothérapie ou de cancer de moins de cinq ans, sont systématiquement vérifiées lors du diagnostic.</p></div>
+
+<h2>Questions fréquentes sur le microneedling</h2>
+%s
+<p>Le microneedling se marie très bien avec nos <a href="soins-visage-manosque.html">soins du visage</a> et avec le <a href="lpg-cellu-m6-manosque.html">LPG visage</a>. Pour les taches pigmentaires installées, découvrez aussi le <a href="soin-cosmelan-taches-manosque.html">protocole Cosmelan</a>. Les prix sont détaillés sur la <a href="tarifs.html">page tarifs</a>, et vous pouvez faire connaissance avec <a href="a-propos.html">la praticienne</a>.</p>
+</div></article>
+%s</main>
+""" % (faq_html(mn_faq), cta('Réveillez l\'<span class="accent">éclat</span> de votre peau', "Réservez votre diagnostic visage à Manosque. Nous définissons ensemble le protocole adapté à votre peau."))
+
+mn_schema = (schema_service("Microneedling","Microneedling à Manosque","Micro-stimulation de la peau avec actifs Mesoestetic aux exosomes à Manosque : rides, éclat, pores dilatés, cicatrices d'acné. Par une infirmière diplômée d'État.","https://lumia-salon.fr/microneedling-manosque.html")
+ + schema_faq(mn_faq) + schema_breadcrumb([("Accueil",BASE),("Microneedling",BASE+"microneedling-manosque.html")]))
+page("microneedling-manosque.html",
+     "Microneedling à Manosque : anti-âge & éclat | LUMIA",
+     "Microneedling à Manosque avec les actifs Mesoestetic aux exosomes : rides, pores dilatés, cicatrices d'acné, éclat. Sans injection, tous phototypes. RDV en ligne.",
+     "https://lumia-salon.fr/microneedling-manosque.html", mn_body, mn_schema)
