@@ -110,7 +110,7 @@ def mobile_cta():
 '<a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Prendre RDV</a></nav>' % (PHONE_SVG, PLANITY))
 
 def page(filename, title, desc, canonical, body, schema="", robots="index, follow",
-         prefix="./", og_type="website", in_sub=False):
+         prefix="./", og_type="website", in_sub=False, extra_tail=""):
     p = "../" if in_sub else "./"
     pa = "../" if in_sub else ""  # pour assets/css/js (chemin relatif sans ./)
     head = (
@@ -131,7 +131,9 @@ def page(filename, title, desc, canonical, body, schema="", robots="index, follo
     html = (head
         + '<a href="#main" class="skip-link">Aller au contenu principal</a>\n'
         + topbar() + nav(p) + body + footer(p) + mobile_cta()
-        + '\n<script src="%sjs/main.min.js" defer></script>\n</body>\n</html>\n' % pa)
+        + '\n<script src="%sjs/main.min.js" defer></script>\n' % pa
+        + extra_tail
+        + '</body>\n</html>\n')
     with open(os.path.join(ROOT, filename), "w", encoding="utf-8") as f:
         f.write(html)
     print("écrit:", filename, len(html), "o")
