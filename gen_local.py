@@ -48,7 +48,7 @@ for c in CITIES:
     w,h = ("1360","907") if imgcls=="landscape" else ("765","1020")
     faq = [
       c["faq_access"],
-      ("Combien de séances d'épilation laser faut-il ?","En moyenne 6 à 10 séances selon la zone, la couleur du poil et votre type de peau. Le bilan préalable précise votre protocole et le nombre de séances estimé."),
+      ("Combien de séances d'épilation laser faut-il ?","En moyenne 8 à 12 séances selon la zone, la couleur du poil et votre type de peau. Le bilan préalable précise votre protocole et le nombre de séances estimé."),
       ("Le laser convient-il à ma peau ?","Le laser diode utilisé cible la mélanine du poil et convient à de nombreux phototypes. Une peau récemment bronzée fait reporter la séance, et les poils blancs, blonds ou roux ne réagissent pas. Le bilan vérifie l'adéquation."),
       ("Le bilan est-il vraiment offert ?","Le bilan personnalisé, obligatoire avant la première séance, coûte 20 euros et il est offert pour tout achat de séance ou de cure."),
     ]

@@ -18,10 +18,10 @@ ARTICLES = [
   "img":"machinelaserlunettes.webp",
   "title":"Épilation laser : combien de séances faut-il vraiment ?",
   "desc":"Le nombre de séances d'épilation laser dépend de la zone, du poil et de la peau. On vous explique ce qui fait varier ce chiffre et à quoi vous attendre.",
-  "lead":"C'est la première question que l'on nous pose : combien de séances pour en finir avec le poil ? La réponse honnête tient en une fourchette, 6 à 10 séances en moyenne, mais le vrai chiffre dépend de vous. Voici ce qui le fait varier.",
+  "lead":"C'est la première question que l'on nous pose : combien de séances pour en finir avec le poil ? La réponse honnête tient en une fourchette, 8 à 12 séances en moyenne, mais le vrai chiffre dépend de vous. Voici ce qui le fait varier.",
   "sections":[
-   ("Une moyenne de 6 à 10 séances",[
-    "En épilation laser définitive, on observe le plus souvent un résultat durable au bout de 6 à 10 séances. Cette fourchette n'est pas un hasard : le laser n'agit que sur les poils en phase de croissance, et à un instant donné, seule une partie de votre pilosité est dans cette phase. Il faut donc plusieurs passages, espacés dans le temps, pour traiter l'ensemble des poils au bon moment de leur cycle.",
+   ("Une moyenne de 8 à 12 séances",[
+    "En épilation laser définitive, on observe le plus souvent un résultat durable au bout de 8 à 12 séances. Cette fourchette n'est pas un hasard : le laser n'agit que sur les poils en phase de croissance, et à un instant donné, seule une partie de votre pilosité est dans cette phase. Il faut donc plusieurs passages, espacés dans le temps, pour traiter l'ensemble des poils au bon moment de leur cycle.",
     "Chez LUMIA, le nombre de séances estimé est précisé lors du bilan, qui est obligatoire avant la première séance et offert pour tout achat. C'est à ce moment que l'on examine votre peau et votre poil pour construire un protocole réaliste."]),
    ("Ce qui fait varier le nombre de séances",[
     "Trois facteurs principaux pèsent sur le compteur. D'abord la zone : le visage et les zones influencées par les hormones, comme le menton ou le maillot, demandent souvent davantage de séances que les jambes ou les aisselles. Ensuite la couleur et l'épaisseur du poil : un poil foncé et épais réagit mieux qu'un poil fin ou clair. Enfin votre type de peau et votre pilosité de départ, plus ou moins dense.",
@@ -105,7 +105,7 @@ ARTICLES = [
     "Le déroulement est identique à celui des autres zones : bilan obligatoire avant de commencer, port de lunettes de protection, rasage préalable, puis passage du laser avec refroidissement. La sensation ressemble à de petits picotements de chaleur, bien supportables grâce au système de refroidissement.",
     "Sur les grandes surfaces comme le dos, la séance dure plus longtemps, mais le laser diode permet de couvrir efficacement de larges zones."]),
    ("Combien de séances et quel entretien",[
-    "Comme pour tout le monde, comptez en moyenne 6 à 10 séances, parfois davantage sur les zones denses ou hormonales. Entre les séances, on ne s'épile qu'au rasoir, jamais à la cire ni à la pince. Un entretien ponctuel peut être utile sur certaines zones.",
+    "Comme pour tout le monde, comptez en moyenne 8 à 12 séances, parfois davantage sur les zones denses ou hormonales. Entre les séances, on ne s'épile qu'au rasoir, jamais à la cire ni à la pince. Un entretien ponctuel peut être utile sur certaines zones.",
     "Le bilan permet d'estimer le protocole adapté à votre pilosité et à vos objectifs."]),
   ],
   "faq":[
