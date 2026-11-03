@@ -24,7 +24,7 @@ apropos_body = header_block(
 <img src="assets/margaux.jpg" class="portrait" alt="Margaux, infirmière diplômée d'État, esthéticienne et fondatrice de l'institut LUMIA à Manosque" width="900" height="900" loading="lazy">
 
 <h2>Le fil conducteur : du soin à l'esthétique</h2>
-<p>Margaux est infirmière diplômée d'État (2015-2018). Elle s'est ensuite formée à l'épilation laser (Formation Socle LASER, 2024), aux soins du visage EsthéSkin et Corpoderm (2025), puis au protocole COSMELAN de Mesoestetic (2025). Elle a obtenu le CAP Esthétique en 2026. Cette formation continue se retrouve dans sa façon de travailler : questionnaire de santé, consentement éclairé, fiche de suivi. C'est la rigueur du soin appliquée à votre beauté, et c'est le cœur de la confiance que vous accordent ses clientes et clients.</p>
+<p>Margaux est infirmière diplômée d'État (2015-2018). Elle s'est ensuite formée à l'épilation laser (Formation Socle LASER, 2024), aux soins du visage EsthéSkin et Corpoderm (2025), puis au protocole COSMELAN de Mesoestetic (2025). Elle a obtenu le CAP Esthétique en 2026 et s'est formée au microneedling la même année. Cette formation continue se retrouve dans sa façon de travailler : questionnaire de santé, consentement éclairé, fiche de suivi. C'est la rigueur du soin appliquée à votre beauté, et c'est le cœur de la confiance que vous accordent ses clientes et clients.</p>
 
 <h2>L'institut</h2>
 <p>L'institut se trouve au 10 Bis avenue Jean Giono, à côté de l'opticien ATOL, dans un cadre cocon aux arches de pierre et aux matières chaleureuses. On y travaille avec des marques exigeantes, Mesoestetic et LPG, pour les cosmétiques corps, les compléments alimentaires et le visage, et un matériel professionnel : un laser diode Leaseir, la machine EsthéSkin pour les soins du visage, la LPG Cellu M6 Alliance et le PEN MESOESTETIC pour le soin microneedling.</p>
@@ -33,12 +33,16 @@ apropos_body = header_block(
 
 <h2>Des qualifications datées et vérifiables</h2>
 <p>La transparence fait partie du soin. Voici les repères de formation de la praticienne.</p>
+
+<img src="assets/interieur.webp" class="landscape" alt="Couloir et espace d'attente de l'institut LUMIA à Manosque, arches de pierre et lumière douce" width="1600" height="1066" loading="lazy">
+
 <ul>
 <li>2015 à 2018 : diplôme d'État d'infirmière.</li>
 <li>2024 : Formation Socle LASER (épilation laser à visée non thérapeutique).</li>
 <li>2025 : formation soins du visage EsthéSkin (Corpoderm).</li>
 <li>2025 : formation au protocole COSMELAN de Mesoestetic.</li>
 <li>2026 : CAP Esthétique.</li>
+<li>2026 : formation au microneedling (micro-stimulation).</li>
 </ul>
 <p>L'attestation de formation à l'épilation laser est affichée à l'institut. Découvrez nos prestations : <a href="epilation-laser-manosque.html">épilation laser</a>, <a href="soins-visage-manosque.html">soins du visage</a>, <a href="lpg-cellu-m6-manosque.html">LPG</a> et <a href="soin-cosmelan-taches-manosque.html">COSMELAN</a>.</p>
 </div></article>
@@ -66,22 +70,28 @@ tarifs_body = header_block(
 <h2>Épilation laser</h2>
 <p>Tarifs à la séance. Un bilan personnalisé est obligatoire avant la première séance.</p>
 
-<h3>Femme</h3>
+<details>
+<summary>Épilation laser femme, voir les 16 zones et les tarifs</summary>
 <div class="table-wrap"><table class="data"><thead><tr><th>Zone</th><th>Tarif à la séance</th></tr></thead><tbody>
 <tr><td>Inter-sourcils</td><td class="price">31 euros</td></tr><tr><td>Lèvre supérieure</td><td class="price">39 euros</td></tr><tr><td>Menton</td><td class="price">37 euros</td></tr><tr><td>Tempes ou joues</td><td class="price">55 euros</td></tr><tr><td>Aisselles</td><td class="price">54 euros</td></tr><tr><td>Aréoles des seins</td><td class="price">47 euros</td></tr><tr><td>Bas du ventre</td><td class="price">51 euros</td></tr><tr><td>Bas du dos</td><td class="price">61 euros</td></tr><tr><td>Sillon inter-fessier</td><td class="price">44 euros</td></tr><tr><td>Maillot simple</td><td class="price">65 euros</td></tr><tr><td>Maillot échancré</td><td class="price">100 euros</td></tr><tr><td>Maillot intégral</td><td class="price">133 euros</td></tr><tr><td>Avant-bras</td><td class="price">99 euros</td></tr><tr><td>Cuisses</td><td class="price">202 euros</td></tr><tr><td>Demi-jambes</td><td class="price">153 euros</td></tr><tr><td>Jambes entières</td><td class="price">274 euros</td></tr>
 </tbody></table></div>
+</details>
 
-<h3>Homme</h3>
+
+<details>
+<summary>Épilation laser homme, voir les 15 zones et les tarifs</summary>
 <div class="table-wrap"><table class="data"><thead><tr><th>Zone</th><th>Tarif à la séance</th></tr></thead><tbody>
 <tr><td>Inter-sourcils</td><td class="price">31 euros</td></tr><tr><td>Oreilles</td><td class="price">39 euros</td></tr><tr><td>Col de chemise</td><td class="price">58 euros</td></tr><tr><td>Barbe</td><td class="price">110 euros</td></tr><tr><td>Aisselles</td><td class="price">63 euros</td></tr><tr><td>Épaules</td><td class="price">103 euros</td></tr><tr><td>Avant-bras</td><td class="price">106 euros</td></tr><tr><td>Bras complets</td><td class="price">159 euros</td></tr><tr><td>Torse</td><td class="price">121 euros</td></tr><tr><td>Ventre</td><td class="price">121 euros</td></tr><tr><td>Fesses</td><td class="price">121 euros</td></tr><tr><td>Dos</td><td class="price">223 euros</td></tr><tr><td>Cuisses</td><td class="price">202 euros</td></tr><tr><td>Demi-jambes</td><td class="price">206 euros</td></tr><tr><td>Jambes entières</td><td class="price">303 euros</td></tr>
 </tbody></table></div>
+</details>
+
 
 <p>Des cures existent sur la plupart des zones, à des tarifs avantageux par rapport aux séances à l'unité et réglables en 3 fois sans frais. Le montant vous est communiqué lors du bilan, en fonction de votre peau et du nombre de séances nécessaires.</p>
 <p class="lead">Bilan / diagnostic laser : 20 euros, offert pour tout achat de séance ou de cure.</p>
 
 <h2>Soins du visage LUMINEA (EsthéSkin)</h2>
 <div class="table-wrap"><table class="data"><thead><tr><th>Soin</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
-<tr><td>LUMINEA Express nettoyage</td><td>30 min</td><td class="price">45 euros</td></tr><tr><td>LUMINEA Express radiofréquence (visage ou cou)</td><td>30 min</td><td class="price">49 euros</td></tr><tr><td>LUMINEA Découverte</td><td>1h15</td><td class="price">95 euros</td></tr><tr><td>LUMINEA Avancé</td><td>1h15</td><td class="price">115 euros</td></tr><tr><td>LUMINEA Prestige + LPG visage</td><td>1h30</td><td class="price">135 euros</td></tr><tr><td>LUMINEA Prestige + LED</td><td>1h30</td><td class="price">135 euros</td></tr>
+<tr><td>LUMINEA Express nettoyage</td><td>30 min</td><td class="price">45 euros</td></tr><tr><td>LUMINEA Express radiofréquence (visage ou cou)</td><td>30 min</td><td class="price">49 euros</td></tr><tr><td>LUMINEA Découverte</td><td>1h15</td><td class="price">95 euros</td></tr><tr><td>LUMINEA Avancé</td><td>1h15</td><td class="price">115 euros</td></tr><tr><td>LUMINEA Prestige LPG Visage OU LED</td><td>1h30</td><td class="price">135 euros</td></tr>
 </tbody></table></div>
 
 <h2>Soins du visage avec LED</h2>
