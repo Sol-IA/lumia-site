@@ -39,13 +39,13 @@ apropos_body = header_block(
 <li>2025 : formation soins du visage EsthéSkin (Corpoderm).</li>
 <li>2025 : formation au protocole COSMELAN de Mesoestetic.</li>
 </ul>
-<p>L'attestation de formation à l'épilation laser est affichée à l'institut. Découvrez nos prestations : <a href="epilation-laser-manosque.html">épilation laser</a>, <a href="soins-visage-manosque.html">soins du visage</a>, <a href="lpg-cellu-m6-manosque.html">LPG</a> et <a href="soin-cosmelan-taches-manosque.html">Cosmelan</a>.</p>
+<p>L'attestation de formation à l'épilation laser est affichée à l'institut. Découvrez nos prestations : <a href="epilation-laser-manosque.html">épilation laser</a>, <a href="soins-visage-manosque.html">soins du visage</a>, <a href="lpg-cellu-m6-manosque.html">LPG</a> et <a href="soin-cosmelan-taches-manosque.html">COSMELAN</a>.</p>
 </div></article>
 %s</main>
 """ % cta('Faisons <span class="accent">connaissance</span>', "Le premier échange est gratuit. Réservez votre bilan à l'institut LUMIA à Manosque.")
 page("a-propos.html",
      "La praticienne | Infirmière D.E. & épilation laser à Manosque | LUMIA",
-     "Margaux, infirmière diplômée d'État, vous accueille à l'institut LUMIA de Manosque : épilation laser, soins du visage, LPG, Cosmelan. Parcours et qualifications.",
+     "Margaux, infirmière diplômée d'État, vous accueille à l'institut LUMIA de Manosque : épilation laser, soins du visage, LPG, COSMELAN. Parcours et qualifications.",
      "https://lumia-salon.fr/a-propos.html", apropos_body, apropos_schema)
 
 # ============================ TARIFS ============================
@@ -60,7 +60,7 @@ tarifs_body = header_block(
 <main id="main"><article class="article-body"><div class="container">
 <p>Voici les tarifs de l'institut LUMIA à Manosque, à la séance et en forfait. Les prix indiqués sont donnés à titre indicatif et peuvent évoluer ; ils sont confirmés lors du bilan. Le paiement en 3 fois sans frais est possible sur les cures. Pour l'épilation laser, un bilan personnalisé est obligatoire avant la première séance : il coûte 20 euros et il est offert pour tout achat de séance ou de cure.</p>
 
-<div class="callout"><h3>Bon à savoir</h3><p>Carte bancaire et espèces acceptées. Le bilan laser (20 euros) et le bilan LPG (40 euros) sont offerts pour tout achat de séance, de cure ou de forfait. Le diagnostic de peau Cosmelan (20 euros) est déductible du soin en cabine.</p></div>
+<div class="callout"><h3>Bon à savoir</h3><p>Carte bancaire et espèces acceptées. Le bilan laser (20 euros) et le bilan LPG (40 euros) sont offerts pour tout achat de séance, de cure ou de forfait. Le diagnostic de peau COSMELAN (20 euros) est déductible du soin en cabine.</p></div>
 
 <h2>Épilation laser</h2>
 <p>Tarifs à la séance. Un bilan personnalisé est obligatoire avant la première séance.</p>
@@ -102,9 +102,9 @@ tarifs_body = header_block(
 </tbody></table></div>
 <p class="lead">120 euros d'économies pour l'achat de la cure, jusqu'au 31 décembre 2026.</p>
 
-<h2>Soins dépigmentants Cosmelan</h2>
+<h2>Soins dépigmentants COSMELAN</h2>
 <div class="table-wrap"><table class="data"><thead><tr><th>Prestation</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
-<tr><td>Diagnostic de peau</td><td>RDV préalable</td><td class="price">20 euros (déductible)</td></tr><tr><td>Soin cabine (diagnostic + home pack)</td><td>45 min</td><td class="price">650 euros</td></tr><tr><td>Soin apaisant post-Cosmelan</td><td>45 min</td><td class="price">50 euros</td></tr>
+<tr><td>Diagnostic de peau</td><td>RDV préalable</td><td class="price">20 euros (déductible)</td></tr><tr><td>Soin cabine (diagnostic + home pack)</td><td>45 min</td><td class="price">650 euros</td></tr><tr><td>Soin apaisant post-COSMELAN</td><td>45 min</td><td class="price">50 euros</td></tr>
 </tbody></table></div>
 
 <h2>LPG Cellu M6, corps</h2>
@@ -141,7 +141,7 @@ tarifs_body = header_block(
 """ % cta('Prête à <span class="accent">réserver</span> ?', "Premier bilan offert pour tout achat. Réservez en ligne ou appelez-nous.")
 page("tarifs.html",
      "Tarifs & forfaits | LUMIA Manosque",
-     "Tarifs de l'institut LUMIA à Manosque : épilation laser, soins du visage LUMINEA et LED, Cosmelan, LPG. Forfaits dégressifs, paiement en 3 fois sans frais.",
+     "Tarifs de l'institut LUMIA à Manosque : épilation laser, soins du visage LUMINEA et LED, COSMELAN, LPG. Forfaits dégressifs, paiement en 3 fois sans frais.",
      "https://lumia-salon.fr/tarifs.html", tarifs_body,
      schema_breadcrumb([("Accueil",BASE),("Tarifs",BASE+"tarifs.html")]))
 

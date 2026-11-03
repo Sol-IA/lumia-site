@@ -142,7 +142,7 @@ ARTICLES = [
   "slug":"taches-visage-comprendre-attenuer.html","tag":"Soins du visage","date":"Juin 2026","iso":"2026-06-15","read":"8 min",
   "img":"cosmelan.jpg",
   "title":"Taches sur le visage : comprendre et atténuer",
-  "desc":"Mélasma, taches solaires, taches de l'âge : d'où viennent les taches du visage et comment les atténuer durablement, notamment avec le protocole Cosmelan.",
+  "desc":"Mélasma, taches solaires, taches de l'âge : d'où viennent les taches du visage et comment les atténuer durablement, notamment avec le protocole COSMELAN.",
   "lead":"Les taches du visage sont l'un des motifs de consultation esthétique les plus fréquents. Avant de chercher à les atténuer, encore faut-il comprendre d'où elles viennent. Tour d'horizon, et solutions.",
   "sections":[
    ("D'où viennent les taches ?",[
@@ -151,15 +151,15 @@ ARTICLES = [
    ("Le rôle central de la protection solaire",[
     "Quelle que soit la tache, la protection solaire est la base. Sans elle, les taches reviennent ou s'aggravent, et tout soin dépigmentant perd en efficacité. Une protection élevée, appliquée tous les jours et renouvelée, est le geste le plus rentable contre les taches.",
     "C'est aussi pour cela que les protocoles dépigmentants s'accompagnent toujours de conseils de protection au quotidien."]),
-   ("Le protocole Cosmelan",[
-    "Pour atténuer durablement les taches, le protocole Cosmelan de Mesoestetic agit en deux temps. Une première phase en cabine, avec un masque dépigmentant, puis une phase d'entretien à la maison avec une routine adaptée, suivie sur environ six mois. Son intérêt : il estompe les taches existantes tout en régulant la production de mélanine, ce qui limite leur réapparition.",
+   ("Le protocole COSMELAN",[
+    "Pour atténuer durablement les taches, le protocole COSMELAN de Mesoestetic agit en deux temps. Une première phase en cabine, avec un masque dépigmentant, puis une phase d'entretien à la maison avec une routine adaptée, suivie sur environ six mois. Son intérêt : il estompe les taches existantes tout en régulant la production de mélanine, ce qui limite leur réapparition.",
     "À l'institut LUMIA, le protocole débute par un diagnostic de peau obligatoire, déductible du soin, pour vérifier qu'il est adapté à votre type de taches. Aucun résultat n'est garanti, mais l'approche est reconnue sur les hyperpigmentations."]),
    ("Entretenir les résultats",[
     "Une fois les taches atténuées, le maintien passe par une routine de soin adaptée et, encore et toujours, une protection solaire quotidienne. Des soins ponctuels peuvent compléter l'entretien selon votre peau.",
     "Si vous hésitez sur la nature de vos taches, le mieux reste un diagnostic de peau en institut, qui orientera vers le soin le plus adapté."]),
   ],
   "faq":[
-   ("Le Cosmelan efface-t-il toutes les taches ?","Il est reconnu sur le mélasma, les taches solaires, l'hyperpigmentation post-inflammatoire et les taches de l'âge. Un diagnostic de peau vérifie que vos taches s'y prêtent. Aucun résultat n'est garanti."),
+   ("Le COSMELAN efface-t-il toutes les taches ?","Il est reconnu sur le mélasma, les taches solaires, l'hyperpigmentation post-inflammatoire et les taches de l'âge. Un diagnostic de peau vérifie que vos taches s'y prêtent. Aucun résultat n'est garanti."),
    ("Pourquoi la protection solaire est-elle si importante ?","Parce que le soleil est la première cause des taches. Sans protection quotidienne, elles reviennent et tout soin dépigmentant perd en efficacité."),
   ],
  },
