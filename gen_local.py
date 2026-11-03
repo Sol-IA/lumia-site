@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Génère les 5 pages locales d'épilation laser, contenu unique par ville."""
+"""Génère les 9 pages locales d'épilation laser, contenu unique par ville."""
 from build_pages import *
 
 CITIES = [
@@ -31,6 +31,34 @@ CITIES = [
   "why":"Depuis Oraison, l'accès à Manosque est simple et le centre-ville facile à rejoindre. À LUMIA, vous trouvez une praticienne unique qui vous suit dans le temps, un laser diode Leaseir adapté à de nombreux types de peau et un accueil chaleureux. En finir avec le rasage et la cire devient un projet serein et accompagné.",
   "access":"Comptez environ 20 minutes depuis Oraison. L'institut se situe au 10 Bis avenue Jean Giono, à Manosque, à côté de l'opticien ATOL.",
   "faq_access":("Depuis Oraison, combien de temps de trajet ?","Oraison est à une vingtaine de minutes de Manosque par la D4096 puis la D907. L'institut LUMIA se situe au centre, 10 Bis avenue Jean Giono, avec des parkings gratuits à proximité."),
+ },
+ {
+  "slug":"sainte-tulle","ville":"Sainte-Tulle","img":"acceuil.webp",
+  "intro":"Sainte-Tulle est la commune voisine immédiate de Manosque, à 5,5 kilomètres au sud, entre la plaine de la Durance et les premiers contreforts du Luberon. Pour une épilation laser définitive, l'institut LUMIA est donc à moins de dix minutes de chez vous. Les séances sont réalisées par Margaux, infirmière diplômée d'État formée au laser, et le bilan personnalisé est offert pour tout achat de séance ou de cure.",
+  "why":"C'est la proximité qui change tout depuis Sainte-Tulle. Une zone courte comme la lèvre supérieure, le menton ou les aisselles se traite en quelques minutes : le rendez-vous tient largement dans une pause déjeuner, trajet compris. Vous retrouvez à chaque séance la même praticienne, un laser diode Leaseir adapté à de nombreux phototypes, et un protocole construit lors du bilan puis ajusté au fil des séances.",
+  "access":"Comptez moins de 10 minutes depuis Sainte-Tulle, soit 5,5 kilomètres. L'institut se situe au 10 Bis avenue Jean Giono, à Manosque, à côté de l'opticien ATOL.",
+  "faq_access":("Depuis Sainte-Tulle, combien de temps pour venir à l'institut ?","Sainte-Tulle jouxte Manosque : 5,5 kilomètres, soit moins de dix minutes en voiture. L'institut LUMIA se trouve au 10 Bis avenue Jean Giono, avec des parkings gratuits à proximité immédiate."),
+ },
+ {
+  "slug":"volx","ville":"Volx","img":"cabinedesoin.webp","img_class":"portrait",
+  "intro":"Adossé à son rocher qui domine la plaine de la Durance, Volx se trouve à 9 kilomètres de Manosque par la D4096, soit une dizaine de minutes. Pour une épilation laser définitive, l'institut LUMIA vous accueille au centre de Manosque, où les séances sont assurées par une infirmière diplômée d'État formée au laser, avec un bilan personnalisé offert pour tout achat de séance ou de cure.",
+  "why":"Depuis Volx, la D4096 descend directement sur Manosque : pas de détour, pas de trajet compliqué. À LUMIA, vous profitez d'un cadre calme et confidentiel, d'un laser diode Leaseir adapté à de nombreux types de peau, et surtout d'une praticienne unique qui connaît votre peau et votre protocole d'une séance à l'autre. C'est ce suivi dans la durée qui fait la différence sur un parcours d'épilation.",
+  "access":"Comptez une dizaine de minutes depuis Volx, par la D4096. L'institut se situe au 10 Bis avenue Jean Giono, à Manosque, à côté de l'opticien ATOL.",
+  "faq_access":("Depuis Volx, comment rejoindre l'institut ?","Volx est à 9 kilomètres de Manosque par la D4096, soit une dizaine de minutes en voiture. L'institut LUMIA se trouve au 10 Bis avenue Jean Giono, au centre, avec des parkings gratuits à proximité."),
+ },
+ {
+  "slug":"villeneuve","ville":"Villeneuve","img":"laserhomme.webp",
+  "intro":"Perché à 450 mètres contre le versant oriental du Luberon, entre Volx et La Brillanne, Villeneuve domine la vallée de la Durance à une quinzaine de minutes de Manosque. Pour une épilation laser définitive, l'institut LUMIA vous reçoit au centre de Manosque, avec des séances réalisées par Margaux, infirmière diplômée d'État formée au laser, et un bilan personnalisé offert pour tout achat de séance ou de cure.",
+  "why":"Depuis Villeneuve, rejoindre Manosque par la vallée est simple et rapide, et l'institut se trouve en plein centre, avec des parkings gratuits tout près. Vous y trouvez un laser diode Leaseir adapté à de nombreux phototypes, un accompagnement par une infirmière, et un protocole personnalisé défini lors du bilan. De quoi en finir durablement avec le rasage et la cire, sans y consacrer vos journées.",
+  "access":"Comptez une quinzaine de minutes depuis Villeneuve, en descendant la vallée de la Durance. L'institut se situe au 10 Bis avenue Jean Giono, à Manosque, à côté de l'opticien ATOL.",
+  "faq_access":("Depuis Villeneuve, à quelle distance se trouve l'institut ?","Villeneuve est à une dizaine de kilomètres au nord de Manosque, soit environ un quart d'heure en voiture. L'institut LUMIA est au 10 Bis avenue Jean Giono, avec des parkings gratuits à proximité."),
+ },
+ {
+  "slug":"sisteron","ville":"Sisteron","img":"machinelaserlunettes.webp","img_class":"portrait",
+  "intro":"Entre la citadelle et le rocher de la Baume, Sisteron garde la porte de la Provence. L'institut LUMIA, à Manosque, accueille régulièrement des habitantes et habitants de Sisteron pour leur épilation laser définitive, à une cinquantaine de kilomètres par l'A51. Les séances sont réalisées par Margaux, infirmière diplômée d'État formée au laser, avec un bilan personnalisé offert pour tout achat de séance ou de cure.",
+  "why":"Soyons honnêtes : depuis Sisteron, il faut compter une trentaine de minutes d'autoroute. Si des clientes font ce trajet, c'est pour le suivi par une infirmière diplômée d'État et pour un protocole vraiment personnalisé. Et le rythme de l'épilation laser rend ce déplacement très supportable : les séances sont espacées de 6 à 8 semaines, et un parcours complet compte 8 à 12 séances étalées sur plus d'un an. Cela représente en moyenne un déplacement tous les deux mois, que l'on peut combiner avec un passage à Manosque. Les séances peuvent aussi être regroupées pour traiter plusieurs zones le même jour.",
+  "access":"Comptez une trentaine de minutes depuis Sisteron, soit environ 54 kilomètres par l'A51. L'institut se situe au 10 Bis avenue Jean Giono, à Manosque, à côté de l'opticien ATOL.",
+  "faq_access":("Cela vaut-il le déplacement depuis Sisteron ?","Sisteron est à environ 54 kilomètres de Manosque, soit une trentaine de minutes par l'A51. Les séances étant espacées de 6 à 8 semaines, le déplacement reste occasionnel, et plusieurs zones peuvent être traitées le même jour pour le limiter."),
  },
  {
   "slug":"valensole","ville":"Valensole","img":"machinelaserlunettes.webp",
