@@ -32,6 +32,8 @@ lpg_body = header_block(
 <h2>Un suivi personnalisé</h2>
 <p>Chaque parcours commence par un bilan où l'on définit ensemble vos objectifs. Des photos de suivi sont prises à la première, la sixième et la douzième séance pour mesurer la progression. Les cures se règlent en plusieurs fois sans frais, pour avancer sereinement.</p>
 
+<img src="assets/lpg-corps.webp" class="portrait" alt="Séance de LPG Cellu M6 Alliance en tenue Endermowear à l'institut LUMIA à Manosque" width="1066" height="1600" loading="lazy">
+
 <h2>Questions fréquentes sur le LPG</h2>
 %s
 <p>Le LPG complète idéalement nos <a href="soins-visage-manosque.html">soins du visage</a> et notre <a href="epilation-laser-manosque.html">épilation laser</a>. Retrouvez le détail des prix sur la <a href="tarifs.html">page tarifs</a> et faites connaissance avec <a href="a-propos.html">la praticienne</a>.</p>
@@ -124,6 +126,8 @@ mn_body = header_block(
 <h2>Comment se déroule une séance</h2>
 <p>Tout commence par un rendez-vous de diagnostic du visage de 30 minutes. Nous discutons de votre projet et de vos problématiques, et nous définissons ensemble le protocole personnalisé. Un questionnaire de santé, un consentement mutuel et une fiche d'information sur le microneedling sont signés avant de pouvoir débuter les soins.</p>
 <p>La séance de microneedling dure ensuite 60 minutes et traite le visage et le cou. La LED est incluse lors de la pose du masque, pour apaiser la peau et potentialiser les résultats. Il est également possible de traiter uniquement le décolleté.</p>
+
+<img src="assets/microneedling-soin.webp" class="portrait" alt="Séance de microneedling du visage à l'institut LUMIA à Manosque, stylo de micro-stimulation et luminothérapie" width="898" height="1600" loading="lazy">
 
 <p class="text-center mt-2"><a href="" + PLANITY + "" target="_blank" rel="noopener" class="btn btn-primary">Réservez votre diagnostic visage</a></p>
 

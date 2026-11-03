@@ -191,6 +191,7 @@ contact_body = header_block(
 </form>
 </div>
 </div>
+<img src="assets/interieur.webp" alt="Couloir et espace d'attente de l'institut LUMIA à Manosque, arches de pierre et lumière douce" width="1600" height="1066" loading="lazy" style="border-radius:var(--radius);box-shadow:var(--shadow);margin:2.5rem auto 0;">
 </div></section></main>
 """  % (PHONE_SVG, PLANITY)
 page("contact.html",

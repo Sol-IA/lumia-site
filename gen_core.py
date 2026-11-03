@@ -397,6 +397,8 @@ soins_visage_manosque_body = r'''
     <h2>La luminothérapie LED</h2>
     <p>La LED est une lumière froide qui stimule les cellules de la peau, sans chaleur ni douleur. Cette photobiomodulation soutient la production de collagène, d'acide hyaluronique et d'élastine. Selon la couleur de la lumière, on cible l'éclat, les imperfections, les taches, la fermeté ou l'apaisement des peaux sensibles. La LED se pratique seule ou en complément d'un soin du visage.</p>
 
+    <img src="assets/led-visage.webp" class="portrait" alt="Séance de luminothérapie LED rouge du visage à l'institut LUMIA à Manosque" width="1066" height="1600" loading="lazy">
+
     <h2>Contre-indications et préparation</h2>
     <p>Certaines situations nécessitent de reporter ou d'adapter le soin. Elles sont vérifiées lors du diagnostic.</p>
     <div class="callout callout--legal">
@@ -529,6 +531,8 @@ epilation_laser_manosque_body = r'''
     </div>
     <p>Vous retrouvez le détail des tarifs par zone sur notre <a href="tarifs.html">page tarifs</a>. Pour les zones non listées, le bilan précise le protocole et le prix.</p>
 
+    <img src="assets/laser-jambes.webp" class="portrait" alt="Séance d'épilation laser des jambes à l'institut LUMIA à Manosque, réglage du laser diode Leaseir par l'infirmière" width="1066" height="1600" loading="lazy">
+
     <h2>Combien de séances faut-il ?</h2>
     <p>En moyenne, comptez 8 à 12 séances pour un résultat durable. Le nombre exact dépend de la zone, de la densité et de la couleur du poil, et de votre type de peau. Les zones influencées par les hormones, comme le menton ou le maillot, peuvent en demander davantage. Le bilan permet d'estimer votre protocole, qui reste ajusté séance après séance.</p>
 
@@ -544,8 +548,12 @@ epilation_laser_manosque_body = r'''
       <li>Conseils d'après-séance et planification de la séance suivante.</li>
     </ul>
 
+    <img src="assets/laser-maillot.webp" class="portrait" alt="Épilation laser du bas du ventre en cours à l'institut LUMIA à Manosque, pièce à main refroidie" width="1066" height="1600" loading="lazy">
+
     <h2>Le laser convient-il à tous les types de peau ?</h2>
     <p>Le laser diode utilisé à l'institut est adapté à de nombreux phototypes. Quelques règles s'appliquent toutefois : une peau récemment bronzée nécessite de reporter la séance, et les poils blancs, blonds, roux ainsi que le duvet ne contiennent pas assez de mélanine pour réagir. Le bilan vérifie l'adéquation entre votre pilosité, votre peau et le traitement.</p>
+
+    <img src="assets/laser-machine.webp" class="portrait" alt="Écran de réglage du laser diode Leaseir utilisé à l'institut LUMIA à Manosque" width="1066" height="1600" loading="lazy">
 
     <h2>Avant et après la séance</h2>
     <p>Quelques précautions simples garantissent l'efficacité et la sécurité du traitement.</p>
