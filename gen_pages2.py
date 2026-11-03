@@ -6,28 +6,28 @@ from build_pages import *
 # ============================ À PROPOS ============================
 apropos_schema = ('<script type="application/ld+json">\n'
 '{ "@context":"https://schema.org","@type":"Person","name":"Margaux",'
-'"jobTitle":"Infirmière diplômée d\'État, praticienne en épilation laser",'
+'"jobTitle":"Infirmière diplômée d\'État, esthéticienne et praticienne en épilation laser",'
 '"worksFor":{"@type":"BeautySalon","name":"LUMIA","url":"https://lumia-salon.fr"},'
 '"url":"https://lumia-salon.fr/a-propos.html" }\n</script>\n'
 '<script type="application/ld+json">\n'
 '{ "@context":"https://schema.org","@type":"BeautySalon","name":"LUMIA","url":"https://lumia-salon.fr",'
 '"telephone":"+33492876372","address":{"@type":"PostalAddress","streetAddress":"10 Bis avenue Jean Giono","addressLocality":"Manosque","postalCode":"04100","addressCountry":"FR"},'
-'"founder":{"@type":"Person","name":"Margaux","jobTitle":"Infirmière diplômée d\'État, praticienne en épilation laser"} }\n</script>\n'
+'"founder":{"@type":"Person","name":"Margaux","jobTitle":"Infirmière diplômée d\'État, esthéticienne et praticienne en épilation laser"} }\n</script>\n'
 + schema_breadcrumb([("Accueil",BASE),("À propos",BASE+"a-propos.html")]))
 apropos_body = header_block(
   [("Accueil","./"),("À propos",None)],
   "LUMIA, votre institut à Manosque",
-  "Une infirmière diplômée d'État qui apporte la rigueur du soin à l'esthétique.") + """
+  "Une infirmière diplômée d'État et esthéticienne, qui apporte la rigueur du soin à l'esthétique.") + """
 <main id="main"><article class="article-body"><div class="container">
-<p>LUMIA est l'institut de Margaux, infirmière diplômée d'État, à Manosque. Après plusieurs années au service des patients, elle a choisi de mettre la précision et l'écoute du soin infirmier au service de la beauté : épilation laser, soins du visage, LPG et soins dépigmentants. L'institut a ouvert à l'automne 2024 et s'est construit autour d'une idée simple, vous accompagner sur-mesure, avec la même interlocutrice à chaque rendez-vous.</p>
+<p>LUMIA est l'institut de Margaux, infirmière diplômée d'État et esthéticienne, à Manosque. Après plusieurs années au service des patients, elle a choisi de mettre la précision et l'écoute du soin infirmier au service de la beauté : épilation laser, soins du visage, LPG et soins dépigmentants. L'institut a ouvert à l'automne 2024 et s'est construit autour d'une idée simple, vous accompagner sur-mesure, avec la même interlocutrice à chaque rendez-vous.</p>
 
-<img src="assets/margaux.jpg" class="portrait" alt="Margaux, infirmière diplômée d'État et fondatrice de l'institut LUMIA à Manosque" width="900" height="900" loading="lazy">
+<img src="assets/margaux.jpg" class="portrait" alt="Margaux, infirmière diplômée d'État, esthéticienne et fondatrice de l'institut LUMIA à Manosque" width="900" height="900" loading="lazy">
 
 <h2>Le fil conducteur : du soin à l'esthétique</h2>
-<p>Margaux est infirmière diplômée d'État (2015-2018). Elle s'est ensuite formée à l'épilation laser (Formation Socle LASER, 2024), aux soins du visage EsthéSkin et Corpoderm (2025), puis au protocole COSMELAN de Mesoestetic (2025). Cette formation continue se retrouve dans sa façon de travailler : questionnaire de santé, consentement éclairé, fiche de suivi. C'est la rigueur du soin appliquée à votre beauté, et c'est le cœur de la confiance que vous accordent ses clientes et clients.</p>
+<p>Margaux est infirmière diplômée d'État (2015-2018). Elle s'est ensuite formée à l'épilation laser (Formation Socle LASER, 2024), aux soins du visage EsthéSkin et Corpoderm (2025), puis au protocole COSMELAN de Mesoestetic (2025). Elle a obtenu le CAP Esthétique en 2026. Cette formation continue se retrouve dans sa façon de travailler : questionnaire de santé, consentement éclairé, fiche de suivi. C'est la rigueur du soin appliquée à votre beauté, et c'est le cœur de la confiance que vous accordent ses clientes et clients.</p>
 
 <h2>L'institut</h2>
-<p>L'institut se trouve au 10 Bis avenue Jean Giono, à côté de l'opticien ATOL, dans un cadre cocon aux arches de pierre et aux matières chaleureuses. On y travaille avec des marques exigeantes, Mesoestetic et les nutricosmétiques D-LAB, et un matériel professionnel : un laser diode Leaseir, la machine EsthéSkin pour les soins du visage et la LPG Cellu M6 Alliance. Un soin du visage PEELING de Mesoestetic est à venir.</p>
+<p>L'institut se trouve au 10 Bis avenue Jean Giono, à côté de l'opticien ATOL, dans un cadre cocon aux arches de pierre et aux matières chaleureuses. On y travaille avec des marques exigeantes, Mesoestetic et LPG, pour les cosmétiques corps, les compléments alimentaires et le visage, et un matériel professionnel : un laser diode Leaseir, la machine EsthéSkin pour les soins du visage, la LPG Cellu M6 Alliance et le PEN MESOESTETIC pour le soin microneedling. Un soin du visage PEELING de Mesoestetic est à venir.</p>
 
 <img src="assets/acceuil.webp" class="landscape" alt="L'accueil de l'institut LUMIA à Manosque, mur en arche et comptoir en bois" width="1360" height="907" loading="lazy">
 
@@ -38,6 +38,7 @@ apropos_body = header_block(
 <li>2024 : Formation Socle LASER (épilation laser à visée non thérapeutique).</li>
 <li>2025 : formation soins du visage EsthéSkin (Corpoderm).</li>
 <li>2025 : formation au protocole COSMELAN de Mesoestetic.</li>
+<li>2026 : CAP Esthétique.</li>
 </ul>
 <p>L'attestation de formation à l'épilation laser est affichée à l'institut. Découvrez nos prestations : <a href="epilation-laser-manosque.html">épilation laser</a>, <a href="soins-visage-manosque.html">soins du visage</a>, <a href="lpg-cellu-m6-manosque.html">LPG</a> et <a href="soin-cosmelan-taches-manosque.html">COSMELAN</a>.</p>
 </div></article>
