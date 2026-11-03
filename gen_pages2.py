@@ -5,23 +5,23 @@ from build_pages import *
 
 # ============================ À PROPOS ============================
 apropos_schema = ('<script type="application/ld+json">\n'
-'{ "@context":"https://schema.org","@type":"Person","name":"Margaux Libereau",'
+'{ "@context":"https://schema.org","@type":"Person","name":"Margaux",'
 '"jobTitle":"Infirmière diplômée d\'État, praticienne en épilation laser",'
 '"worksFor":{"@type":"BeautySalon","name":"LUMIA","url":"https://lumia-salon.fr"},'
 '"url":"https://lumia-salon.fr/a-propos.html" }\n</script>\n'
 '<script type="application/ld+json">\n'
 '{ "@context":"https://schema.org","@type":"BeautySalon","name":"LUMIA","url":"https://lumia-salon.fr",'
 '"telephone":"+33492876372","address":{"@type":"PostalAddress","streetAddress":"10 Bis avenue Jean Giono","addressLocality":"Manosque","postalCode":"04100","addressCountry":"FR"},'
-'"founder":{"@type":"Person","name":"Margaux Libereau","jobTitle":"Infirmière diplômée d\'État, praticienne en épilation laser"} }\n</script>\n'
+'"founder":{"@type":"Person","name":"Margaux","jobTitle":"Infirmière diplômée d\'État, praticienne en épilation laser"} }\n</script>\n'
 + schema_breadcrumb([("Accueil",BASE),("À propos",BASE+"a-propos.html")]))
 apropos_body = header_block(
   [("Accueil","./"),("À propos",None)],
   "LUMIA, votre institut à Manosque",
   "Une infirmière diplômée d'État qui apporte la rigueur du soin à l'esthétique.") + """
 <main id="main"><article class="article-body"><div class="container">
-<p>LUMIA est l'institut de Margaux Libereau, infirmière diplômée d'État, à Manosque. Après plusieurs années au service des patients, elle a choisi de mettre la précision et l'écoute du soin infirmier au service de la beauté : épilation laser, soins du visage, LPG et soins dépigmentants. L'institut a ouvert à l'automne 2024 et s'est construit autour d'une idée simple, vous accompagner sur-mesure, avec la même interlocutrice à chaque rendez-vous.</p>
+<p>LUMIA est l'institut de Margaux, infirmière diplômée d'État, à Manosque. Après plusieurs années au service des patients, elle a choisi de mettre la précision et l'écoute du soin infirmier au service de la beauté : épilation laser, soins du visage, LPG et soins dépigmentants. L'institut a ouvert à l'automne 2024 et s'est construit autour d'une idée simple, vous accompagner sur-mesure, avec la même interlocutrice à chaque rendez-vous.</p>
 
-<img src="assets/margaux.jpg" class="portrait" alt="Margaux Libereau, infirmière diplômée d'État et fondatrice de l'institut LUMIA à Manosque" width="820" height="820" loading="lazy">
+<img src="assets/margaux.jpg" class="portrait" alt="Margaux, infirmière diplômée d'État et fondatrice de l'institut LUMIA à Manosque" width="820" height="820" loading="lazy">
 
 <h2>Le fil conducteur : du soin à l'esthétique</h2>
 <p>Margaux est infirmière diplômée d'État (2015-2018). Elle s'est ensuite formée à l'épilation laser (Formation Socle LASER, 2024), aux soins du visage EsthéSkin et Corpoderm (2025), puis au protocole COSMELAN de Mesoestetic (2025). Cette formation continue se retrouve dans sa façon de travailler : questionnaire de santé, consentement éclairé, fiche de suivi. C'est la rigueur du soin appliquée à votre beauté, et c'est le cœur de la confiance que vous accordent ses clientes et clients.</p>
@@ -45,7 +45,7 @@ apropos_body = header_block(
 """ % cta('Faisons <span class="accent">connaissance</span>', "Le premier échange est gratuit. Réservez votre bilan à l'institut LUMIA à Manosque.")
 page("a-propos.html",
      "La praticienne | Infirmière D.E. & épilation laser à Manosque | LUMIA",
-     "Margaux Libereau, infirmière diplômée d'État, vous accueille à l'institut LUMIA de Manosque : épilation laser, soins du visage, LPG, Cosmelan. Parcours et qualifications.",
+     "Margaux, infirmière diplômée d'État, vous accueille à l'institut LUMIA de Manosque : épilation laser, soins du visage, LPG, Cosmelan. Parcours et qualifications.",
      "https://lumia-salon.fr/a-propos.html", apropos_body, apropos_schema)
 
 # ============================ TARIFS ============================

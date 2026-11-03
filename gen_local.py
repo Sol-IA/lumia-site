@@ -6,7 +6,7 @@ from build_pages import *
 CITIES = [
  {
   "slug":"forcalquier","ville":"Forcalquier","img":"machinelaserlunettes.webp",
-  "intro":"Vous habitez Forcalquier ou ses environs et cherchez une épilation laser définitive sérieuse ? L'institut LUMIA vous accueille à Manosque, à une vingtaine de minutes de la cité comtale par la D4100 puis la D13. L'épilation laser y est réalisée par Margaux Libereau, infirmière diplômée d'État formée au laser, avec un bilan personnalisé offert pour tout achat de séance ou de cure.",
+  "intro":"Vous habitez Forcalquier ou ses environs et cherchez une épilation laser définitive sérieuse ? L'institut LUMIA vous accueille à Manosque, à une vingtaine de minutes de la cité comtale par la D4100 puis la D13. L'épilation laser y est réalisée par Margaux, infirmière diplômée d'État formée au laser, avec un bilan personnalisé offert pour tout achat de séance ou de cure.",
   "why":"Depuis Forcalquier, le trajet est direct et rapide, et l'institut est facile d'accès au centre de Manosque, avec plusieurs parkings gratuits à proximité. Vous y trouvez un cadre cocon, une praticienne unique qui vous suit d'une séance à l'autre, et un laser diode Leaseir adapté à de nombreux phototypes. De quoi en finir durablement avec le rasage et la cire sans renoncer à la proximité.",
   "access":"Comptez environ 25 minutes depuis Forcalquier. L'institut se situe au 10 Bis avenue Jean Giono, à côté de l'opticien ATOL.",
   "faq_access":("Depuis Forcalquier, combien de temps pour venir à l'institut ?","L'institut LUMIA est à environ 25 minutes de Forcalquier, au centre de Manosque, par la D4100 puis la D13. Plusieurs parkings gratuits se trouvent à proximité immédiate."),
@@ -20,7 +20,7 @@ CITIES = [
  },
  {
   "slug":"pierrevert","ville":"Pierrevert","img":"enseigne.webp","img_class":"portrait",
-  "intro":"Pierrevert est la porte sud de Manosque : l'institut LUMIA n'est qu'à une dizaine de minutes de votre village, au cœur de la commune voisine. Pour une épilation laser définitive de proximité, vous y êtes accueilli par Margaux Libereau, infirmière diplômée d'État formée au laser, avec un bilan personnalisé offert pour tout achat de séance ou de cure.",
+  "intro":"Pierrevert est la porte sud de Manosque : l'institut LUMIA n'est qu'à une dizaine de minutes de votre village, au cœur de la commune voisine. Pour une épilation laser définitive de proximité, vous y êtes accueilli par Margaux, infirmière diplômée d'État formée au laser, avec un bilan personnalisé offert pour tout achat de séance ou de cure.",
   "why":"Entre le golf, le vignoble de l'AOC Pierrevert et le centre de Manosque, le trajet est court et pratique. À LUMIA, vous bénéficiez d'un suivi par une infirmière, d'un laser diode Leaseir adapté à de nombreux phototypes et d'un cadre cocon, à deux pas de chez vous. L'idéal pour traiter le visage comme le corps, à votre rythme.",
   "access":"Comptez environ 10 minutes depuis Pierrevert. L'institut se situe au 10 Bis avenue Jean Giono, à Manosque, à côté de l'opticien ATOL.",
   "faq_access":("Depuis Pierrevert, à quelle distance se trouve l'institut ?","Pierrevert jouxte Manosque : comptez environ 10 minutes en voiture. L'institut LUMIA est au 10 Bis avenue Jean Giono, avec des parkings gratuits à proximité immédiate."),
@@ -34,7 +34,7 @@ CITIES = [
  },
  {
   "slug":"valensole","ville":"Valensole","img":"machinelaserlunettes.webp",
-  "intro":"Sur le plateau de Valensole, célèbre pour ses champs de lavande, l'épilation laser définitive se prépare à l'institut LUMIA, à Manosque, à environ 25 minutes par la D6. Les séances sont assurées par Margaux Libereau, infirmière diplômée d'État formée au laser, avec un premier bilan offert pour tout achat de séance ou de cure.",
+  "intro":"Sur le plateau de Valensole, célèbre pour ses champs de lavande, l'épilation laser définitive se prépare à l'institut LUMIA, à Manosque, à environ 25 minutes par la D6. Les séances sont assurées par Margaux, infirmière diplômée d'État formée au laser, avec un premier bilan offert pour tout achat de séance ou de cure.",
   "why":"Depuis Valensole, descendre à Manosque pour ses soins est l'occasion d'un vrai moment pour soi. À LUMIA, vous profitez d'un suivi par une infirmière, d'un laser diode Leaseir adapté à de nombreux phototypes et d'un cadre cocon. Le protocole est défini ensemble lors du bilan, puis ajusté séance après séance.",
   "access":"Comptez environ 25 minutes depuis Valensole. L'institut se situe au 10 Bis avenue Jean Giono, à Manosque, à côté de l'opticien ATOL.",
   "faq_access":("Depuis Valensole, comment rejoindre l'institut ?","Valensole est à environ 25 minutes de Manosque par la D6. L'institut LUMIA se trouve au 10 Bis avenue Jean Giono, au centre, avec des parkings gratuits à proximité."),

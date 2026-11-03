@@ -8,7 +8,7 @@ def schema_article(title, desc, img, iso, url):
     return ('<script type="application/ld+json">\n'
     '{ "@context":"https://schema.org","@type":"Article","headline":"%s","description":"%s",'
     '"image":"https://lumia-salon.fr/assets/%s","datePublished":"%s","dateModified":"%s",'
-    '"author":{"@type":"Person","name":"Margaux Libereau","url":"https://lumia-salon.fr/a-propos.html"},'
+    '"author":{"@type":"Person","name":"Margaux","url":"https://lumia-salon.fr/a-propos.html"},'
     '"publisher":{"@type":"Organization","name":"LUMIA","url":"https://lumia-salon.fr","logo":{"@type":"ImageObject","url":"https://lumia-salon.fr/assets/logo.png"}},'
     '"mainEntityOfPage":"%s" }\n</script>\n' % (title, desc, img, iso, iso, url))
 
@@ -199,7 +199,7 @@ for i, a in enumerate(ARTICLES):
         [("Accueil","../"),("Blog","../blog.html"),(a["title"], None)],
         a["title"], "") + ("""
 <main id="main"><article class="article-body"><div class="container">
-<p class="card__meta" style="margin-bottom:1.5rem;">%s · %s · Par Margaux Libereau</p>
+<p class="card__meta" style="margin-bottom:1.5rem;">%s · %s · Par Margaux</p>
 <p class="lead">%s</p>
 %s
 <h2>Questions fréquentes</h2>
