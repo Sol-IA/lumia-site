@@ -27,7 +27,7 @@ ARTICLES = [
     "Trois facteurs principaux pèsent sur le compteur. D'abord la zone : le visage et les zones influencées par les hormones, comme le menton ou le maillot, demandent souvent davantage de séances que les jambes ou les aisselles. Ensuite la couleur et l'épaisseur du poil : un poil foncé et épais réagit mieux qu'un poil fin ou clair. Enfin votre type de peau et votre pilosité de départ, plus ou moins dense.",
     "Les facteurs hormonaux jouent un rôle particulier. Une grossesse, certains traitements ou des déséquilibres hormonaux peuvent relancer la pousse et nécessiter des séances d'entretien. Cela ne remet pas en cause le résultat, mais explique pourquoi deux personnes n'auront pas exactement le même parcours."]),
    ("Quel espacement entre les séances ?",[
-    "Au début, les séances sont espacées de 4 à 6 semaines, le temps que la repousse se manifeste. Au fil du protocole, comme il reste de moins en moins de poils actifs, on espace progressivement les rendez-vous. L'intervalle est ajusté à chaque séance en fonction de ce que l'on observe, plutôt que figé à l'avance.",
+    "Au début, les séances sont espacées de 6 à 8 semaines, le temps que la repousse se manifeste. Au fil du protocole, comme il reste de moins en moins de poils actifs, on espace progressivement les rendez-vous. L'intervalle est ajusté à chaque séance en fonction de ce que l'on observe, plutôt que figé à l'avance.",
     "Respecter cet espacement est important : revenir trop tôt n'accélère pas le résultat, car les poils ciblés ne sont pas encore en phase de croissance."]),
    ("Et après, est-ce vraiment définitif ?",[
     "On parle d'épilation durable plutôt que définitive à 100 pour cent. Concrètement, la grande majorité des poils traités ne repoussent plus. Quelques poils peuvent réapparaître avec le temps, souvent plus fins et plus clairs, et une simple séance d'entretien annuelle suffit en général à les maîtriser.",
@@ -49,7 +49,7 @@ ARTICLES = [
     "Le laser cible la mélanine, le pigment qui colore le poil. Or le bronzage, c'est justement une augmentation de la mélanine dans la peau. Sur une peau bronzée, le laser risque de ne plus faire la différence entre le poil et la peau, ce qui augmente le risque de réaction (rougeurs, taches, voire brûlure superficielle).",
     "C'est pour cette raison qu'une peau récemment exposée n'est pas traitée : on attend que le bronzage s'estompe pour travailler en sécurité."]),
    ("Combien de temps attendre ?",[
-    "La règle de prudence est d'éviter le soleil, les UV et l'autobronzant pendant environ quatre semaines avant chaque séance, et autant après. L'autobronzant compte aussi, car il colore la peau et fausse le repère du laser.",
+    "La règle de prudence est d'éviter le soleil, les UV et l'autobronzant pendant 10 jours avant chaque séance, et 10 jours après. L'autobronzant compte aussi, car il colore la peau et fausse le repère du laser.",
     "Si vous avez prévu des vacances au soleil, mieux vaut anticiper et caler vos séances en dehors de ces périodes. Le bilan permet d'organiser le calendrier avec vous."]),
    ("Comment organiser ses séances autour de l'été",[
     "L'idéal est de commencer son protocole à l'automne ou en hiver, lorsque la peau n'est pas bronzée et que l'exposition est faible. On enchaîne ainsi plusieurs séances dans de bonnes conditions, et l'on arrive à l'été avec une pilosité déjà bien réduite.",
@@ -60,7 +60,7 @@ ARTICLES = [
   ],
   "faq":[
    ("Peut-on faire du laser en été ?","Oui, à condition de ne pas être bronzé et de protéger soigneusement les zones traitées. Beaucoup préfèrent toutefois avancer leur protocole en automne et en hiver."),
-   ("L'autobronzant empêche-t-il une séance ?","Oui. L'autobronzant colore la peau et fausse le repère du laser. Il faut l'éviter environ quatre semaines avant une séance."),
+   ("L'autobronzant empêche-t-il une séance ?","Oui. L'autobronzant colore la peau et fausse le repère du laser. Il faut l'éviter 10 jours avant une séance."),
   ],
  },
  {
@@ -127,7 +127,7 @@ ARTICLES = [
     "Dans les jours qui précèdent la séance, on rase la zone à traiter, idéalement la veille. Surtout, on n'arrache pas le poil : pas de cire, pas de pince, pas d'épilateur électrique dans les semaines précédentes. Le laser a besoin de la racine du poil pour agir, alors que la cire la retire.",
     "Un rasage propre permet au laser de cibler la racine sans brûler le poil en surface."]),
    ("Éviter le soleil et signaler vos traitements",[
-    "On évite le soleil, les UV et l'autobronzant environ quatre semaines avant la séance. Une peau bronzée fait reporter le rendez-vous. Pensez aussi à signaler tout médicament, en particulier les traitements photosensibilisants, ainsi qu'une grossesse en cours : certains cas conduisent à reporter ou adapter la séance.",
+    "On évite le soleil, les UV et l'autobronzant 10 jours avant la séance. Une peau bronzée fait reporter le rendez-vous. Pensez aussi à signaler tout médicament, en particulier les traitements photosensibilisants, ainsi qu'une grossesse en cours : certains cas conduisent à reporter ou adapter la séance.",
     "Mieux vaut tout mentionner lors du bilan, même un détail qui vous paraît anodin."]),
    ("Le jour de la séance",[
     "Venez avec une peau propre, sans crème, parfum ni maquillage sur la zone. Évitez les déodorants pour une séance des aisselles. Sur place, vous porterez des lunettes de protection pendant toute la durée du soin. La séance dure de quelques minutes à plus d'une heure selon la zone.",
