@@ -189,9 +189,11 @@ for i, a in enumerate(ARTICLES):
         for k,par in enumerate(paras):
             secs += "<p>%s</p>\n" % par
         if j == 0:  # image + CTA après la première section
-            secs += ('<img src="../assets/%s" class="landscape" alt="%s" width="900" height="600" loading="lazy">\n'
+            iw, ih = img_size(a["img"])
+            icls = "landscape" if iw >= ih else "portrait"
+            secs += ('<img src="../assets/%s" class="%s" alt="%s" width="%d" height="%d" loading="lazy">\n'
                      '<p class="text-center mt-2"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Réserver mon bilan offert</a></p>\n'
-                     % (a["img"], a["title"], PLANITY))
+                     % (a["img"], icls, a["title"], iw, ih, PLANITY))
     # fallback statique : 2 articles suivants
     sib = [ARTICLES[(i+1)%n], ARTICLES[(i+2)%n]]
     related = "".join(article_card(s, "../assets/", "") for s in sib)

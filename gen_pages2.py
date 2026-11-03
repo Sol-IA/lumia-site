@@ -21,7 +21,7 @@ apropos_body = header_block(
 <main id="main"><article class="article-body"><div class="container">
 <p>LUMIA est l'institut de Margaux, infirmière diplômée d'État, à Manosque. Après plusieurs années au service des patients, elle a choisi de mettre la précision et l'écoute du soin infirmier au service de la beauté : épilation laser, soins du visage, LPG et soins dépigmentants. L'institut a ouvert à l'automne 2024 et s'est construit autour d'une idée simple, vous accompagner sur-mesure, avec la même interlocutrice à chaque rendez-vous.</p>
 
-<img src="assets/margaux.jpg" class="portrait" alt="Margaux, infirmière diplômée d'État et fondatrice de l'institut LUMIA à Manosque" width="820" height="820" loading="lazy">
+<img src="assets/margaux.jpg" class="portrait" alt="Margaux, infirmière diplômée d'État et fondatrice de l'institut LUMIA à Manosque" width="900" height="900" loading="lazy">
 
 <h2>Le fil conducteur : du soin à l'esthétique</h2>
 <p>Margaux est infirmière diplômée d'État (2015-2018). Elle s'est ensuite formée à l'épilation laser (Formation Socle LASER, 2024), aux soins du visage EsthéSkin et Corpoderm (2025), puis au protocole COSMELAN de Mesoestetic (2025). Cette formation continue se retrouve dans sa façon de travailler : questionnaire de santé, consentement éclairé, fiche de suivi. C'est la rigueur du soin appliquée à votre beauté, et c'est le cœur de la confiance que vous accordent ses clientes et clients.</p>

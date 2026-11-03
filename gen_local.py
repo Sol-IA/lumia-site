@@ -73,7 +73,7 @@ for c in CITIES:
     ville = c["ville"]; slug = c["slug"]
     url = "https://lumia-salon.fr/epilation-laser-%s.html" % slug
     imgcls = c.get("img_class","landscape")
-    w,h = ("1360","907") if imgcls=="landscape" else ("765","1020")
+    w,h = img_size(c["img"])
     faq = [
       c["faq_access"],
       ("Combien de séances d'épilation laser faut-il ?","En moyenne 8 à 12 séances selon la zone, la couleur du poil et votre type de peau. Le bilan préalable précise votre protocole et le nombre de séances estimé."),

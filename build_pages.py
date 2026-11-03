@@ -14,6 +14,42 @@ IG = "https://www.instagram.com/lumiamanosque"
 IG_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>'
 PHONE_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.27a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z"/></svg>'
 
+def img_size(name, base="assets"):
+    """Dimensions reelles d'une image, lues dans l'en-tete du fichier.
+
+    Evite de declarer des width/height faux dans le HTML, ce qui provoque un
+    decalage de mise en page au chargement (CLS). Sans dependance externe :
+    lecture directe des en-tetes PNG, JPEG et WebP.
+    """
+    import os, struct
+    path = name if os.path.sep in name else os.path.join(base, name)
+    with open(path, "rb") as fh:
+        head = fh.read(32)
+        if head[:8] == b"\x89PNG\r\n\x1a\n":
+            w, h = struct.unpack(">II", head[16:24]); return w, h
+        if head[:4] == b"RIFF" and head[8:12] == b"WEBP":
+            fh.seek(12); chunk = fh.read(8); kind = chunk[:4]
+            if kind == b"VP8 ":
+                d = fh.read(10); return struct.unpack("<H", d[6:8])[0] & 0x3FFF, struct.unpack("<H", d[8:10])[0] & 0x3FFF
+            if kind == b"VP8L":
+                d = fh.read(5); n = struct.unpack("<I", d[1:5])[0]
+                return (n & 0x3FFF) + 1, ((n >> 14) & 0x3FFF) + 1
+            if kind == b"VP8X":
+                d = fh.read(10)
+                return (int.from_bytes(d[4:7], "little") + 1, int.from_bytes(d[7:10], "little") + 1)
+        if head[:2] == b"\xff\xd8":
+            fh.seek(2)
+            while True:
+                b0 = fh.read(1)
+                if not b0: break
+                if b0 != b"\xff": continue
+                marker = fh.read(1)
+                while marker == b"\xff": marker = fh.read(1)
+                if marker[0] in (0xC0,0xC1,0xC2,0xC3,0xC5,0xC6,0xC7,0xC9,0xCA,0xCB,0xCD,0xCE,0xCF):
+                    fh.read(3); h, w = struct.unpack(">HH", fh.read(4)); return w, h
+                size = struct.unpack(">H", fh.read(2))[0]; fh.seek(size - 2, 1)
+    raise ValueError("dimensions illisibles : %s" % path)
+
 def topbar():
     return (
 '<div class="topbar"><div class="container">'
