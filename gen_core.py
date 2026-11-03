@@ -66,7 +66,7 @@ index_body = r'''
     <div class="section__header">
       <span class="eyebrow">Nos prestations</span>
       <h2 class="section__title-rule">Un institut complet, à Manosque</h2>
-      <p>Du laser au soin du visage, en passant par la silhouette et le teint, chaque protocole est choisi et réalisé par la même infirmière. Voici nos cinq univers de soin.</p>
+      <p>Du laser au soin du visage, en passant par la silhouette et le teint, chaque protocole est choisi et réalisé par la même infirmière. Voici nos six univers de soin.</p>
     </div>
     <div class="services-grid">
       <article class="service-card">
@@ -113,6 +113,15 @@ index_body = r'''
           <span class="service-card__cta">Découvrir</span>
         </div>
         <a href="soin-cosmelan-taches-manosque.html" class="service-card__link" aria-label="Soins dépigmentants COSMELAN à Manosque"></a>
+      </article>
+      <article class="service-card">
+        <div class="service-card__img"><img src="assets/produits.webp" alt="Cosmétiques professionnels Mesoestetic et LPG à l'institut LUMIA à Manosque" width="680" height="1020" loading="lazy"></div>
+        <div class="service-card__body">
+          <h3>Cosmétiques</h3>
+          <p>Mesoestetic pour le visage, LPG pour le corps et les compléments alimentaires. Coffrets et cartes cadeaux à l'institut.</p>
+          <span class="service-card__cta">Découvrir</span>
+        </div>
+        <a href="cosmetiques-manosque.html" class="service-card__link" aria-label="Cosmétiques Mesoestetic et LPG à Manosque"></a>
       </article>
     </div>
   </div>

@@ -63,6 +63,8 @@ cos_body = header_block(
 <p>Les soins dépigmentants COSMELAN de LUMIA à Manosque s'adressent à celles et ceux qui veulent atténuer les taches du visage : mélasma, taches solaires, hyperpigmentation post-inflammatoire ou taches liées à l'âge. Le protocole COSMELAN de Mesoestetic agit en deux temps, en cabine puis à la maison, avec un suivi sur plusieurs mois. Tout commence par un diagnostic de peau obligatoire, déductible du soin, pour vérifier que votre peau est adaptée.</p>
 <div class="hero__actions"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a><a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA">04 92 87 63 72</a></div>
 
+<img src="assets/cosmelan-taches.webp" class="portrait" alt="Taches pigmentaires du visage traitées par la méthode dépigmentante COSMELAN de Mesoestetic" width="900" height="1600" loading="lazy">
+
 <h2>Comment agit le COSMELAN ?</h2>
 <p>Le COSMELAN a une double action : il estompe les taches déjà présentes et régule la production de mélanine pour limiter leur réapparition. C'est cette approche en deux temps qui en fait un protocole de fond, et non un simple gommage de surface. Aucun résultat n'est garanti, mais le protocole est reconnu pour son efficacité sur les hyperpigmentations.</p>
 
@@ -80,6 +82,8 @@ cos_body = header_block(
 </ul>
 <p>Un soin apaisant post-COSMELAN est disponible pour accompagner la peau. La protection solaire quotidienne est indispensable pendant et après le protocole.</p>
 
+<img src="assets/cosmelan-produits.webp" class="portrait" alt="Les deux produits du protocole COSMELAN de Mesoestetic, masque cosmelan 1 et crème cosmelan 2" width="900" height="1600" loading="lazy">
+
 <h2>Questions fréquentes sur le COSMELAN</h2>
 %s
 <p>Le COSMELAN se prolonge naturellement avec nos <a href="soins-visage-manosque.html">soins du visage</a>. Découvrez aussi <a href="a-propos.html">la praticienne</a> et les <a href="tarifs.html">tarifs</a>.</p>
@@ -92,6 +96,61 @@ page("soin-cosmelan-taches-manosque.html",
      "Traitement des taches COSMELAN à Manosque | LUMIA",
      "Soins dépigmentants COSMELAN à Manosque : atténuer mélasma et taches du visage avec Mesoestetic, encadré par une infirmière D.E. Diagnostic de peau préalable.",
      "https://lumia-salon.fr/soin-cosmelan-taches-manosque.html", cos_body, cos_schema)
+
+# ============================ COSMÉTIQUES ============================
+cos2_faq = [
+ ("Faut-il être cliente de l'institut pour acheter les produits ?", "Non. La boutique est ouverte à tous, que vous suiviez un protocole à l'institut ou non. Un conseil personnalisé vous est proposé pour choisir les produits adaptés à votre peau ou à votre objectif."),
+ ("Comment savoir quels produits conviennent à ma peau ?", "Le plus simple est d'en parler lors d'un soin ou d'un bilan. La routine est construite selon votre type de peau et vos problématiques, plutôt que selon une gamme imposée."),
+ ("Les compléments alimentaires remplacent-ils les soins ?", "Non, ils les complètent. Les nutricosmétiques LPG agissent de l'intérieur, en soutien d'un protocole minceur, drainant ou anti-âge. Les résultats se construisent avec les soins en cabine et une bonne hygiène de vie."),
+ ("Proposez-vous des cartes cadeaux ?", "Oui. Des cartes cadeaux et des coffrets sont disponibles à l'institut, d'un montant libre ou pour une prestation précise. Ils sont préparés sur place et remis en main propre."),
+ ("Pourquoi des marques professionnelles plutôt que de la grande distribution ?", "Les gammes Mesoestetic et LPG sont des gammes professionnelles, aux actifs plus concentrés, distribuées uniquement par des praticiens formés. C'est ce qui permet d'adapter la routine à votre peau en toute sécurité."),
+]
+
+cos2_body = header_block(
+  [("Accueil","./"),("Cosmétiques",None)],
+  "Cosmétiques et compléments à Manosque",
+  "Les gammes professionnelles Mesoestetic pour le visage et LPG pour le corps, conseillées par une infirmière diplômée d'État.") + """
+<main id="main"><article class="article-body"><div class="container">
+<p>L'institut LUMIA à Manosque propose une sélection de cosmétiques et de compléments alimentaires professionnels, pour prolonger chez vous les résultats obtenus en cabine. Deux marques, choisies pour la qualité de leurs actifs et réservées aux praticiens formés : Mesoestetic pour le visage et LPG pour le corps. Le conseil est personnalisé, selon votre peau et vos objectifs, jamais selon une gamme imposée.</p>
+<div class="hero__actions"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a><a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA">04 92 87 63 72</a></div>
+
+<h2>Mesoestetic, pour le visage</h2>
+<p>La gamme Mesoestetic est dédiée au visage. Elle couvre l'hydratation au quotidien, les peaux sensibles et réactives, le micropeeling pour affiner le grain de peau, et une gamme solaire pour protéger les résultats obtenus. Ce sont les mêmes actifs professionnels que ceux employés pendant les soins en cabine, ce qui permet de construire une routine cohérente entre l'institut et la maison.</p>
+<ul>
+<li><strong>Hydratation</strong> : les soins du quotidien pour maintenir le confort et la souplesse de la peau.</li>
+<li><strong>Peaux sensibles</strong> : des formules apaisantes pour les peaux réactives ou fragilisées.</li>
+<li><strong>Micropeeling</strong> : pour lisser le grain de peau et raviver l'éclat, en douceur.</li>
+<li><strong>Gamme solaire</strong> : indispensable après un protocole dépigmentant, un laser ou un microneedling.</li>
+</ul>
+
+<img src="assets/produits.webp" class="portrait" alt="Cosmétiques professionnels Mesoestetic et compléments alimentaires à l'institut LUMIA à Manosque" width="680" height="1020" loading="lazy">
+
+<h2>LPG, pour le corps</h2>
+<p>Pour le corps, l'institut travaille avec LPG, la marque de la technologie Cellu M6 utilisée en cabine. La gamme réunit les cosmétiques minceur et anti-cellulite, ainsi que des compléments alimentaires anti-âge et drainants. Ces nutricosmétiques agissent de l'intérieur, en soutien d'un protocole LPG, et ne remplacent pas les séances : ils les prolongent.</p>
+<ul>
+<li><strong>Minceur et anti-cellulite</strong> : les cosmétiques corps qui accompagnent les séances de Cellu M6.</li>
+<li><strong>Compléments alimentaires drainants</strong> : en appui d'un protocole détox ou silhouette.</li>
+<li><strong>Compléments anti-âge</strong> : pour soutenir la fermeté et la qualité de la peau de l'intérieur.</li>
+</ul>
+
+<h2>Coffrets et cartes cadeaux</h2>
+<p>Des <strong>coffrets cadeaux</strong> et des <strong>cartes cadeaux</strong> sont disponibles à l'institut. La carte peut porter sur un montant libre ou sur une prestation précise, soin du visage, séance de LPG ou bilan laser. Les coffrets associent produits et soins, et sont préparés sur place. C'est une idée simple pour offrir un moment pour soi, à Manosque.</p>
+
+<p class="text-center mt-2"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Demander conseil à l'institut</a></p>
+
+<h2>Questions fréquentes sur les cosmétiques</h2>
+%s
+<p>Les produits prolongent nos soins : découvrez les <a href="soins-visage-manosque.html">soins du visage</a>, le <a href="lpg-cellu-m6-manosque.html">LPG endermologie</a>, le <a href="microneedling-manosque.html">microneedling</a> et le <a href="soin-cosmelan-taches-manosque.html">protocole COSMELAN</a>. Les prix des prestations sont sur la <a href="tarifs.html">page tarifs</a>.</p>
+</div></article>
+%s</main>
+""" % (PLANITY, PLANITY, faq_html(cos2_faq), cta('Offrez un vrai <span class="accent">moment</span>', "Cartes et coffrets cadeaux disponibles à l'institut. Passez nous voir ou appelez-nous."))
+
+cos2_schema = (schema_service("Cosmétiques","Cosmétiques et compléments à Manosque","Cosmétiques professionnels Mesoestetic pour le visage et LPG pour le corps, compléments alimentaires, coffrets et cartes cadeaux à Manosque.","https://lumia-salon.fr/cosmetiques-manosque.html")
+ + schema_faq(cos2_faq) + schema_breadcrumb([("Accueil",BASE),("Cosmétiques",BASE+"cosmetiques-manosque.html")]))
+page("cosmetiques-manosque.html",
+     "Cosmétiques Mesoestetic & LPG à Manosque | LUMIA",
+     "Cosmétiques professionnels à Manosque : Mesoestetic pour le visage (hydratation, peaux sensibles, micropeeling, solaire) et LPG pour le corps. Cartes cadeaux.",
+     "https://lumia-salon.fr/cosmetiques-manosque.html", cos2_body, cos2_schema)
 
 print("services OK")
 
