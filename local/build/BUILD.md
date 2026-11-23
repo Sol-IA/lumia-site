@@ -6,38 +6,40 @@
 
 | Dossier | Contenu | En ligne ? |
 |---|---|---|
-| **`docs/`** | **le site, et rien d'autre** | ✅ **oui, intégralement** |
-| **`hors-ligne/`** | tout le reste : générateurs, images brutes, propale, plans, module abandonné | ❌ **jamais** |
+| **`SITE/`** | **le site, et rien d'autre** | ✅ **oui, intégralement** |
+| **`local/`** | tout le reste : générateurs, images brutes, propale, plans, module abandonné | ❌ **jamais** |
 
-🔴 **Tout `docs/` va en ligne. Rien d'autre n'y va.**
-Pour un envoi FTP : on pointe `docs/`, on envoie tout. Rien à trier, donc rien à se tromper.
+🔴 **Tout `SITE/` va en ligne. Rien d'autre n'y va.**
+Pour un envoi FTP : on pointe `SITE/`, on envoie tout. Rien à trier, donc rien à se tromper.
 
 `CLAUDE.md` reste à la racine : c'est imposé par le système de mémoire et par le chargement automatique du contexte projet.
 
-### Pourquoi `docs/` et pas `site/`
+### Pourquoi `SITE/`
 
-En mode branche, **GitHub Pages ne sait servir que la racine ou `/docs`**. Le nom vient de cette contrainte. L'appeler `site/` imposerait de passer Pages en déploiement par workflow, donc un fichier de plus à maintenir et une fenêtre de coupure, pour un résultat identique.
+C'est la **convention MGE** : « `SITE/` est le miroir EXACT et COMPLET d'OVH, source de vérité unique ». ⚠️ Surtout pas `docs/` : chez MGE ce nom désigne la **documentation interne**, et le même mot voulant dire l'inverse d'un projet à l'autre, c'est l'ambiguïté qui produit une erreur le jour du FTP.
+
+GitHub Pages ne sachant servir que la racine ou `/docs` en mode branche, la publication passe par `.github/workflows/pages.yml`. Ce fichier ne bouge jamais, et il devient inutile à la bascule OVH.
 
 ### Ce que git suit
 
-Tout `docs/` **sauf `docs/php/`**, qui contient des identifiants et ne part qu'en FTP.
-Dans `hors-ligne/`, **seul `build/` est versionné** : les générateurs sont la source du site. Le reste est ignoré en bloc, dont les 81 Mo d'images brutes.
+Tout `SITE/` **sauf `SITE/php/`**, qui contient des identifiants et ne part qu'en FTP.
+Dans `local/`, **seul `build/` est versionné** : les générateurs sont la source du site. Le reste est ignoré en bloc, dont les 81 Mo d'images brutes.
 
 ## Régénérer
 
 Depuis la racine du projet, dans cet ordre :
 
 ```bash
-python3 hors-ligne/build/gen_core.py       # accueil, laser, soins du visage, mentions légales
-python3 hors-ligne/build/gen_services.py   # LPG, COSMELAN, microneedling, cosmétiques
-python3 hors-ligne/build/gen_pages2.py     # à propos, tarifs, contact, 404, confidentialité
-python3 hors-ligne/build/gen_local.py      # les 9 pages locales
-python3 hors-ligne/build/gen_blog.py       # le blog et ses articles
+python3 local/build/gen_core.py       # accueil, laser, soins du visage, mentions légales
+python3 local/build/gen_services.py   # LPG, COSMELAN, microneedling, cosmétiques
+python3 local/build/gen_pages2.py     # à propos, tarifs, contact, 404, confidentialité
+python3 local/build/gen_local.py      # les 9 pages locales
+python3 local/build/gen_blog.py       # le blog et ses articles
 ```
 
 ## Règles absolues
 
-1. 🔴 **Ne jamais éditer un `.html` de `docs/`.** Il est écrasé à la régénération suivante. On modifie le générateur.
+1. 🔴 **Ne jamais éditer un `.html` de `SITE/`.** Il est écrasé à la régénération suivante. On modifie le générateur.
 2. **Menu et pied de page : uniquement dans `build_pages.py`.** Les oublier ailleurs a déjà rendu une prestation invisible sur tout le site.
 3. **`img_size()`** lit les dimensions réelles des images. Toujours l'utiliser plutôt que de saisir des valeurs à la main.
 4. **`style.css` ET `style.min.css`** se modifient tous les deux, idem `js/*.js` et `js/*.min.js`. Aucun script ne les synchronise.
@@ -46,8 +48,10 @@ python3 hors-ligne/build/gen_blog.py       # le blog et ses articles
 
 ## Valider, puis prévisualiser
 
+Depuis `Sol.IA/` :
+
 ```bash
-python3 "../docs/tools/validate-solia.py" docs
+python3 "docs/tools/validate-solia.py" LUMIA/SITE
 ```
 
-Zéro bloquant exigé avant tout push. Prévisualisation : configuration `lumia`, port 8093, qui sert `docs/`.
+Zéro bloquant exigé avant tout push. Prévisualisation : configuration `lumia`, port 8093, qui sert `SITE/`.
