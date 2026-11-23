@@ -18,7 +18,11 @@ Pour un envoi FTP : on pointe `SITE/`, on envoie tout. Rien à trier, donc rien 
 
 C'est la **convention MGE** : « `SITE/` est le miroir EXACT et COMPLET d'OVH, source de vérité unique ». ⚠️ Surtout pas `docs/` : chez MGE ce nom désigne la **documentation interne**, et le même mot voulant dire l'inverse d'un projet à l'autre, c'est l'ambiguïté qui produit une erreur le jour du FTP.
 
-GitHub Pages ne sachant servir que la racine ou `/docs` en mode branche, la publication passe par `.github/workflows/pages.yml`. Ce fichier ne bouge jamais, et il devient inutile à la bascule OVH.
+GitHub Pages ne sachant servir que la racine ou `/docs` en mode branche, la publication passe par `.github/workflows/pages.yml`, qui copie `SITE/` à la racine d'une branche **`gh-pages`**.
+
+🔴 **Ne pas retenter la voie officielle par artefact.** Testée le 23/11/2026 : `upload-pages-artifact` dépose bien l'artefact, `deploy-pages` ne le retrouve pas. Versions à jour, permission `actions: read` ajoutée, aucun incident GitHub : sans effet. La branche `gh-pages` n'utilise ni artefact, ni API, ni action tierce.
+
+Ce fichier ne bouge jamais, et il devient inutile à la bascule OVH.
 
 ### Ce que git suit
 
