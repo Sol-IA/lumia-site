@@ -7,7 +7,9 @@ Outil de build (comme la minification) ; la sortie reste 100% statique.
 Lancer : python3 build_pages.py
 """
 import os, datetime
-ROOT = os.path.dirname(os.path.abspath(__file__))
+# Le site vit dans docs/, les générateurs dans build/. ROOT désigne toujours la
+# racine du site : le seul dossier qui part en ligne, et plus tard en FTP.
+ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs")
 
 PLANITY = "https://www.planity.com/lumia-04100-manosque"
 IG = "https://www.instagram.com/lumiamanosque"
@@ -25,7 +27,7 @@ AVIS_GOOGLE = 39
 # Business, qui ouvre directement la fenêtre de notation.
 AVIS_GOOGLE_URL = "https://www.google.com/maps?cid=2478910083160358823"
 
-def img_size(name, base="assets"):
+def img_size(name, base=None):
     """Dimensions reelles d'une image, lues dans l'en-tete du fichier.
 
     Evite de declarer des width/height faux dans le HTML, ce qui provoque un
@@ -33,7 +35,11 @@ def img_size(name, base="assets"):
     lecture directe des en-tetes PNG, JPEG et WebP.
     """
     import os, struct
-    path = name if os.path.sep in name else os.path.join(base, name)
+    if base is None:
+        base = os.path.join(ROOT, "assets")
+    elif not os.path.isabs(base):
+        base = os.path.join(ROOT, base)
+    path = name if os.path.isabs(name) else os.path.join(base, name)
     with open(path, "rb") as fh:
         head = fh.read(32)
         if head[:8] == b"\x89PNG\r\n\x1a\n":
