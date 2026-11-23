@@ -135,7 +135,6 @@ def page(filename, title, desc, canonical, body, schema="", robots="index, follo
 '<meta property="og:description" content="%s">\n<meta property="og:url" content="%s">\n'
 '<meta property="og:image" content="https://lumia-salon.fr/assets/og-image.jpg">\n'
 '<meta property="og:locale" content="fr_FR">\n<meta name="theme-color" content="#A63524">\n'
-'<link rel="icon" type="image/svg+xml" href="%sassets/favicon.svg">\n'
 '<link rel="icon" type="image/png" sizes="32x32" href="%sassets/favicon-32.png">\n'
 '<link rel="apple-touch-icon" sizes="180x180" href="%sassets/apple-touch-icon.png">\n'
 '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
@@ -145,7 +144,7 @@ def page(filename, title, desc, canonical, body, schema="", robots="index, follo
 '<script src="%sannonces.js"></script>\n'
 "<script>(function(){var b=(window.ANNONCES||{}).banniere;if(!b||!b.active)return;var n=new Date();if(b.debut&&new Date(b.debut+'T00:00:00')>n)return;if(b.fin&&new Date(b.fin+'T23:59:59')<n)return;try{if(localStorage.getItem('lumiaBanniere|'+(b.titre||b.texte||'')+'|'+(b.debut||'')+'|'+(b.fin||'')))return}catch(e){}document.documentElement.classList.add('has-banniere')})();</script>\n"
 '%s</head>\n<body>\n'
-% (title, desc, robots, canonical, og_type, title, desc, canonical, pa, pa, pa, pa, pa, schema))
+% (title, desc, robots, canonical, og_type, title, desc, canonical, pa, pa, pa, pa, schema))
     html = (head
         + '<a href="#main" class="skip-link">Aller au contenu principal</a>\n'
         + topbar() + nav(p) + body + footer(p) + mobile_cta()
