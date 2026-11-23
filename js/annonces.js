@@ -125,9 +125,13 @@
     corps.appendChild(h);
 
     if (p.texte) {
-      var pt = d.createElement('p');
-      pt.textContent = p.texte;
-      corps.appendChild(pt);
+      var phrases = Array.isArray(p.texte) ? p.texte : [p.texte];
+      phrases.forEach(function (phrase) {
+        var pt = d.createElement('p');
+        pt.className = 'popup__phrase';
+        pt.textContent = phrase;
+        corps.appendChild(pt);
+      });
     }
 
     if (p.lien && p.bouton) {

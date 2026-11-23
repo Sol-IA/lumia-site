@@ -27,7 +27,9 @@ window.ANNONCES = {
   popup: {
     active:    true,
     titre:     "Black Friday chez LUMIA",
-    texte:     "Pour l'achat d'une cure d'épilation laser de 7 séances, 3 séances vous sont offertes, soit une cure de 10 séances au prix de 7. Jusqu'à 450 euros d'économies. Paiement en 2 ou 3 fois disponible.",
+    texte:     ["Pour l'achat d'une cure d'épilation laser de 7 séances, 3 séances vous sont offertes, soit une cure de 10 séances au prix de 7.",
+                "Jusqu'à 450 euros d'économies.",
+                "Paiement en 2 ou 3 fois disponible."],
     note:      ["Offre valable jusqu'au 30 novembre 2026.",
                 "L'achat doit être réalisé pendant cette période."],
     image:     "assets/laserhomme.webp",
