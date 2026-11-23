@@ -3,14 +3,13 @@
 *.log
 *.sqlite*
 
-# TOUT l'interne : sources d'images brutes (81 Mo de scraping), propale,
-# module de réservation abandonné. Rien de ce dossier ne va en ligne.
-interne/
-
-# Notes de pilotage. Le dépôt est PUBLIC : elles ne doivent jamais y monter.
+# Notes de pilotage. Le dépôt est PUBLIC.
 CLAUDE.md
-PLAN-AVANT-BASCULE.md
-plan-editorial-lumia.md
 
-# PHP sensible : part en FTP avec le reste de docs/, jamais sur git.
+# Rien de hors-ligne/ ne monte sur git, SAUF les générateurs :
+# ils sont la source du site, ils doivent être versionnés.
+hors-ligne/*
+!hors-ligne/build/
+
+# PHP sensible : part en FTP avec docs/, jamais sur git.
 docs/php/

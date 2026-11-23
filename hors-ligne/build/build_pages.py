@@ -9,7 +9,8 @@ Lancer : python3 build_pages.py
 import os, datetime
 # Le site vit dans docs/, les générateurs dans build/. ROOT désigne toujours la
 # racine du site : le seul dossier qui part en ligne, et plus tard en FTP.
-ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs")
+ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__)))), "docs")
 
 PLANITY = "https://www.planity.com/lumia-04100-manosque"
 IG = "https://www.instagram.com/lumiamanosque"
