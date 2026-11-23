@@ -637,6 +637,11 @@ html.has-banniere .page-header { padding-top: calc(var(--bannerH) + 100px + var(
 @media (max-width: 768px) {
   .banniere__inner { font-size: 0.8rem; gap: 0.6rem; padding: 0 2.5rem 0 1rem; text-align: center; }
   :root { --bannerH: 58px; }
+
+  /* Le flou d'arrière-plan du menu crée un bloc conteneur pour les éléments
+     en position fixe : le panneau du menu mobile s'y trouvait enfermé et
+     réduit à une bande. On le retire sur mobile, le fond devient opaque. */
+  nav#nav { backdrop-filter: none; -webkit-backdrop-filter: none; background: var(--bg); }
   html.has-banniere nav#nav { top: var(--bannerH); }
   html.has-banniere .hero,
   html.has-banniere .page-header { padding-top: calc(var(--bannerH) + var(--headerH) + 2.5rem); }
