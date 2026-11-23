@@ -238,7 +238,7 @@ page("contact.html",
 pc_body = header_block([("Accueil","./"),("Politique de confidentialité",None)],"Politique de confidentialité","") + """
 <main id="main"><article class="article-body"><div class="container">
 <h2>Responsable du traitement</h2>
-<p>Le responsable du traitement des données collectées sur ce site est l'institut LUMIA, 10 Bis avenue Jean Giono, 04100 Manosque 〔coordonnées de l'éditeur à compléter〕.</p>
+<p>Le responsable du traitement des données collectées sur ce site est la société NOVASIF, enseigne LUMIA, 10 Bis avenue Jean Giono, 04100 Manosque, joignable à l’adresse <a href="mailto:lumia.manosque@gmail.com">lumia.manosque@gmail.com</a>.</p>
 <h2>Données collectées et finalité</h2>
 <p>Le formulaire de contact collecte votre nom, votre adresse e-mail, votre numéro de téléphone (facultatif) et votre message. Ces données sont utilisées uniquement pour répondre à votre demande. Aucune donnée n'est cédée ni revendue à des tiers.</p>
 <h2>Base légale</h2>
@@ -246,11 +246,11 @@ pc_body = header_block([("Accueil","./"),("Politique de confidentialité",None)]
 <h2>Durée de conservation</h2>
 <p>Les messages sont conservés le temps nécessaire au traitement de votre demande, puis archivés ou supprimés conformément aux durées légales.</p>
 <h2>Vos droits</h2>
-<p>Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition sur vos données. Pour les exercer, écrivez-nous à 〔email professionnel à fournir〕 ou par courrier à l'adresse de l'institut. Vous pouvez également introduire une réclamation auprès de la CNIL (www.cnil.fr).</p>
+<p>Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition sur vos données. Pour les exercer, écrivez-nous à <a href="mailto:lumia.manosque@gmail.com">lumia.manosque@gmail.com</a> ou par courrier à l'adresse de l'institut. Vous pouvez également introduire une réclamation auprès de la CNIL (www.cnil.fr).</p>
 <h2>Cookies</h2>
 <p>Ce site n'utilise aucun cookie publicitaire ni aucun traceur tiers. La réservation Planity et la localisation Google Maps sont proposées sous forme de liens externes, sans intégration sur le site.</p>
 <h2>Hébergement</h2>
-<p>Le site est hébergé par O2switch, 222-224 boulevard Gustave Flaubert, 63000 Clermont-Ferrand, France.</p>
+<p>Le site est hébergé par OVH SAS, 2 rue Kellermann, 59100 Roubaix, France. Téléphone : 1007.</p>
 </div></article></main>
 """
 page("politique-confidentialite.html","Politique de confidentialité | LUMIA",

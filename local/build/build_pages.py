@@ -26,7 +26,7 @@ AVIS_GOOGLE = 39
 # Lien de dépôt d'avis Google. Celui-ci ouvre la fiche : la cliente doit ensuite
 # trouver le bouton d'avis. À remplacer par le lien g.page/r/… de l'admin Google
 # Business, qui ouvre directement la fenêtre de notation.
-AVIS_GOOGLE_URL = "https://www.google.com/maps?cid=2478910083160358823"
+AVIS_GOOGLE_URL = "https://g.page/r/Cac_6DiW22YiEBM/review"
 # Consultation des avis Google. Vérifié : ce lien ouvre bien la fiche LUMIA.
 AVIS_GOOGLE_VOIR = "https://www.google.com/maps?cid=2478910083160358823"
 
