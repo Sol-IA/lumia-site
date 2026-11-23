@@ -27,6 +27,8 @@ AVIS_GOOGLE = 39
 # trouver le bouton d'avis. À remplacer par le lien g.page/r/… de l'admin Google
 # Business, qui ouvre directement la fenêtre de notation.
 AVIS_GOOGLE_URL = "https://www.google.com/maps?cid=2478910083160358823"
+# Consultation des avis Google. Vérifié : ce lien ouvre bien la fiche LUMIA.
+AVIS_GOOGLE_VOIR = "https://www.google.com/maps?cid=2478910083160358823"
 
 def img_size(name, base=None):
     """Dimensions reelles d'une image, lues dans l'en-tete du fichier.
@@ -161,7 +163,8 @@ def page(filename, title, desc, canonical, body, schema="", robots="index, follo
     for jeton, valeur in (("{{NOTE}}", NOTE), ("{{AVIS_PLANITY}}", AVIS_PLANITY),
                           ("{{AVIS_GOOGLE}}", AVIS_GOOGLE),
                           ("{{AVIS_TOTAL}}", AVIS_PLANITY + AVIS_GOOGLE),
-                          ("{{AVIS_GOOGLE_URL}}", AVIS_GOOGLE_URL)):
+                          ("{{AVIS_GOOGLE_URL}}", AVIS_GOOGLE_URL),
+                          ("{{AVIS_GOOGLE_VOIR}}", AVIS_GOOGLE_VOIR)):
         html = html.replace(jeton, str(valeur))
     with open(os.path.join(ROOT, filename), "w", encoding="utf-8") as f:
         f.write(html)

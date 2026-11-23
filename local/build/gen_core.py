@@ -206,12 +206,14 @@ index_body = r'''
     </div>
     <div class="review-sources">
       <div class="review-source">
+        <img class="review-source__logo" src="assets/logo-planity.svg" alt="Planity" width="140" height="16" loading="lazy">
         <div class="review-source__note">{{NOTE}} / 5</div>
-        <div class="review-source__label">{{AVIS_PLANITY}} avis sur Planity</div>
+        <div class="review-source__label">{{AVIS_PLANITY}} avis</div>
       </div>
       <div class="review-source">
+        <img class="review-source__logo" src="assets/logo-google.svg" alt="Google" width="74" height="24" loading="lazy">
         <div class="review-source__note">{{NOTE}} / 5</div>
-        <div class="review-source__label">{{AVIS_GOOGLE}} avis sur Google</div>
+        <div class="review-source__label">{{AVIS_GOOGLE}} avis</div>
       </div>
     </div>
     <div class="reviews-grid">
@@ -231,7 +233,7 @@ index_body = r'''
         <p class="review__author">Avis vérifié &middot; Planity &middot; novembre 2026</p>
       </div>
     </div>
-    <p class="text-center mt-2"><a href="https://www.planity.com/lumia-04100-manosque" target="_blank" rel="noopener" class="btn btn-outline">Voir tous les avis sur Planity</a> <a href="{{AVIS_GOOGLE_URL}}" target="_blank" rel="noopener" class="btn btn-primary">Laisser un avis Google</a></p>
+    <div class="review-actions"><a href="https://www.planity.com/lumia-04100-manosque" target="_blank" rel="noopener" class="btn btn-outline">Voir les avis Planity</a> <a href="{{AVIS_GOOGLE_VOIR}}" target="_blank" rel="noopener" class="btn btn-outline">Voir les avis Google</a> <a href="{{AVIS_GOOGLE_URL}}" target="_blank" rel="noopener" class="btn btn-primary">Laisser un avis Google</a></div>
   </div>
 </section>
 
