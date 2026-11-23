@@ -6,10 +6,10 @@
 # Notes de pilotage. Le dépôt est PUBLIC.
 CLAUDE.md
 
-# Rien de hors-ligne/ ne monte sur git, SAUF les générateurs :
+# Rien de local/ ne monte sur git, SAUF les générateurs :
 # ils sont la source du site, ils doivent être versionnés.
-hors-ligne/*
-!hors-ligne/build/
+local/*
+!local/build/
 
-# PHP sensible : part en FTP avec docs/, jamais sur git.
-docs/php/
+# PHP sensible : part en FTP avec SITE/, jamais sur git.
+SITE/php/
