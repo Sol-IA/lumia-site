@@ -1,10 +1,14 @@
-# Déploie SITE/ sur GitHub Pages.
-# Nécessaire parce que Pages, en mode branche, ne sert que la racine ou /docs,
-# alors que la convention SOL·IA veut un dossier SITE/ miroir exact de l'OVH.
+# Publie SITE/ à la racine de la branche gh-pages, que GitHub Pages sert en
+# mode branche classique.
 #
-# ⚠️ Les versions d'actions se périment : upload-pages-artifact@v3 s'appuyait sur
-# upload-artifact@v3, désactivé par GitHub. L'étape réussissait sans rien déposer,
-# et le déploiement échouait sur « 0 artifact ». Versions relevées le 23/11/2026.
+# Pourquoi ce détour : Pages en mode branche ne sert que la racine ou /docs,
+# or la convention SOL·IA veut un dossier SITE/, miroir exact de l'OVH. La voie
+# officielle par artefact (upload-pages-artifact + deploy-pages) déposait bien
+# l'artefact mais deploy-pages ne le retrouvait pas, y compris avec les
+# versions à jour et la permission actions: read. Cette méthode-ci n'utilise ni
+# artefact ni API, seulement git, et aucune action tierce.
+#
+# À la bascule sur OVH, ce fichier et la branche gh-pages deviennent inutiles.
 name: Deploiement Pages
 
 on:
@@ -13,26 +17,28 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  actions: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  publier:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: actions/configure-pages@v6
-      - uses: actions/upload-pages-artifact@v5
-        with:
-          path: SITE
-      - id: deployment
-        uses: actions/deploy-pages@v5
+
+      - name: Publier SITE/ sur gh-pages
+        run: |
+          set -e
+          cd SITE
+          git init -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Publication depuis ${GITHUB_SHA:0:8}"
+          git push -q --force \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
