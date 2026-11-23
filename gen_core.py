@@ -172,8 +172,32 @@ index_body = r'''
   </div>
 </section>
 
-<!-- AVIS -->
+<!-- PARTENAIRE EMANA -->
 <section class="section section--alt">
+  <div class="container">
+    <div class="split">
+      <div class="split__media">
+        <img src="assets/emana-margaux-sophie.webp" alt="Margaux, à gauche, et Sophie d'Emana Massages, à droite, devant l'institut LUMIA à Manosque" width="1202" height="1600" loading="lazy">
+      </div>
+      <div class="split__content">
+        <span class="eyebrow">Également dans nos locaux</span>
+        <h2 class="section__title-rule">Emana by Sophie, massage bien-être</h2>
+        <p><em>L'expertise par le toucher.</em> Sophie vous reçoit au 10 bis avenue Jean Giono, dans les locaux de LUMIA, pour ses soins de massage et de bien-être.</p>
+        <ul>
+          <li><strong>Soins visage facialiste</strong> : éclat, raffermissant, liftant.</li>
+          <li><strong>Drainage et madérothérapie</strong> : remodelant, drainant, sculptant.</li>
+          <li><strong>Bien-être et Reiki</strong>.</li>
+        </ul>
+        <p>Nous travaillons ensemble sur la <a href="tarifs.html">Cure Expertise Silhouette</a>, qui associe son drainage lymphatique à notre LPG.</p>
+        <p><a href="https://www.sophiemassagebienetre.com" target="_blank" rel="noopener" class="btn btn-outline">Découvrir Emana by Sophie</a></p>
+        <p><small>Emana by Sophie est une activité indépendante, distincte de l'institut LUMIA.</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVIS -->
+<section class="section">
   <div class="container">
     <div class="section__header">
       <span class="eyebrow">Vos avis</span>
@@ -202,7 +226,7 @@ index_body = r'''
 </section>
 
 <!-- FAQ COURTE -->
-<section class="section">
+<section class="section section--alt">
   <div class="container">
     <div class="section__header">
       <span class="eyebrow">Questions fréquentes</span>
@@ -227,7 +251,7 @@ index_body = r'''
 </section>
 
 <!-- CONTACT / ACCES -->
-<section class="section section--alt" id="contact">
+<section class="section" id="contact">
   <div class="container">
     <div class="section__header">
       <span class="eyebrow">Nous trouver</span>
@@ -723,6 +747,8 @@ mentions_legales_body = r'''
       <li>Numéro de TVA intracommunautaire : 〔à fournir si applicable〕</li>
       <li>Directrice de la publication : Margaux Libereau</li>
     </ul>
+
+    <p>L'activité <strong>Emana by Sophie</strong>, massage bien-être, est hébergée dans les mêmes locaux. Il s'agit d'une <strong>entité juridique distincte</strong>, qui exerce sous sa propre responsabilité. L'institut LUMIA n'est pas responsable des prestations réalisées par Emana by Sophie, et réciproquement.</p>
 
     <h2>Hébergement</h2>
     <p>Le site est hébergé par O2switch, SAS au capital de 100 000 €, 222-224 boulevard Gustave Flaubert, 63000 Clermont-Ferrand, France. Téléphone : 04 44 44 60 40.</p>

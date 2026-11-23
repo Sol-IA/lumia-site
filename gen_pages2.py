@@ -116,7 +116,7 @@ tarifs_body = header_block(
 <p>Recommandé en cure, une séance tous les quinze jours pendant six séances, puis un entretien tous les deux mois.</p>
 
 <h2>Cure Expertise Silhouette</h2>
-<p>Cure de six séances associant 45 minutes de drainage lymphatique et 30 minutes de LPG, soit une séance complète d'1h15, avec un bilan de 20 minutes avant la cure. Disponible pour le bas du corps ou pour le ventre et la taille. Cure réalisée avec Emana Massages.</p>
+<p>Cure de six séances associant 45 minutes de drainage lymphatique et 30 minutes de LPG, soit une séance complète d'1h15, avec un bilan de 20 minutes avant la cure. Disponible pour le bas du corps ou pour le ventre et la taille. Cure réalisée avec <a href="https://www.sophiemassagebienetre.com" target="_blank" rel="noopener">Emana by Sophie</a>, praticienne en massage bien-être installée dans nos locaux.</p>
 <details>
 <summary>Voir le détail de la cure et son tarif</summary>
 <div class="table-wrap"><table class="data"><thead><tr><th>Prestation</th><th>Durée</th><th>Tarif</th></tr></thead><tbody>
@@ -203,6 +203,7 @@ contact_body = header_block(
 <li><span class="info-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span><span><strong>Paiement</strong>Carte bancaire et espèces. 3 fois sans frais sur les cures.</span></li>
 </ul>
 <p><strong>Parkings gratuits à proximité</strong> : Dr Joubert (45 min), Monoprix (1h30), La Poste (3h), Souvenir Français (3h).</p>
+<p><strong>Également à cette adresse</strong> : <a href="https://www.sophiemassagebienetre.com" target="_blank" rel="noopener">Emana by Sophie</a>, massage bien-être, une activité indépendante installée dans nos locaux.</p>
 <div class="hero__actions mt-2">
 <a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a>
 <a href="https://www.google.com/maps/search/?api=1&amp;query=LUMIA+10+Bis+avenue+Jean+Giono+Manosque" target="_blank" rel="noopener" class="btn btn-outline">Ouvrir dans Google Maps</a>
