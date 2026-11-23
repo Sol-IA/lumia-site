@@ -140,10 +140,15 @@
     }
 
     if (p.note) {
-      var note = d.createElement('p');
-      note.className = 'popup__note';
-      note.textContent = p.note;
-      corps.appendChild(note);
+      var lignes = Array.isArray(p.note) ? p.note : [p.note];
+      var notes = d.createElement('div');
+      notes.className = 'popup__notes';
+      lignes.forEach(function (texte) {
+        var note = d.createElement('p');
+        note.textContent = texte;
+        notes.appendChild(note);
+      });
+      corps.appendChild(notes);
     }
 
     dlg.appendChild(corps);
