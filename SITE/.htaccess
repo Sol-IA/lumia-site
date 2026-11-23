@@ -1,11 +1,11 @@
 # ==========================================================================
-# LUMIA — institut de beauté & épilation laser, Manosque
-# Hébergement O2switch · Réalisé par Sol·IA
+# LUMIA · institut de beauté et épilation laser, Manosque
+# Hébergement OVH · Réalisé par Sol·IA
 # ==========================================================================
 
 DirectoryIndex index.html
 
-# -MultiViews OBLIGATOIRE sur O2switch/OVH (sinon les 301 cassent quand un
+# -MultiViews OBLIGATOIRE sur OVH (sinon les 301 cassent quand un
 # slug correspond à un .html). -Indexes : pas de listing de répertoire.
 Options -Indexes -MultiViews +FollowSymLinks
 
@@ -18,25 +18,43 @@ ErrorDocument 404 /404.html
 RewriteEngine On
 
 # Forcer HTTPS
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# ----------------------------------------------------------------------
+# PHASE 4 : A REACTIVER une fois le certificat Let's Encrypt emis sur OVH.
+# L'activer avant, c'est servir une erreur de certificat a toutes les
+# visiteuses pendant la propagation DNS. Retirer les deux # ci-dessous.
+# ----------------------------------------------------------------------
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# www -> sans-www
+# www -> sans-www. Conserve le protocole en cours, donc valable avant comme
+# apres l'emission du certificat : rien a toucher en phase 4.
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+RewriteRule ^(.*)$ %{REQUEST_SCHEME}://%1/$1 [L,R=301]
 
 # Bloquer l'accès aux fichiers cachés
 RewriteRule "(^|/)\." - [F]
 
 # ==========================================================================
-# Redirections 301 — migration depuis Wix
-# A COMPLETER avec les URL Wix indexées (Search Console) avant la bascule DNS.
-# Exemples de mapping (decommenter et adapter une fois les URL connues) :
+# Redirections 301 · migration depuis Wix
+# Relevées le 23/11/2026 sur le sitemap Wix, qui ne compte que 6 URL.
+# /termes-et-conditions et /service-securise sont des gabarits Wix jamais
+# remplis, titres « Serving You Safely | Juice Shop » : on les renvoie a
+# l'accueil et aux mentions legales plutot que de les laisser en 404.
 # ==========================================================================
-# Redirect 301 /nous-contacter /contact.html
-# Redirect 301 /mentions-legales /mentions-legales.html
-# Redirect 301 /epilation-laser /epilation-laser-manosque.html
-# Redirect 301 /soins-du-visage /soins-visage-manosque.html
+RewriteRule ^nous-contacter/?$            /contact.html [R=301,L]
+RewriteRule ^politique-de-cookies/?$      /politique-confidentialite.html [R=301,L]
+RewriteRule ^termes-et-conditions/?$      /mentions-legales.html [R=301,L]
+
+# Les deux URL accentuees. mod_rewrite compare l'URL DECODEE dans RewriteRule
+# et l'URL ENCODEE dans RewriteCond : on traite donc les deux formes, sinon
+# l'une des deux passe au travers. C'est le piege classique des accents.
+RewriteRule ^mentions-l(é|%C3%A9)gales/?$ /mentions-legales.html [R=301,L]
+RewriteCond %{REQUEST_URI} ^/mentions-l%C3%A9gales/?$ [NC]
+RewriteRule ^ /mentions-legales.html [R=301,L]
+
+RewriteRule ^service-s(é|%C3%A9)curis(é|%C3%A9)/?$ / [R=301,L]
+RewriteCond %{REQUEST_URI} ^/service-s%C3%A9curis%C3%A9/?$ [NC]
+RewriteRule ^ / [R=301,L]
 
 # ==========================================================================
 # En-têtes de sécurité
