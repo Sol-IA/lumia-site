@@ -128,12 +128,15 @@ def page(filename, title, desc, canonical, body, schema="", robots="index, follo
 '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
 '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
 '<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">\n'
-'<link rel="stylesheet" href="%scss/style.min.css">\n%s</head>\n<body>\n'
-% (title, desc, robots, canonical, og_type, title, desc, canonical, pa, pa, schema))
+'<link rel="stylesheet" href="%scss/style.min.css">\n'
+'<script src="%sannonces.js"></script>\n'
+"<script>(function(){var b=(window.ANNONCES||{}).banniere;if(!b||!b.active)return;var n=new Date();if(b.debut&&new Date(b.debut+'T00:00:00')>n)return;if(b.fin&&new Date(b.fin+'T23:59:59')<n)return;try{if(localStorage.getItem('lumiaBanniere|'+(b.titre||b.texte||'')+'|'+(b.debut||'')+'|'+(b.fin||'')))return}catch(e){}document.documentElement.classList.add('has-banniere')})();</script>\n"
+'%s</head>\n<body>\n'
+% (title, desc, robots, canonical, og_type, title, desc, canonical, pa, pa, pa, schema))
     html = (head
         + '<a href="#main" class="skip-link">Aller au contenu principal</a>\n'
         + topbar() + nav(p) + body + footer(p) + mobile_cta()
-        + '\n<script src="%sjs/main.min.js" defer></script>\n' % pa
+        + '\n<script src="%sjs/main.min.js" defer></script>\n<script src="%sjs/annonces.min.js" defer></script>\n' % (pa, pa)
         + extra_tail
         + '</body>\n</html>\n')
     with open(os.path.join(ROOT, filename), "w", encoding="utf-8") as f:
