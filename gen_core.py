@@ -54,8 +54,8 @@ index_body = r'''
       <div class="trust-item__label">Pour tout achat de séance ou de cure</div>
     </div>
     <div class="trust-item">
-      <div class="trust-item__value">5,0 / 5</div>
-      <div class="trust-item__label">32 avis sur Planity</div>
+      <div class="trust-item__value">{{NOTE}} / 5</div>
+      <div class="trust-item__label">{{AVIS_PLANITY}} avis Planity &middot; {{AVIS_GOOGLE}} avis Google</div>
     </div>
   </div>
 </section>
@@ -79,7 +79,7 @@ index_body = r'''
         <a href="epilation-laser-manosque.html" class="service-card__link" aria-label="Épilation laser définitive à Manosque"></a>
       </article>
       <article class="service-card">
-        <div class="service-card__img"><img src="assets/cabinedesoin.webp" alt="Cabine de soin du visage et luminothérapie LED à l'institut LUMIA" width="765" height="1020" loading="lazy"></div>
+        <div class="service-card__img"><img src="assets/card-soins-visage.webp" alt="Soin du visage réalisé à l'institut LUMIA à Manosque, sous lumière LED" width="1066" height="666" loading="lazy"></div>
         <div class="service-card__body">
           <h3>Soins du visage</h3>
           <p>Soins LUMINEA réalisés avec la machine EsthéSkin et luminothérapie LED, pour nettoyer, hydrater, raffermir et redonner de l'éclat à la peau.</p>
@@ -88,7 +88,7 @@ index_body = r'''
         <a href="soins-visage-manosque.html" class="service-card__link" aria-label="Soins du visage à Manosque"></a>
       </article>
       <article class="service-card">
-        <div class="service-card__img"><img src="assets/soinLPG.webp" alt="Soin LPG endermologie des jambes à l'institut LUMIA" width="765" height="1020" loading="lazy"></div>
+        <div class="service-card__img"><img src="assets/card-lpg.webp" alt="Séance de LPG Cellu M6 Alliance sur les jambes à l'institut LUMIA à Manosque" width="1066" height="666" loading="lazy"></div>
         <div class="service-card__body">
           <h3>LPG endermologie</h3>
           <p>Cellu M6 Alliance pour la minceur, la fermeté et le drainage. Corps et visage, avec un suivi photo de votre progression.</p>
@@ -106,7 +106,7 @@ index_body = r'''
         <a href="microneedling-manosque.html" class="service-card__link" aria-label="Microneedling à Manosque"></a>
       </article>
       <article class="service-card">
-        <div class="service-card__img"><img src="assets/produits2.webp" alt="Cosmétiques et nutricosmétiques Mesoestetic à l'institut LUMIA" width="765" height="1020" loading="lazy"></div>
+        <div class="service-card__img"><img src="assets/card-cosmelan.webp" alt="Actifs dépigmentants Mesoestetic utilisés pour le protocole COSMELAN à l'institut LUMIA" width="1080" height="675" loading="lazy"></div>
         <div class="service-card__body">
           <h3>Soins dépigmentants COSMELAN</h3>
           <p>Protocole COSMELAN de Mesoestetic pour atténuer les taches du visage : mélasma, taches solaires, hyperpigmentation.</p>
@@ -201,27 +201,37 @@ index_body = r'''
   <div class="container">
     <div class="section__header">
       <span class="eyebrow">Vos avis</span>
-      <h2 class="section__title-rule">5,0 / 5 sur Planity, 32 avis</h2>
-      <p>La confiance se construit séance après séance. Retrouvez les avis vérifiés de nos clientes et clients sur Planity.</p>
+      <h2 class="section__title-rule">{{NOTE}} / 5 sur Planity et sur Google</h2>
+      <p>La confiance se construit séance après séance. {{AVIS_TOTAL}} clientes et clients ont laissé un avis vérifié, sur deux plateformes indépendantes.</p>
+    </div>
+    <div class="review-sources">
+      <div class="review-source">
+        <div class="review-source__note">{{NOTE}} / 5</div>
+        <div class="review-source__label">{{AVIS_PLANITY}} avis sur Planity</div>
+      </div>
+      <div class="review-source">
+        <div class="review-source__note">{{NOTE}} / 5</div>
+        <div class="review-source__label">{{AVIS_GOOGLE}} avis sur Google</div>
+      </div>
     </div>
     <div class="reviews-grid">
       <div class="review">
         <div class="review__stars" aria-label="5 étoiles sur 5">★★★★★</div>
-        <p class="review__text">〔Avis client réel à reprendre depuis Planity ou Google, à valider avec la cliente〕</p>
-        <p class="review__author">〔Prénom〕</p>
+        <p class="review__text">Établissement au top ! Margaux est très pro et très chaleureuse.</p>
+        <p class="review__author">Avis vérifié &middot; Planity &middot; novembre 2026</p>
       </div>
       <div class="review">
         <div class="review__stars" aria-label="5 étoiles sur 5">★★★★★</div>
-        <p class="review__text">〔Avis client réel à reprendre depuis Planity ou Google, à valider avec la cliente〕</p>
-        <p class="review__author">〔Prénom〕</p>
+        <p class="review__text">Un soin LPG de grande qualité avec les mains expertes de Margaux.</p>
+        <p class="review__author">Avis vérifié &middot; Planity &middot; octobre 2026</p>
       </div>
       <div class="review">
         <div class="review__stars" aria-label="5 étoiles sur 5">★★★★★</div>
-        <p class="review__text">〔Avis client réel à reprendre depuis Planity ou Google, à valider avec la cliente〕</p>
-        <p class="review__author">〔Prénom〕</p>
+        <p class="review__text">Pour une 1ère expérience c'était vraiment super</p>
+        <p class="review__author">Avis vérifié &middot; Planity &middot; novembre 2026</p>
       </div>
     </div>
-    <p class="text-center mt-2"><a href="https://www.planity.com/lumia-04100-manosque" target="_blank" rel="noopener" class="btn btn-outline">Voir tous les avis sur Planity</a></p>
+    <p class="text-center mt-2"><a href="https://www.planity.com/lumia-04100-manosque" target="_blank" rel="noopener" class="btn btn-outline">Voir tous les avis sur Planity</a> <a href="{{AVIS_GOOGLE_URL}}" target="_blank" rel="noopener" class="btn btn-primary">Laisser un avis Google</a></p>
   </div>
 </section>
 
