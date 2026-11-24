@@ -7,6 +7,14 @@
 
   var A = window.ANNONCES || {};
   var d = document;
+  /* Annonces planifiées (listes « bannieres » et « popups », écrites par l'administration
+     de la plus récente à la plus ancienne) : on retient la première en cours. */
+  function choisir(liste) {
+    for (var i = 0; i < (liste || []).length; i++) { if (enCours(liste[i])) return liste[i]; }
+    return null;
+  }
+  if (A.bannieres) A.banniere = choisir(A.bannieres);
+  if (A.popups) A.popup = choisir(A.popups);
 
   /* Les chemins relatifs des annonces (image, lien) sont écrits depuis la racine
      du site : on les résout depuis l'emplacement de annonces.js, pour qu'ils

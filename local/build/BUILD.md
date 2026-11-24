@@ -76,3 +76,5 @@ Zéro bloquant exigé avant tout push. Prévisualisation : configuration `lumia`
 - **Images** : la première image visible d'une page (LCP) en `loading="eager"` + `fetchpriority="high"`, toutes les autres en `lazy`.
 - **Recette OVH** : servie en `X-Robots-Tag: noindex` par le `.htaccess` (hôte `*.hosting.ovh.net`), donc Lighthouse y affiche SEO 69 : normal.
 - **Pages de villes** : similarité par mots < 70 % entre deux villes (`scratchpad/lot4/sim.py`), trajets mesurés (OSRM), jamais de fait local sans source.
+- **Annonces (24/11/2026)** : `SITE/annonces.js` est réécrit par l'administration (`php/admin/`). La version du serveur fait foi : la récupérer avant tout envoi SFTP, ne jamais l'écraser avec la copie locale.
+- **Annonces planifiées (24/11/2026)** : `annonces.js` contient des listes `bannieres` et `popups` (la plus récente en premier) ; `js/annonces.js` et `js/annonces-tete.js` affichent la première en cours. La mémoire complète (brouillons, archives) est dans `php/admin/annonces-data.php`, sur le serveur seulement.
