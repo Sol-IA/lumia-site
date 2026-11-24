@@ -6,7 +6,7 @@ Centralise l'en-tête / pied de page partagés et émet du HTML statique pur.
 Outil de build (comme la minification) ; la sortie reste 100% statique.
 Lancer : python3 build_pages.py
 """
-import os, datetime
+import os, re, datetime, hashlib
 # Le site vit dans docs/, les générateurs dans build/. ROOT désigne toujours la
 # racine du site : le seul dossier qui part en ligne, et plus tard en FTP.
 ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
@@ -78,26 +78,31 @@ def topbar():
 '<div class="topbar__right"><a href="%s" target="_blank" rel="noopener noreferrer" aria-label="Instagram de LUMIA">%s</a></div>'
 '</div></div>' % (IG, IG_SVG))
 
-def nav(p):
+def nav(p, cur=None):
+    # cur : nom du fichier de la page en cours, pour aria-current="page" sur le lien correspondant
+    def a(name, label):
+        courant = ' aria-current="page"' if name == cur else ''
+        return '<a href="%s%s"%s>%s</a>' % (p, name, courant, label)
     return (
 '<nav id="nav" aria-label="Navigation principale"><div class="container">'
 '<a href="%s" class="nav__logo" aria-label="LUMIA, accueil"><img src="%sassets/logo.png" alt="LUMIA, institut de beauté à Manosque" width="132" height="33" loading="eager"></a>'
 '<div class="nav__menu" id="nav-menu">'
-'<a href="%s">Accueil</a>'
-'<div class="nav__dropdown"><a href="%s#prestations">Prestations</a><div class="nav__dropdown-menu">'
-'<a href="%sepilation-laser-manosque.html">Épilation LASER CE Médical</a>'
-'<a href="%ssoins-visage-manosque.html">Soins du visage</a>'
-'<a href="%slpg-cellu-m6-manosque.html">LPG endermologie</a>'
-'<a href="%smicroneedling-manosque.html">Microneedling</a>'
-'<a href="%ssoin-cosmelan-taches-manosque.html">Soins dépigmentants COSMELAN</a>'
-'<a href="%scosmetiques-manosque.html">Cosmétiques</a></div></div>'
-'<a href="%sa-propos.html">À propos</a>'
-'<a href="%starifs.html">Tarifs</a>'
-'<a href="%sblog.html">Blog</a>'
-'<a href="%scontact.html">Contact</a>'
-'<a href="%s" target="_blank" rel="noopener" class="btn-cta-nav">Prendre rendez-vous</a></div>'
-'<button class="nav__toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>'
-'</div></nav>' % (p, p, p, p, p, p, p, p, p, p, p, p, p, p, PLANITY))
+% (p, p)
++ ('<a href="%s"%s>Accueil</a>' % (p, ' aria-current="page"' if cur == "index.html" else ''))
++ '<div class="nav__dropdown"><a href="%s#prestations">Prestations</a><div class="nav__dropdown-menu">' % p
++ a("epilation-laser-manosque.html", "Épilation LASER CE Médical")
++ a("soins-visage-manosque.html", "Soins du visage")
++ a("lpg-cellu-m6-manosque.html", "LPG endermologie")
++ a("microneedling-manosque.html", "Microneedling")
++ a("soin-cosmelan-taches-manosque.html", "Soins dépigmentants COSMELAN")
++ a("cosmetiques-manosque.html", "Cosmétiques") + '</div></div>'
++ a("a-propos.html", "À propos")
++ a("tarifs.html", "Tarifs")
++ a("blog.html", "Blog")
++ a("contact.html", "Contact")
++ ('<a href="%s" target="_blank" rel="noopener" class="btn-cta-nav">Prendre rendez-vous</a></div>' % PLANITY)
++ '<button class="nav__toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button>'
+'</div></nav>')
 
 def footer(p):
     return (
@@ -121,7 +126,7 @@ def footer(p):
 '<p><a href="tel:+33492876372">04 92 87 63 72</a></p><p>Lun-ven, 10h-19h</p>'
 '<div class="footer__social mt-1"><a href="%s" target="_blank" rel="noopener noreferrer" aria-label="Instagram de LUMIA">%s</a></div></div>'
 '</div><div class="footer__bottom">'
-'<p>&copy; 2026 LUMIA &middot; Site réalisé par <a href="https://sol-ia.tech" target="_blank" rel="noopener">Sol&middot;IA</a></p>'
+'<p>&copy; 2026 LUMIA &middot; Site réalisé par <a href="https://sol-ia.tech" target="_blank" rel="noopener">SOL&middot;IA</a></p>'
 '<p><a href="%smentions-legales.html">Mentions légales</a> &middot; <a href="%spolitique-confidentialite.html">Confidentialité</a></p>'
 '</div></div></footer>' % (p, p, p, p, p, p, p, p, p, p, p, IG, IG_SVG, p, p))
 
@@ -131,10 +136,142 @@ def mobile_cta():
 '<a href="tel:+33492876372" class="btn btn-outline">%s Appeler</a>'
 '<a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Prendre RDV</a></nav>' % (PHONE_SVG, PLANITY))
 
+# Versionnage des CSS et JS : ?v= = empreinte du contenu. Le cache navigateur
+# (30 jours, voir .htaccess) est invalidé dès que le fichier change, et seulement
+# à ce moment-là. Ajouté le 23/11/2026 après la recette OVH. annonces.js n'est pas
+# versionné : il est servi en no-cache, l'admin PHP l'écrira sans régénérer le HTML.
+VERSIONNES = ("css/style.min.css", "js/main.min.js", "js/annonces.min.js",
+              "js/annonces-tete.min.js")
+
+
+def variante_800(m):
+    avant, prefixe, nom, apres = m.groups()
+    if "srcset" in avant + apres or not os.path.exists(os.path.join(ROOT, "assets", nom + "-800.webp")):
+        return m.group(0)
+    w, _ = img_size(nom + ".webp")
+    return ('<img %ssrc="%s%s.webp" srcset="%s%s-800.webp 800w, %s%s.webp %dw" '
+            'sizes="(max-width: 768px) 100vw, 50vw"%s>'
+            % (avant, prefixe, nom, prefixe, nom, prefixe, nom, w, apres))
+
+
+def nouvel_onglet(m):
+    attrs, contenu = m.group(1), m.group(2)
+    if "nouvel onglet" in attrs or "nouvel onglet" in contenu:
+        return m.group(0)
+    if 'aria-label="' in attrs:
+        attrs = re.sub(r'aria-label="([^"]*)"', lambda n: 'aria-label="%s (nouvel onglet)"' % n.group(1), attrs, count=1)
+        return '<a %s>%s</a>' % (attrs, contenu)
+    return '<a %s>%s<span class="sr-only"> (nouvel onglet)</span></a>' % (attrs, contenu)
+
+
+def version(rel):
+    with open(os.path.join(ROOT, rel), "rb") as f:
+        return hashlib.md5(f.read()).hexdigest()[:8]
+
+
+# ---------------------------------------------------------------------------
+# Bandeau d'avis des pages intérieures, prix d'entrée et accès rapide aux tarifs.
+# Tout est inséré par post-traitement dans page(), selon le nom du fichier.
+# ---------------------------------------------------------------------------
+BANDEAU_PAGES = frozenset((
+    "epilation-laser-manosque.html", "soins-visage-manosque.html",
+    "lpg-cellu-m6-manosque.html", "microneedling-manosque.html",
+    "soin-cosmelan-taches-manosque.html", "cosmetiques-manosque.html",
+    "tarifs.html", "contact.html", "a-propos.html",
+) + tuple("epilation-laser-%s.html" % s for s in (
+    "forcalquier", "greoux-les-bains", "pierrevert", "oraison", "sainte-tulle",
+    "volx", "villeneuve", "sisteron", "valensole")))
+
+# Prix d'entrée affiché près du premier bouton : (sections de tarifs.html à lire,
+# filtre facultatif sur l'intitulé de la ligne). Les prix sont lus dans gen_pages2.py,
+# jamais saisis ici. Les cosmétiques n'ont aucun prix sur la page tarifs : pas de ligne.
+PRIX_PAGES = {
+    "epilation-laser-manosque.html": (("laser",), None),
+    "soins-visage-manosque.html": (("visage",), None),
+    "lpg-cellu-m6-manosque.html": (("lpg", "lpg-visage"), None),
+    "microneedling-manosque.html": (("microneedling",), None),
+    "soin-cosmelan-taches-manosque.html": (("cosmelan",), "Soin cabine"),
+}
+
+
+def prix_entree_bloc(fragment, filtre=None):
+    """Plus petit prix numérique d'un tableau. Les bilans, diagnostics (offerts ou
+    déductibles) et tenues ne comptent pas. Renvoie None s'il n'y a aucun prix."""
+    prix = []
+    for tr in re.findall(r'<tr>(.*?)</tr>', fragment, re.S):
+        cellules = re.findall(r'<td[^>]*>(.*?)</td>', tr, re.S)
+        if not cellules or re.match(r'\s*((RDV\s+)?(bilan|diagnostic)|tenue)', cellules[0], re.I):
+            continue
+        if filtre and not cellules[0].startswith(filtre):
+            continue
+        m = re.search(r'class="price">\s*(\d+)\s*euros', tr)
+        if m:
+            prix.append(int(m.group(1)))
+    return min(prix) if prix else None
+
+
+def _blocs_details(fragment):
+    """(intitulé, contenu) de chaque accordéon, hors cures et forfaits (pas de prix de séance)."""
+    for m in re.finditer(r'<details>\s*<summary>(.*?)</summary>(.*?)</details>', fragment, re.S):
+        if not re.search(r'cure|forfait', m.group(1), re.I):
+            yield m.group(1), m.group(2)
+
+
+def prix_depuis(ids, filtre=None):
+    """(prix, id de section) du prix d'entrée le plus bas parmi des sections de tarifs.html,
+    lu dans le source de gen_pages2.py. None si aucune n'a de prix."""
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "gen_pages2.py"), encoding="utf-8") as f:
+        src = f.read()
+    meilleur = None
+    for sec in ids:
+        m = re.search(r'<h2 id="%s">(.*?)(?=<h2 id="|</div></article>)' % re.escape(sec), src, re.S)
+        if not m:
+            continue
+        for _, contenu in _blocs_details(m.group(1)):
+            p = prix_entree_bloc(contenu, filtre)
+            if p is not None and (meilleur is None or p < meilleur[0]):
+                meilleur = (p, sec)
+    return meilleur
+
+
+def prix_dans_intitules(html):
+    """Ajoute « dès X € » à chaque intitulé d'accordéon dont le tableau a un prix de séance."""
+    def un(m):
+        intitule, contenu = m.group(1), m.group(2)
+        if re.search(r'cure|forfait', intitule, re.I):
+            return m.group(0)
+        p = prix_entree_bloc(contenu)
+        if p is None:
+            return m.group(0)
+        return '<details>\n<summary>%s <span class="summary-prix">&middot; dès %d&nbsp;€</span></summary>%s</details>' % (intitule, p, contenu)
+    return re.sub(r'<details>\s*<summary>(.*?)</summary>(.*?)</details>', un, html, flags=re.S)
+
+
+def bandeau_avis(pa, rose=True):
+    """Bandeau compact d'avis (même composant que l'accueil). pa : préfixe des assets."""
+    return (
+'<section class="section%s avis-bandeau" aria-label="Avis de nos clientes"><div class="container">'
+'<p class="avis-bandeau__titre">{{NOTE}} / 5 &middot; {{AVIS_TOTAL}} avis sur Planity et Google</p>'
+'<div class="review-sources">'
+'<a class="review-source" href="https://www.planity.com/lumia-04100-manosque" target="_blank" rel="noopener"><img class="review-source__logo" src="%sassets/logo-planity.svg" alt="Planity" width="140" height="16" loading="lazy">'
+'<div class="review-source__note">{{NOTE}} / 5</div><div class="review-source__label">{{AVIS_PLANITY}} avis</div></a>'
+'<a class="review-source" href="{{AVIS_GOOGLE_VOIR}}" target="_blank" rel="noopener"><img class="review-source__logo" src="%sassets/logo-google.svg" alt="Google" width="74" height="24" loading="lazy">'
+'<div class="review-source__note">{{NOTE}} / 5</div><div class="review-source__label">{{AVIS_GOOGLE}} avis</div></a>'
+'</div></div></section>\n' % (" section--alt" if rose else "", pa, pa))
+
+
+def _precede_rose(avant):
+    """Vrai si le dernier bloc de contenu avant l'appel final est déjà sur fond rosé."""
+    blocs = re.findall(r'<(?:article|section|div) class="((?:article-body|section)(?:\s[^"]*)?)"', avant)
+    return bool(blocs) and "section--alt" in blocs[-1]
+
+
 def page(filename, title, desc, canonical, body, schema="", robots="index, follow",
-         prefix="./", og_type="website", in_sub=False, extra_tail=""):
+         prefix="./", og_type="website", in_sub=False, extra_tail="", og_img=None, og_alt=None):
     p = "../" if in_sub else "./"
     pa = "../" if in_sub else ""  # pour assets/css/js (chemin relatif sans ./)
+    if prefix == "/":  # chemins absolus depuis la racine (page 404, servie depuis n'importe quel dossier)
+        p = pa = "/"
     head = (
 '<!DOCTYPE html>\n<html lang="fr">\n<head>\n'
 '<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
@@ -143,29 +280,66 @@ def page(filename, title, desc, canonical, body, schema="", robots="index, follo
 '<meta property="og:type" content="%s">\n<meta property="og:title" content="%s">\n'
 '<meta property="og:description" content="%s">\n<meta property="og:url" content="%s">\n'
 '<meta property="og:image" content="https://lumia-salon.fr/assets/og-image.jpg">\n'
+'<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n'
+'<meta property="og:image:alt" content="Accueil de l\'institut LUMIA à Manosque, mur rouge en arche et comptoir en bois clair">\n'
+'<meta property="og:site_name" content="LUMIA">\n<meta name="twitter:card" content="summary_large_image">\n'
 '<meta property="og:locale" content="fr_FR">\n<meta name="theme-color" content="#A63524">\n'
 '<link rel="icon" type="image/png" sizes="32x32" href="%sassets/favicon-32.png">\n'
 '<link rel="apple-touch-icon" sizes="180x180" href="%sassets/apple-touch-icon.png">\n'
-'<link rel="preconnect" href="https://fonts.googleapis.com">\n'
-'<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-'<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">\n'
+'<link rel="preload" href="%sassets/fonts/cormorant-garamond-600.woff2" as="font" type="font/woff2" crossorigin>\n'
+'<link rel="preload" href="%sassets/fonts/nunito-sans.woff2" as="font" type="font/woff2" crossorigin>\n'
 '<link rel="stylesheet" href="%scss/style.min.css">\n'
 '<script src="%sannonces.js"></script>\n'
-"<script>(function(){var b=(window.ANNONCES||{}).banniere;if(!b||!b.active)return;var n=new Date();if(b.debut&&new Date(b.debut+'T00:00:00')>n)return;if(b.fin&&new Date(b.fin+'T23:59:59')<n)return;try{if(localStorage.getItem('lumiaBanniere|'+(b.titre||b.texte||'')+'|'+(b.debut||'')+'|'+(b.fin||'')))return}catch(e){}document.documentElement.classList.add('has-banniere')})();</script>\n"
+'<script src="%sjs/annonces-tete.min.js"></script>\n'
 '%s</head>\n<body>\n'
-% (title, desc, robots, canonical, og_type, title, desc, canonical, pa, pa, pa, pa, schema))
+% (title, desc, robots, canonical, og_type, title, desc, canonical, pa, pa, pa, pa, pa, pa, pa, schema))
+    if og_img:  # image de partage propre à la page (articles illustrés)
+        head = head.replace('content="https://lumia-salon.fr/assets/og-image.jpg"', 'content="%s"' % og_img)
+        head = head.replace('content="Accueil de l\'institut LUMIA à Manosque, mur rouge en arche et comptoir en bois clair"', 'content="%s"' % og_alt)
     html = (head
         + '<a href="#main" class="skip-link">Aller au contenu principal</a>\n'
-        + topbar() + nav(p) + body + footer(p) + mobile_cta()
+        + '<header class="site-header">' + topbar() + nav(p, filename) + '</header>\n'  # repère « banner » (24/11/2026)
+        + body + footer(p) + mobile_cta()
         + '\n<script src="%sjs/main.min.js" defer></script>\n<script src="%sjs/annonces.min.js" defer></script>\n' % (pa, pa)
         + extra_tail
         + '</body>\n</html>\n')
+    # M3 (24/11/2026) : bandeau d'avis avant l'appel final des pages intérieures.
+    if filename in BANDEAU_PAGES:
+        i = html.find('<section class="cta-section">')
+        if i < 0:  # page sans appel final (contact) : bandeau en fin de contenu
+            i = html.find('</main>')
+        if i >= 0:
+            html = html[:i] + bandeau_avis(pa, not _precede_rose(html[:i])) + html[i:]
+    # M4c (24/11/2026) : « À partir de X € » sous le premier bloc de boutons, prix lu dans les tarifs.
+    if filename in PRIX_PAGES:
+        ids, filtre = PRIX_PAGES[filename]
+        trouve = prix_depuis(ids, filtre)
+        if trouve:
+            ligne = ('<p class="prix-depuis">À partir de %d&nbsp;€ &middot; '
+                     '<a href="%starifs.html#%s">voir les tarifs</a></p>' % (trouve[0], pa, trouve[1]))
+            html = re.sub(r'(<div class="hero__actions">.*?</div>)', lambda m: m.group(1) + ligne, html, count=1, flags=re.S)
     for jeton, valeur in (("{{NOTE}}", NOTE), ("{{AVIS_PLANITY}}", AVIS_PLANITY),
                           ("{{AVIS_GOOGLE}}", AVIS_GOOGLE),
                           ("{{AVIS_TOTAL}}", AVIS_PLANITY + AVIS_GOOGLE),
                           ("{{AVIS_GOOGLE_URL}}", AVIS_GOOGLE_URL),
                           ("{{AVIS_GOOGLE_VOIR}}", AVIS_GOOGLE_VOIR)):
         html = html.replace(jeton, str(valeur))
+    # R12 (23/11/2026) : l'en-tête de page (fil d'Ariane, H1) entre dans <main>,
+    # sinon le lien d'évitement saute le H1 et l'en-tête devient un repère « banner » en double.
+    html = re.sub(r'(<header class="page-header">.*?</header>)\s*<main id="main">',
+                  lambda m: '<main id="main">\n' + m.group(1), html, count=1, flags=re.S)
+    # R14 (23/11/2026) : un lien qui ouvre un nouvel onglet l'annonce aux lecteurs d'écran.
+    html = re.sub(r'<a ([^>]*target="_blank"[^>]*)>(.*?)</a>', nouvel_onglet, html, flags=re.S)
+    # R16 (23/11/2026) : variante 800 px servie aux écrans qui n'ont pas besoin de plus.
+    html = re.sub(r'<img ([^>]*?)src="((?:\.\./|\./)?assets/)([\w-]+)\.webp"([^>]*)>', variante_800, html)
+    for rel in VERSIONNES:
+        html = html.replace(rel + '"', rel + "?v=" + version(rel) + '"')
+    # Typographie française (24/11/2026) : espace insécable avant « : ; ? ! » dans le texte visible,
+    # jamais dans les balises, les scripts ni les styles.
+    morceaux = re.split(r'(<script\b.*?</script>|<style\b.*?</style>|<[^>]+>)', html, flags=re.S)
+    for k in range(0, len(morceaux), 2):
+        morceaux[k] = re.sub(r'(?<=\S) ([:;?!])(?=\s|$)', '\u00a0\\1', morceaux[k])
+    html = ''.join(morceaux)
     with open(os.path.join(ROOT, filename), "w", encoding="utf-8") as f:
         f.write(html)
     print("écrit:", filename, len(html), "o")
@@ -194,7 +368,7 @@ def cta(title_html, text):
 def schema_service(stype, name, desc, url):
     return ('<script type="application/ld+json">\n{ "@context":"https://schema.org","@type":"Service",'
             '"serviceType":"%s","name":"%s","description":"%s","url":"%s",'
-            '"provider":{"@type":"BeautySalon","name":"LUMIA","url":"https://lumia-salon.fr","telephone":"+33492876372",'
+            '"provider":{"@type":"BeautySalon","@id":"https://lumia-salon.fr/#institut","name":"LUMIA","url":"https://lumia-salon.fr","telephone":"+33492876372",'
             '"address":{"@type":"PostalAddress","streetAddress":"10 Bis avenue Jean Giono","addressLocality":"Manosque","postalCode":"04100","addressCountry":"FR"}},'
             '"areaServed":{"@type":"City","name":"Manosque"} }\n</script>\n' % (stype, name, desc, url))
 

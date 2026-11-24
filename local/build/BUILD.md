@@ -38,8 +38,16 @@ python3 local/build/gen_core.py       # accueil, laser, soins du visage, mention
 python3 local/build/gen_services.py   # LPG, COSMELAN, microneedling, cosmétiques
 python3 local/build/gen_pages2.py     # à propos, tarifs, contact, 404, confidentialité
 python3 local/build/gen_local.py      # les 9 pages locales
+python3 local/build/gen_og_illus.py   # images de partage JPEG des illustrations (Playwright, sans -I)
 python3 local/build/gen_blog.py       # le blog et ses articles
 ```
+
+### Blog : illustrations et maillage (règles du 24/11/2026)
+
+- **Une illustration SVG unique par article**, jamais réutilisée : `SITE/assets/illustrations/<slug>.svg` (1200 × 600, palette LUMIA, sans or ni texte, style des deux témoins validés par Thomas : microneedling et cellulite). Elle s'affiche en tête d'article et sur la carte ; la vraie photo reste dans le corps. Texte alternatif dans la clé `illu_alt`. `gen_og_illus.py` en tire l'image de partage `illustrations/og/<slug>.jpg` (1200 × 630).
+- **Ordre** : le blog liste du plus récent au plus ancien (tri sur `iso`). On n'affiche que le mois et l'année ; un article par mois, le 15.
+- **Maillage calculé à chaque génération** : « À lire aussi » = 3 articles, jamais l'article lui-même ni un article déjà cité dans son texte ; priorité au même thème, puis au thème voisin, puis au moins cité, puis au plus récent. Un ancien article cite donc les nouveaux. `gen_blog.py` **s'arrête** si la règle est violée ou si un article n'est cité nulle part.
+- **Nouvel article** : l'ajouter à `ARTICLES` avec son illustration, régénérer, puis renvoyer **toutes** les pages d'articles (leurs « À lire aussi » changent).
 
 ## Règles absolues
 
@@ -59,3 +67,12 @@ python3 "docs/tools/validate-solia.py" LUMIA/SITE
 ```
 
 Zéro bloquant exigé avant tout push. Prévisualisation : configuration `lumia`, port 8093, qui sert `SITE/`.
+
+## Règles ajoutées le 24/11/2026 (correctifs de l'audit)
+
+- **Typographie** : `page()` pose une espace insécable avant « : ; ? ! » dans le texte visible (jamais dans les balises, scripts, styles). Écrire les textes avec une espace ordinaire, la génération s'en charge.
+- **JSON-LD** : l'institut a un seul identifiant, `"@id": "https://lumia-salon.fr/#institut"`, à réutiliser dans tout nouveau bloc (`provider`, `publisher`, `worksFor`).
+- **Blog** : `MAJ_BLOG` (gen_blog.py) donne le `dateModified` des articles. L'avancer seulement après une vraie révision du contenu.
+- **Images** : la première image visible d'une page (LCP) en `loading="eager"` + `fetchpriority="high"`, toutes les autres en `lazy`.
+- **Recette OVH** : servie en `X-Robots-Tag: noindex` par le `.htaccess` (hôte `*.hosting.ovh.net`), donc Lighthouse y affiche SEO 69 : normal.
+- **Pages de villes** : similarité par mots < 70 % entre deux villes (`scratchpad/lot4/sim.py`), trajets mesurés (OSRM), jamais de fait local sans source.

@@ -16,15 +16,15 @@ lpg_body = header_block(
   "LPG endermologie à Manosque",
   "Minceur, fermeté et drainage avec la technologie LPG Cellu M6 Alliance, pour le corps et le visage.") + """
 <main id="main"><article class="article-body"><div class="container">
-<p>Le LPG endermologie de LUMIA à Manosque utilise la technologie Cellu M6 Alliance pour agir sur la cellulite, la fermeté, le drainage et la silhouette, sur le corps comme sur le visage, chez les femmes et les hommes. Chaque programme démarre par un bilan personnalisé avec photos de suivi, et le bilan est offert pour tout achat de forfait. La technique est non invasive, confortable et adaptée à votre objectif.</p>
-<div class="hero__actions"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a><a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA">04 92 87 63 72</a></div>
+<p>Le LPG endermologie de LUMIA à Manosque utilise la technologie Cellu M6 Alliance pour agir sur la cellulite, la fermeté, le drainage et la silhouette, sur le corps comme sur le visage, chez les femmes et les hommes. Une cure de 10 à 12 séances est souvent recommandée pour un objectif marqué, avec des photos de suivi à la 1re, la 6e et la 12e séance, après un bilan à 40 €, offert pour tout achat de forfait. La technique est non invasive, confortable et adaptée à votre objectif.</p>
+<div class="hero__actions"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a><a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA au 04 92 87 63 72">04 92 87 63 72</a></div>
 
 <h2>Le LPG pour le corps</h2>
 <p>Sur le corps, l'endermologie cible la cellulite sous toutes ses formes, adipeuse, aqueuse ou fibreuse, et relance les échanges de la peau. Plusieurs protocoles existent : anti-cellulite, soin jeune maman, détox et palper-rouler drainant, ou simplement relaxation. Le travail mécanique de la tête Alliance stimule la peau en profondeur pour la lisser et la raffermir.</p>
 
 <img src="assets/soinLPG.webp" class="portrait" alt="Soin LPG endermologie des jambes à l'institut LUMIA à Manosque" width="765" height="1020" loading="lazy">
 
-<p class="text-center mt-2"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Premier échange gratuit, réservez votre bilan</a></p>
+<p class="text-center mt-2"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Réserver mon bilan LPG</a><span class="btn-note">Bilan à 40 €, offert pour tout achat de forfait.</span></p>
 
 <h2>Le LPG pour le visage</h2>
 <p>Sur le visage, le LPG travaille zone par zone, du front au cou en passant par le regard, l'ovale, les mains ou le décolleté. Il raffermit, lisse et redonne de l'éclat, sans aiguille ni chirurgie. C'est une réponse douce aux premiers signes de l'âge, qui se marie très bien avec les soins du visage.</p>
@@ -36,7 +36,7 @@ lpg_body = header_block(
 
 <h2>Questions fréquentes sur le LPG</h2>
 %s
-<p>Le LPG complète idéalement nos <a href="soins-visage-manosque.html">soins du visage</a> et notre <a href="epilation-laser-manosque.html">épilation laser</a>. Retrouvez le détail des prix sur la <a href="tarifs.html">page tarifs</a> et faites connaissance avec <a href="a-propos.html">la praticienne</a>.</p>
+<p>Le LPG complète idéalement nos <a href="soins-visage-manosque.html">soins du visage</a> et notre <a href="epilation-laser-manosque.html">épilation laser</a>. Retrouvez le détail des prix sur la <a href="tarifs.html#lpg">page tarifs</a> et faites connaissance avec <a href="a-propos.html">Margaux, la praticienne de LUMIA</a>.</p>
 </div></article>
 %s</main>
 """ % (PLANITY, PLANITY, faq_html(lpg_faq), cta('Retrouvez une silhouette <span class="accent">légère</span>', "Réservez votre bilan LPG à Manosque. Il est offert pour tout achat de forfait."))
@@ -57,11 +57,11 @@ cos_faq = [
 ]
 cos_body = header_block(
   [("Accueil","./"),("Soins dépigmentants COSMELAN",None)],
-  "Atténuer les taches du visage à Manosque",
+  "COSMELAN : atténuer les taches du visage à Manosque",
   "Le protocole COSMELAN de Mesoestetic pour un teint plus uniforme, encadré par une infirmière D.E.") + """
 <main id="main"><article class="article-body"><div class="container">
-<p>Les soins dépigmentants COSMELAN de LUMIA à Manosque s'adressent à celles et ceux qui veulent atténuer les taches du visage : mélasma, taches solaires, hyperpigmentation post-inflammatoire ou taches liées à l'âge. Le protocole COSMELAN de Mesoestetic agit en deux temps, en cabine puis à la maison, avec un suivi sur plusieurs mois. Tout commence par un diagnostic de peau obligatoire, déductible du soin, pour vérifier que votre peau est adaptée.</p>
-<div class="hero__actions"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a><a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA">04 92 87 63 72</a></div>
+<p>Les soins dépigmentants COSMELAN de LUMIA à Manosque s'adressent à celles et ceux qui veulent atténuer les taches du visage : mélasma, taches solaires, hyperpigmentation post-inflammatoire ou taches liées à l'âge. Le protocole COSMELAN de Mesoestetic agit en deux temps, en cabine puis à la maison, avec un suivi sur environ six mois, après un diagnostic de peau à 20 €, déductible du soin. Ce diagnostic est obligatoire : il vérifie que votre peau est adaptée.</p>
+<div class="hero__actions"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a><a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA au 04 92 87 63 72">04 92 87 63 72</a></div>
 
 <img src="assets/cosmelan-taches.webp" class="portrait" alt="Taches pigmentaires du visage traitées par la méthode dépigmentante COSMELAN de Mesoestetic" width="900" height="1600" loading="lazy">
 
@@ -70,7 +70,7 @@ cos_body = header_block(
 
 <img src="assets/cosmelan.jpg" class="portrait" alt="Soin du teint et atténuation des taches du visage à l'institut LUMIA" width="732" height="1100" loading="lazy">
 
-<p class="text-center mt-2"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Premier échange gratuit, réservez votre diagnostic</a></p>
+<p class="text-center mt-2"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Réserver mon diagnostic de peau</a><span class="btn-note">Diagnostic à 20 €, déductible du soin en cabine.</span></p>
 
 <h2>Le déroulé du protocole</h2>
 <p>Le parcours est cadré et accompagné de bout en bout.</p>
@@ -86,7 +86,7 @@ cos_body = header_block(
 
 <h2>Questions fréquentes sur le COSMELAN</h2>
 %s
-<p>Le COSMELAN se prolonge naturellement avec nos <a href="soins-visage-manosque.html">soins du visage</a>. Découvrez aussi <a href="a-propos.html">la praticienne</a> et les <a href="tarifs.html">tarifs</a>.</p>
+<p>Le COSMELAN se prolonge naturellement avec nos <a href="soins-visage-manosque.html">soins du visage</a>. Découvrez aussi <a href="a-propos.html">Margaux, la praticienne de LUMIA</a>, et les <a href="tarifs.html#cosmelan">tarifs</a>.</p>
 </div></article>
 %s</main>
 """ % (PLANITY, PLANITY, faq_html(cos_faq), cta('Retrouvez un teint <span class="accent">uniforme</span>', "Réservez votre diagnostic de peau à Manosque. Il est déductible du soin en cabine."))
@@ -112,7 +112,7 @@ cos2_body = header_block(
   "Les gammes professionnelles Mesoestetic pour le visage et LPG pour le corps, conseillées par une infirmière diplômée d'État.") + """
 <main id="main"><article class="article-body"><div class="container">
 <p>L'institut LUMIA à Manosque propose une sélection de cosmétiques et de compléments alimentaires professionnels, pour prolonger chez vous les résultats obtenus en cabine. Deux marques, choisies pour la qualité de leurs actifs et réservées aux praticiens formés : Mesoestetic pour le visage et LPG pour le corps. Le conseil est personnalisé, selon votre peau et vos objectifs, jamais selon une gamme imposée.</p>
-<div class="hero__actions"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a><a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA">04 92 87 63 72</a></div>
+<div class="hero__actions"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a><a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA au 04 92 87 63 72">04 92 87 63 72</a></div>
 
 <h2>Mesoestetic, pour le visage</h2>
 <p>La gamme Mesoestetic est dédiée au visage. Elle couvre l'hydratation au quotidien, les peaux sensibles et réactives, le micropeeling pour affiner le grain de peau, et une gamme solaire pour protéger les résultats obtenus. Ce sont les mêmes actifs professionnels que ceux employés pendant les soins en cabine, ce qui permet de construire une routine cohérente entre l'institut et la maison.</p>
@@ -136,14 +136,14 @@ cos2_body = header_block(
 <h2>Coffrets et cartes cadeaux</h2>
 <p>Des <strong>coffrets cadeaux</strong> et des <strong>cartes cadeaux</strong> sont disponibles à l'institut. La carte peut porter sur un montant libre ou sur une prestation précise, soin du visage, séance de LPG ou bilan laser. Les coffrets associent produits et soins, et sont préparés sur place. C'est une idée simple pour offrir un moment pour soi, à Manosque.</p>
 
-<p class="text-center mt-2"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Demander conseil à l'institut</a></p>
+<p class="text-center mt-2"><a href="contact.html#formulaire" class="btn btn-primary">Demander conseil à l'institut</a></p>
 
 <h2>Questions fréquentes sur les cosmétiques</h2>
 %s
 <p>Les produits prolongent nos soins : découvrez les <a href="soins-visage-manosque.html">soins du visage</a>, le <a href="lpg-cellu-m6-manosque.html">LPG endermologie</a>, le <a href="microneedling-manosque.html">microneedling</a> et le <a href="soin-cosmelan-taches-manosque.html">protocole COSMELAN</a>. Les prix des prestations sont sur la <a href="tarifs.html">page tarifs</a>.</p>
 </div></article>
 %s</main>
-""" % (PLANITY, PLANITY, faq_html(cos2_faq), cta('Offrez un vrai <span class="accent">moment</span>', "Cartes et coffrets cadeaux disponibles à l'institut. Passez nous voir ou appelez-nous."))
+""" % (PLANITY, faq_html(cos2_faq), cta('Offrez un vrai <span class="accent">moment</span>', "Cartes et coffrets cadeaux disponibles à l'institut. Passez nous voir ou appelez-nous."))
 
 cos2_schema = (schema_service("Cosmétiques","Cosmétiques et compléments à Manosque","Cosmétiques professionnels Mesoestetic pour le visage et LPG pour le corps, compléments alimentaires, coffrets et cartes cadeaux à Manosque.","https://lumia-salon.fr/cosmetiques-manosque.html")
  + schema_faq(cos2_faq) + schema_breadcrumb([("Accueil",BASE),("Cosmétiques",BASE+"cosmetiques-manosque.html")]))
@@ -169,10 +169,10 @@ mn_body = header_block(
   "Microneedling à Manosque",
   "La micro-stimulation de la peau avec les actifs Mesoestetic aux exosomes : rides, éclat, pores dilatés et cicatrices d'acné.") + """
 <main id="main"><article class="article-body"><div class="container">
-<p>Le microneedling, ou micro-stimulation, est un soin de régénération de la peau proposé à l'institut LUMIA à Manosque. Grâce à de micro-perforations contrôlées, réalisées à une profondeur de 0,25 mm, il stimule la production naturelle de collagène et d'élastine, pour une peau plus lisse, plus ferme, plus lumineuse et un grain de peau affiné. Il est réalisé par une infirmière diplômée d'État, avec des actifs brevetés de la marque Mesoestetic.</p>
-<div class="hero__actions"><a href="" + PLANITY + "" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a><a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA">04 92 87 63 72</a></div>
+<p>Le microneedling, ou micro-stimulation, est un soin de régénération de la peau proposé à l'institut LUMIA à Manosque, en cure de six séances, une tous les quinze jours, à partir de 145 € la séance. Grâce à de micro-perforations contrôlées, réalisées à une profondeur de 0,25 mm, il stimule la production naturelle de collagène et d'élastine, pour une peau plus lisse, plus ferme, plus lumineuse et un grain de peau affiné. Il est réalisé par une infirmière diplômée d'État, avec des actifs brevetés de la marque Mesoestetic.</p>
+<div class="hero__actions"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a><a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA au 04 92 87 63 72">04 92 87 63 72</a></div>
 
-<div class="callout"><h3>Sans aucune injection</h3><p>Le microneedling ne comporte <strong>aucune injection de produit</strong>. Le stylo médical crée de minuscules canaux à la surface de la peau : c'est la réponse naturelle de régénération de votre peau qui fait le travail, aidée par les actifs appliqués en surface.</p></div>
+<div class="callout"><h2 class="callout__title">Sans aucune injection</h2><p>Le microneedling ne comporte <strong>aucune injection de produit</strong>. Le stylo médical crée de minuscules canaux à la surface de la peau : c'est la réponse naturelle de régénération de votre peau qui fait le travail, aidée par les actifs appliqués en surface.</p></div>
 
 <h2>Ce que le microneedling traite</h2>
 <p>Ce soin agit sur les rides et les ridules, le teint terne ou fatigué, le manque d'éclat, le relâchement cutané du visage, les pores dilatés, l'excès de sébum et les cicatrices d'acné. Il est adapté à tous les phototypes de peau, des plus claires aux plus foncées.</p>
@@ -188,7 +188,7 @@ mn_body = header_block(
 
 <img src="assets/microneedling-soin.webp" class="portrait" alt="Séance de microneedling du visage à l'institut LUMIA à Manosque, stylo de micro-stimulation et luminothérapie" width="898" height="1600" loading="lazy">
 
-<p class="text-center mt-2"><a href="" + PLANITY + "" target="_blank" rel="noopener" class="btn btn-primary">Réservez votre diagnostic visage</a></p>
+<p class="text-center mt-2"><a href="%s" target="_blank" rel="noopener" class="btn btn-primary">Réservez votre diagnostic visage</a></p>
 
 <h2>Le protocole recommandé</h2>
 <p>Pour une régénération complète et des résultats durables, le microneedling se pratique en cure : une séance tous les quinze jours, pendant six séances. Des séances d'entretien, une fois tous les deux mois, sont ensuite fortement conseillées pour maintenir le bénéfice.</p>
@@ -197,14 +197,15 @@ mn_body = header_block(
 
 <h2>Questions fréquentes sur le microneedling</h2>
 %s
-<p>Le microneedling se marie très bien avec nos <a href="soins-visage-manosque.html">soins du visage</a> et avec le <a href="lpg-cellu-m6-manosque.html">LPG visage</a>. Pour les taches pigmentaires installées, découvrez aussi le <a href="soin-cosmelan-taches-manosque.html">protocole COSMELAN</a>. Les prix sont détaillés sur la <a href="tarifs.html">page tarifs</a>, et vous pouvez faire connaissance avec <a href="a-propos.html">la praticienne</a>.</p>
+<p>Le microneedling se marie très bien avec nos <a href="soins-visage-manosque.html">soins du visage</a> et avec le <a href="lpg-cellu-m6-manosque.html">LPG visage</a>. Pour les taches pigmentaires installées, découvrez aussi le <a href="soin-cosmelan-taches-manosque.html">protocole COSMELAN</a>. Les prix sont détaillés sur la <a href="tarifs.html#microneedling">page tarifs</a>, et vous pouvez faire connaissance avec <a href="a-propos.html">Margaux, la praticienne de LUMIA</a>.</p>
+<p>Après la séance, la <a href="cosmetiques-manosque.html">gamme solaire Mesoestetic</a> protège la peau et prolonge le soin à la maison.</p>
 </div></article>
 %s</main>
-""" % (faq_html(mn_faq), cta('Réveillez l\'<span class="accent">éclat</span> de votre peau', "Réservez votre diagnostic visage à Manosque. Nous définissons ensemble le protocole adapté à votre peau."))
+""" % (PLANITY, PLANITY, faq_html(mn_faq), cta('Réveillez l\'<span class="accent">éclat</span> de votre peau', "Réservez votre diagnostic visage à Manosque. Nous définissons ensemble le protocole adapté à votre peau."))
 
 mn_schema = (schema_service("Microneedling","Microneedling à Manosque","Micro-stimulation de la peau avec actifs Mesoestetic aux exosomes à Manosque : rides, éclat, pores dilatés, cicatrices d'acné. Par une infirmière diplômée d'État.","https://lumia-salon.fr/microneedling-manosque.html")
  + schema_faq(mn_faq) + schema_breadcrumb([("Accueil",BASE),("Microneedling",BASE+"microneedling-manosque.html")]))
 page("microneedling-manosque.html",
      "Microneedling à Manosque : anti-âge & éclat | LUMIA",
-     "Microneedling à Manosque avec les actifs Mesoestetic aux exosomes : rides, pores dilatés, cicatrices d'acné, éclat. Sans injection, tous phototypes. RDV en ligne.",
+     "Microneedling à Manosque avec les actifs Mesoestetic aux exosomes : rides, pores dilatés, cicatrices d'acné, éclat. Sans injection, dès 145 € la séance.",
      "https://lumia-salon.fr/microneedling-manosque.html", mn_body, mn_schema)

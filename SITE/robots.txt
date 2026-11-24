@@ -2,7 +2,5 @@ User-agent: *
 Allow: /
 
 Disallow: /php/
-Disallow: /mentions-legales.html
-Disallow: /politique-confidentialite.html
 
 Sitemap: https://lumia-salon.fr/sitemap.xml

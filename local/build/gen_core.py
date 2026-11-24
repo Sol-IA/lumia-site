@@ -22,7 +22,7 @@ index_body = r'''
       <div class="hero__content">
         <span class="eyebrow">La science de la beauté</span>
         <h1>Institut de beauté &amp; <span class="accent">épilation LASER</span> à Manosque</h1>
-        <p class="hero__lead">Épilation laser définitive et soins du visage, réalisés par une infirmière diplômée d'État, dans un cocon au centre de Manosque. Premier bilan personnalisé offert.</p>
+        <p class="hero__lead">Épilation laser définitive et soins du visage, réalisés par une infirmière diplômée d'État et esthéticienne, dans un cocon au centre de Manosque, dans les Alpes-de-Haute-Provence. Bilan personnalisé à 20 €, offert pour tout achat.</p>
         <div class="hero__actions">
           <a href="https://www.planity.com/lumia-04100-manosque" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a>
           <a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA au 04 92 87 63 72">
@@ -50,7 +50,7 @@ index_body = r'''
       <div class="trust-item__label">Adapté à de nombreux phototypes</div>
     </div>
     <div class="trust-item">
-      <div class="trust-item__value">Bilan offert</div>
+      <div class="trust-item__value">Bilan offert à l'achat</div>
       <div class="trust-item__label">Pour tout achat de séance ou de cure</div>
     </div>
     <div class="trust-item">
@@ -76,7 +76,7 @@ index_body = r'''
           <p>En finir avec le rasage et la cire. Laser diode adapté à de nombreux types de peau, sur le visage et le corps, pour les femmes comme pour les hommes.</p>
           <span class="service-card__cta">Découvrir</span>
         </div>
-        <a href="epilation-laser-manosque.html" class="service-card__link" aria-label="Épilation laser définitive à Manosque"></a>
+        <a href="epilation-laser-manosque.html" class="service-card__link" aria-label="Découvrir l'épilation laser définitive à Manosque"></a>
       </article>
       <article class="service-card">
         <div class="service-card__img"><img src="assets/card-soins-visage.webp" alt="Soin du visage réalisé à l'institut LUMIA à Manosque, sous lumière LED" width="1066" height="666" loading="lazy"></div>
@@ -85,7 +85,7 @@ index_body = r'''
           <p>Soins LUMINEA réalisés avec la machine EsthéSkin et luminothérapie LED, pour nettoyer, hydrater, raffermir et redonner de l'éclat à la peau.</p>
           <span class="service-card__cta">Découvrir</span>
         </div>
-        <a href="soins-visage-manosque.html" class="service-card__link" aria-label="Soins du visage à Manosque"></a>
+        <a href="soins-visage-manosque.html" class="service-card__link" aria-label="Découvrir les soins du visage à Manosque"></a>
       </article>
       <article class="service-card">
         <div class="service-card__img"><img src="assets/card-lpg.webp" alt="Séance de LPG Cellu M6 Alliance sur les jambes à l'institut LUMIA à Manosque" width="1066" height="666" loading="lazy"></div>
@@ -94,7 +94,7 @@ index_body = r'''
           <p>Cellu M6 Alliance pour la minceur, la fermeté et le drainage. Corps et visage, avec un suivi photo de votre progression.</p>
           <span class="service-card__cta">Découvrir</span>
         </div>
-        <a href="lpg-cellu-m6-manosque.html" class="service-card__link" aria-label="LPG Cellu M6 à Manosque"></a>
+        <a href="lpg-cellu-m6-manosque.html" class="service-card__link" aria-label="Découvrir le LPG Cellu M6 à Manosque"></a>
       </article>
       <article class="service-card">
         <div class="service-card__img"><img src="assets/microneedling.webp" alt="Stylo de microneedling utilisé pour la micro-stimulation du visage à l'institut LUMIA à Manosque" width="904" height="1600" loading="lazy"></div>
@@ -103,7 +103,7 @@ index_body = r'''
           <p>Micro-stimulation de la peau avec les actifs MESOESTETIC aux exosomes : rides, éclat, pores dilatés et cicatrices d'acné. Sans injection.</p>
           <span class="service-card__cta">Découvrir</span>
         </div>
-        <a href="microneedling-manosque.html" class="service-card__link" aria-label="Microneedling à Manosque"></a>
+        <a href="microneedling-manosque.html" class="service-card__link" aria-label="Découvrir le microneedling à Manosque"></a>
       </article>
       <article class="service-card">
         <div class="service-card__img"><img src="assets/card-cosmelan.webp" alt="Actifs dépigmentants Mesoestetic utilisés pour le protocole COSMELAN à l'institut LUMIA" width="1080" height="675" loading="lazy"></div>
@@ -112,7 +112,7 @@ index_body = r'''
           <p>Protocole COSMELAN de Mesoestetic pour atténuer les taches du visage : mélasma, taches solaires, hyperpigmentation.</p>
           <span class="service-card__cta">Découvrir</span>
         </div>
-        <a href="soin-cosmelan-taches-manosque.html" class="service-card__link" aria-label="Soins dépigmentants COSMELAN à Manosque"></a>
+        <a href="soin-cosmelan-taches-manosque.html" class="service-card__link" aria-label="Découvrir les soins dépigmentants COSMELAN à Manosque"></a>
       </article>
       <article class="service-card">
         <div class="service-card__img"><img src="assets/produits.webp" alt="Cosmétiques professionnels Mesoestetic et LPG à l'institut LUMIA à Manosque" width="680" height="1020" loading="lazy"></div>
@@ -121,7 +121,7 @@ index_body = r'''
           <p>Mesoestetic pour le visage, LPG pour le corps et les compléments alimentaires. Coffrets et cartes cadeaux à l'institut.</p>
           <span class="service-card__cta">Découvrir</span>
         </div>
-        <a href="cosmetiques-manosque.html" class="service-card__link" aria-label="Cosmétiques Mesoestetic et LPG à Manosque"></a>
+        <a href="cosmetiques-manosque.html" class="service-card__link" aria-label="Découvrir les cosmétiques Mesoestetic et LPG à Manosque"></a>
       </article>
     </div>
   </div>
@@ -159,11 +159,11 @@ index_body = r'''
   <div class="container">
     <div class="split">
       <div class="split__media">
-        <img src="assets/margaux.jpg" alt="Margaux, infirmière D.E. et fondatrice de l'institut LUMIA à Manosque" width="820" height="820" loading="lazy">
+        <img src="assets/margaux.webp" alt="Margaux, infirmière D.E. et fondatrice de l'institut LUMIA à Manosque" width="820" height="820" loading="lazy">
       </div>
       <div class="split__content">
         <span class="eyebrow">La praticienne</span>
-        <h2 class="section__title-rule">Margaux, infirmière D.E.</h2>
+        <h2 class="section__title-rule">Margaux, infirmière D.E. et esthéticienne</h2>
         <p>Après plusieurs années comme infirmière diplômée d'État, Margaux s'est formée à l'épilation laser, aux soins du visage EsthéSkin et au protocole COSMELAN de Mesoestetic pour ouvrir LUMIA. Son approche : la précision et l'écoute du soin infirmier, au service de votre beauté.</p>
         <p>Concrètement, chaque parcours commence par un bilan : on examine votre peau, on répond à vos questions, on définit ensemble un protocole adapté. Puis on avance à votre rythme, séance après séance.</p>
         <p><a href="a-propos.html" class="btn btn-outline">En savoir plus sur LUMIA</a></p>
@@ -175,23 +175,25 @@ index_body = r'''
 <!-- PARTENAIRE EMANA -->
 <section class="section section--alt">
   <div class="container">
+    <div class="partenaire">
     <div class="split">
       <div class="split__media">
         <img src="assets/emana-margaux-sophie.webp" alt="Margaux, à gauche, et Sophie d'Emana Massages, à droite, devant l'institut LUMIA à Manosque" width="1202" height="1600" loading="lazy">
       </div>
       <div class="split__content">
-        <span class="eyebrow">Également dans nos locaux</span>
+        <span class="eyebrow">Partenaire · également dans nos locaux</span>
         <h2 class="section__title-rule">Emana by Sophie, massage bien-être</h2>
-        <p><em>L'expertise par le toucher.</em> Sophie vous reçoit au 10 bis avenue Jean Giono, dans les locaux de LUMIA, pour ses soins de massage et de bien-être.</p>
+        <p><em>L'expertise par le toucher.</em> Sophie, praticienne indépendante, vous reçoit au 10 Bis avenue Jean Giono, dans les locaux de LUMIA, pour ses soins de massage et de bien-être.</p>
         <ul>
           <li><strong>Soins visage facialiste</strong> : éclat, raffermissant, liftant.</li>
           <li><strong>Drainage et madérothérapie</strong> : remodelant, drainant, sculptant.</li>
           <li><strong>Bien-être et Reiki</strong>.</li>
         </ul>
         <p>Nous travaillons ensemble sur la <a href="tarifs.html">Cure Expertise Silhouette</a>, qui associe son drainage lymphatique à notre LPG.</p>
-        <p><a href="https://www.sophiemassagebienetre.com" target="_blank" rel="noopener" class="btn btn-outline">Découvrir Emana by Sophie</a></p>
+        <p><a href="https://www.sophiemassagebienetre.com" target="_blank" rel="noopener" class="btn btn-outline">Découvrir Emana by Sophie <span aria-hidden="true">↗</span></a></p>
         <p><small>Emana by Sophie est une activité indépendante, distincte de l'institut LUMIA.</small></p>
       </div>
+    </div>
     </div>
   </div>
 </section>
@@ -202,7 +204,7 @@ index_body = r'''
     <div class="section__header">
       <span class="eyebrow">Vos avis</span>
       <h2 class="section__title-rule">{{NOTE}} / 5 sur Planity et sur Google</h2>
-      <p>La confiance se construit séance après séance. {{AVIS_TOTAL}} clientes et clients ont laissé un avis vérifié, sur deux plateformes indépendantes.</p>
+      <p>La confiance se construit séance après séance. {{AVIS_TOTAL}} clientes et clients ont laissé un avis, sur deux plateformes indépendantes : Planity et Google.</p>
     </div>
     <div class="review-sources">
       <div class="review-source">
@@ -233,7 +235,7 @@ index_body = r'''
         <p class="review__author">Avis vérifié &middot; Planity &middot; novembre 2026</p>
       </div>
     </div>
-    <div class="review-actions"><a href="https://www.planity.com/lumia-04100-manosque" target="_blank" rel="noopener" class="btn btn-outline">Voir les avis Planity</a> <a href="{{AVIS_GOOGLE_VOIR}}" target="_blank" rel="noopener" class="btn btn-outline">Voir les avis Google</a> <a href="{{AVIS_GOOGLE_URL}}" target="_blank" rel="noopener" class="btn btn-primary">Laisser un avis Google</a></div>
+    <div class="review-actions"><a href="https://www.planity.com/lumia-04100-manosque" target="_blank" rel="noopener" class="btn btn-outline">Voir les avis Planity</a> <a href="{{AVIS_GOOGLE_VOIR}}" target="_blank" rel="noopener" class="btn btn-outline">Voir les avis Google</a> <a href="{{AVIS_GOOGLE_URL}}" target="_blank" rel="noopener" class="btn btn-outline">Déjà cliente ? Laissez un avis</a></div>
   </div>
 </section>
 
@@ -251,7 +253,7 @@ index_body = r'''
       </details>
       <details>
         <summary>Qui réalise les soins chez LUMIA ?</summary>
-        <p>Tous les soins sont réalisés par Margaux, infirmière diplômée d'État formée à l'épilation laser, aux soins du visage EsthéSkin et au protocole COSMELAN. Vous avez la même interlocutrice à chaque séance.</p>
+        <p>Tous les soins sont réalisés par Margaux, infirmière diplômée d'État et esthéticienne, formée à l'épilation laser, aux soins du visage EsthéSkin et au protocole COSMELAN. Vous avez la même interlocutrice à chaque séance.</p>
       </details>
       <details>
         <summary>Quels moyens de paiement acceptez-vous ?</summary>
@@ -259,6 +261,7 @@ index_body = r'''
       </details>
     </div>
     <p class="text-center mt-2"><a href="epilation-laser-manosque.html" class="text-accent"><strong>Tout savoir sur l'épilation laser définitive →</strong></a></p>
+    <p class="text-center">Retrouvez aussi nos conseils sur l'épilation laser et les soins du visage dans <a href="blog.html">le blog de LUMIA</a>.</p>
   </div>
 </section>
 
@@ -303,6 +306,18 @@ index_body = r'''
   </div>
 </section>
 
+<!-- ZONES DESSERVIES -->
+<section class="section section--alt" id="zones">
+  <div class="container">
+    <div class="section__header">
+      <span class="eyebrow">Autour de Manosque</span>
+      <h2 class="section__title-rule">Zones desservies</h2>
+    </div>
+    <p class="text-center">L'institut est situé à Manosque et accueille aussi les clientes et clients des communes voisines. Retrouvez notre page d'<a href="epilation-laser-manosque.html">épilation laser à Manosque</a>, ainsi que celle de votre commune :</p>
+    <p class="text-center"><a href="epilation-laser-sainte-tulle.html">Sainte-Tulle</a> &middot; <a href="epilation-laser-pierrevert.html">Pierrevert</a> &middot; <a href="epilation-laser-volx.html">Volx</a> &middot; <a href="epilation-laser-villeneuve.html">Villeneuve</a> &middot; <a href="epilation-laser-forcalquier.html">Forcalquier</a> &middot; <a href="epilation-laser-greoux-les-bains.html">Gréoux-les-Bains</a> &middot; <a href="epilation-laser-oraison.html">Oraison</a> &middot; <a href="epilation-laser-valensole.html">Valensole</a> &middot; <a href="epilation-laser-sisteron.html">Sisteron</a></p>
+  </div>
+</section>
+
 </main>
 
 <!-- CTA FINAL -->
@@ -323,8 +338,9 @@ index_head = r'''<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BeautySalon",
+  "@id": "https://lumia-salon.fr/#institut",
   "name": "LUMIA",
-  "description": "Institut de beauté et centre d'épilation laser à Manosque. Épilation laser définitive par une infirmière D.E., soins du visage, LPG.",
+  "description": "Institut de beauté et centre d'épilation laser à Manosque. Épilation laser définitive par une infirmière D.E. et esthéticienne, soins du visage, LPG.",
   "url": "https://lumia-salon.fr",
   "telephone": "+33492876372",
   "image": "https://lumia-salon.fr/assets/og-image.jpg",
@@ -345,21 +361,20 @@ index_head = r'''<script type="application/ld+json">
     { "@type": "City", "name": "Gréoux-les-Bains" },
     { "@type": "City", "name": "Pierrevert" },
     { "@type": "City", "name": "Oraison" },
-    { "@type": "City", "name": "Valensole" }
+    { "@type": "City", "name": "Valensole" },
+    { "@type": "City", "name": "Sainte-Tulle" },
+    { "@type": "City", "name": "Volx" },
+    { "@type": "City", "name": "Villeneuve" },
+    { "@type": "City", "name": "Sisteron" }
   ],
+  "hasMap": "https://www.google.com/maps?cid=2478910083160358823",
   "priceRange": "€€€",
   "currenciesAccepted": "EUR",
   "paymentAccepted": "Cash, Credit Card",
   "founder": {
     "@type": "Person",
     "name": "Margaux",
-    "jobTitle": "Infirmière diplômée d'État, praticienne en épilation laser"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "32",
-    "bestRating": "5"
+    "jobTitle": "Infirmière diplômée d'État et esthéticienne, praticienne en épilation laser"
   },
   "sameAs": [
     "https://www.planity.com/lumia-04100-manosque",
@@ -380,7 +395,7 @@ index_head = r'''<script type="application/ld+json">
     {
       "@type": "Question",
       "name": "Qui réalise les soins chez LUMIA ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Tous les soins sont réalisés par Margaux, infirmière diplômée d'État formée à l'épilation laser, aux soins du visage EsthéSkin et au protocole COSMELAN. Vous avez la même interlocutrice à chaque séance." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Tous les soins sont réalisés par Margaux, infirmière diplômée d'État et esthéticienne, formée à l'épilation laser, aux soins du visage EsthéSkin et au protocole COSMELAN. Vous avez la même interlocutrice à chaque séance." }
     },
     {
       "@type": "Question",
@@ -390,17 +405,8 @@ index_head = r'''<script type="application/ld+json">
   ]
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://lumia-salon.fr/" }
-  ]
-}
-</script>
 '''
-page("index.html", r"""Institut de beauté &amp; épilation laser à Manosque | LUMIA""", r"""LUMIA, institut de beauté à Manosque. Épilation laser définitive par une infirmière D.E., soins du visage, LPG. Bilan offert. Réservation en ligne.""", "https://lumia-salon.fr/", index_body, schema=index_head)
+page("index.html", r"""Institut de beauté à Manosque · laser, visage, LPG | LUMIA""", r"""LUMIA, institut de beauté à Manosque : épilation laser définitive, soins du visage, LPG, COSMELAN, par une infirmière D.E. et esthéticienne. RDV en ligne.""", "https://lumia-salon.fr/", index_body, schema=index_head)
 
 # ============================ SOINS-VISAGE-MANOSQUE.HTML ============================
 soins_visage_manosque_body = r'''
@@ -419,11 +425,11 @@ soins_visage_manosque_body = r'''
 <article class="article-body">
   <div class="container">
 
-    <p>Les soins du visage de LUMIA à Manosque associent le modelage et des technologies de pointe pour répondre à chaque besoin de peau : manque d'éclat, déshydratation, premiers signes de l'âge, imperfections. Ils sont réalisés par Margaux, infirmière diplômée d'État et esthéticienne, formée aux protocoles EsthéSkin. Chaque soin commence par un diagnostic de peau pour choisir le protocole le plus adapté.</p>
+    <p>Les soins du visage LUMINEA se font chez LUMIA à Manosque, par Margaux, infirmière diplômée d'État et esthéticienne, avec la technologie EsthéSkin : des soins express de 30 minutes dès 45 €, puis trois formules, Découverte et Avancé (1h15) ou Prestige (1h30). Ils associent le modelage et des technologies de pointe pour répondre à chaque besoin de peau : manque d'éclat, déshydratation, premiers signes de l'âge, imperfections. Chaque soin commence par un diagnostic de peau pour choisir le protocole le plus adapté.</p>
 
     <div class="hero__actions">
       <a href="https://www.planity.com/lumia-04100-manosque" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a>
-      <a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA">04 92 87 63 72</a>
+      <a href="tel:+33492876372" class="hero__phone" aria-label="Appeler LUMIA au 04 92 87 63 72">04 92 87 63 72</a>
     </div>
 
     <h2>Les soins LUMINEA, la technologie EsthéSkin</h2>
@@ -460,7 +466,8 @@ soins_visage_manosque_body = r'''
       <details><summary>La luminothérapie LED, qu'est-ce que c'est ?</summary><p>C'est une lumière froide qui stimule les cellules de la peau. Selon la couleur, elle cible l'éclat, les imperfections, la fermeté ou l'apaisement, sans douleur ni éviction sociale.</p></details>
     </div>
 
-    <p>Découvrez aussi notre <a href="lpg-cellu-m6-manosque.html">LPG endermologie</a> pour le corps et le visage, nos <a href="soin-cosmelan-taches-manosque.html">soins dépigmentants COSMELAN</a>, et le parcours de <a href="a-propos.html">la praticienne</a>. Les tarifs détaillés sont sur la <a href="tarifs.html">page tarifs</a>.</p>
+    <p>Découvrez aussi notre <a href="lpg-cellu-m6-manosque.html">LPG endermologie</a> pour le corps et le visage, nos <a href="soin-cosmelan-taches-manosque.html">soins dépigmentants COSMELAN</a>, et le parcours de <a href="a-propos.html">Margaux, la praticienne de LUMIA</a>. Les tarifs détaillés sont sur la <a href="tarifs.html#visage">page tarifs</a>.</p>
+    <p>Pour prolonger le soin chez vous, l'institut conseille les <a href="cosmetiques-manosque.html">cosmétiques Mesoestetic</a>, les mêmes actifs qu'en cabine.</p>
 
   </div>
 </article>
@@ -488,6 +495,7 @@ soins_visage_manosque_head = r'''<script type="application/ld+json">
   "url": "https://lumia-salon.fr/soins-visage-manosque.html",
   "provider": {
     "@type": "BeautySalon",
+    "@id": "https://lumia-salon.fr/#institut",
     "name": "LUMIA",
     "url": "https://lumia-salon.fr",
     "telephone": "+33492876372",
@@ -520,7 +528,7 @@ soins_visage_manosque_head = r'''<script type="application/ld+json">
 }
 </script>
 '''
-page("soins-visage-manosque.html", r"""Soin du visage à Manosque | LUMIA""", r"""Soins du visage à Manosque : LUMINEA avec la technologie EsthéSkin et luminothérapie LED. Nettoyage, hydratation, anti-âge, éclat. Bilan offert.""", "https://lumia-salon.fr/soins-visage-manosque.html", soins_visage_manosque_body, schema=soins_visage_manosque_head)
+page("soins-visage-manosque.html", r"""Soin du visage à Manosque | LUMIA""", r"""Soins du visage à Manosque : LUMINEA avec la technologie EsthéSkin et luminothérapie LED. Nettoyage, hydratation, anti-âge, éclat. Bilan offert pour tout achat.""", "https://lumia-salon.fr/soins-visage-manosque.html", soins_visage_manosque_body, schema=soins_visage_manosque_head)
 
 # ============================ EPILATION-LASER-MANOSQUE.HTML ============================
 epilation_laser_manosque_body = r'''
@@ -540,7 +548,7 @@ epilation_laser_manosque_body = r'''
 <article class="article-body">
   <div class="container">
 
-    <p>L'épilation laser définitive à Manosque chez LUMIA est réalisée par Margaux, infirmière diplômée d'État formée à l'épilation laser. Elle s'adresse aux femmes comme aux hommes qui veulent en finir durablement avec le rasage et la cire, sur le visage comme sur le corps. Avant la première séance, un bilan personnalisé est offert pour tout achat de séance ou de cure : on examine votre peau et votre poil, on répond à vos questions et on définit ensemble votre protocole.</p>
+    <p>L'épilation laser définitive à Manosque (Alpes-de-Haute-Provence) se fait chez LUMIA au laser diode Leaseir, par Margaux, infirmière diplômée d'État et esthéticienne. Comptez en moyenne 8 à 12 séances, espacées de 6 à 8 semaines, après un bilan à 20 €, offert pour tout achat de séance ou de cure. L'épilation laser s'adresse aux femmes comme aux hommes qui veulent en finir durablement avec le rasage et la cire, sur le visage comme sur le corps. Lors du bilan, on examine votre peau et votre poil, on répond à vos questions et on définit ensemble votre protocole.</p>
 
     <div class="hero__actions">
       <a href="https://www.planity.com/lumia-04100-manosque" target="_blank" rel="noopener" class="btn btn-primary">Prendre rendez-vous</a>
@@ -558,7 +566,7 @@ epilation_laser_manosque_body = r'''
 
     <img src="assets/laserhomme.webp" class="landscape" alt="Séance d'épilation laser à l'institut LUMIA à Manosque, le laser convient aussi aux hommes" width="1360" height="907" loading="lazy">
 
-    <p class="text-center mt-2"><a href="https://www.planity.com/lumia-04100-manosque" target="_blank" rel="noopener" class="btn btn-primary">Premier échange gratuit, réservez votre bilan</a></p>
+    <p class="text-center mt-2"><a href="https://www.planity.com/lumia-04100-manosque" target="_blank" rel="noopener" class="btn btn-primary">Réserver mon bilan laser</a><span class="btn-note">Bilan à 20 €, offert pour tout achat de séance ou de cure.</span></p>
 
     <h2>Quelles zones peut-on traiter ?</h2>
     <p>Presque toutes les zones du visage et du corps peuvent être traitées, chez les femmes comme chez les hommes. Voici les zones les plus demandées à l'institut.</p>
@@ -575,12 +583,12 @@ epilation_laser_manosque_body = r'''
         </tbody>
       </table>
     </div>
-    <p>Vous retrouvez le détail des tarifs par zone sur notre <a href="tarifs.html">page tarifs</a>. Pour les zones non listées, le bilan précise le protocole et le prix.</p>
+    <p>Vous retrouvez le détail des tarifs par zone sur notre <a href="tarifs.html#laser">page tarifs</a>. Pour les zones non listées, le bilan précise le protocole et le prix.</p>
 
     <img src="assets/laser-jambes.webp" class="portrait" alt="Séance d'épilation laser des jambes à l'institut LUMIA à Manosque, réglage du laser diode Leaseir par l'infirmière" width="1066" height="1600" loading="lazy">
 
     <h2>Combien de séances faut-il ?</h2>
-    <p>En moyenne, comptez 8 à 12 séances pour un résultat durable. Le nombre exact dépend de la zone, de la densité et de la couleur du poil, et de votre type de peau. Les zones influencées par les hormones, comme le menton ou le maillot, peuvent en demander davantage. Le bilan permet d'estimer votre protocole, qui reste ajusté séance après séance.</p>
+    <p>En moyenne, comptez 8 à 12 séances pour un résultat durable. Le nombre exact dépend de la zone, de la densité et de la couleur du poil, et de votre type de peau. Les zones influencées par les hormones, comme le menton ou le maillot, peuvent en demander davantage. Le bilan permet d'estimer votre protocole, qui reste ajusté séance après séance. Pour comprendre ce qui fait varier ce nombre, lisez notre article <a href="blog/epilation-laser-combien-de-seances.html">épilation laser : combien de séances faut-il vraiment ?</a></p>
 
     <h2>Est-ce que c'est douloureux ?</h2>
     <p>La sensation ressemble à de petits picotements de chaleur, parfois comparés à un léger claquement d'élastique. Le système de refroidissement intégré au laser apaise la peau pendant la séance et la rend bien supportable.</p>
@@ -599,6 +607,12 @@ epilation_laser_manosque_body = r'''
     <h2>Le laser convient-il à tous les types de peau ?</h2>
     <p>Le laser diode utilisé à l'institut est adapté à de nombreux phototypes. Quelques règles s'appliquent toutefois : une peau récemment bronzée nécessite de reporter la séance, et les poils blancs, blonds, roux ainsi que le duvet ne contiennent pas assez de mélanine pour réagir. Le bilan vérifie l'adéquation entre votre pilosité, votre peau et le traitement.</p>
 
+    <div class="callout">
+      <h3>Faites le point avant votre bilan</h3>
+      <p>Phototype, zones traitables, situations qui imposent d'attendre : notre guide gratuit <strong>« Êtes-vous éligible à l'épilation laser ? »</strong> vous aide à préparer votre bilan, en 3 pages.</p>
+      <p><a href="assets/guide-epilation-laser-lumia.pdf" class="btn btn-outline" download>Télécharger le guide (PDF)</a></p>
+    </div>
+
     <img src="assets/laser-machine.webp" class="portrait" alt="Écran de réglage du laser diode Leaseir utilisé à l'institut LUMIA à Manosque" width="1066" height="1600" loading="lazy">
 
     <h2>Avant et après la séance</h2>
@@ -611,6 +625,11 @@ epilation_laser_manosque_body = r'''
       <li>Apaiser la peau après la séance, par exemple avec un gel d'aloe vera, et appliquer une protection solaire élevée sur les zones exposées.</li>
     </ul>
 
+  </div>
+</article>
+
+<div class="article-body section--alt">
+  <div class="container">
     <h2>Questions fréquentes sur l'épilation laser</h2>
     <div class="faq">
       <details>
@@ -643,10 +662,14 @@ epilation_laser_manosque_body = r'''
       </details>
       <details>
         <summary>Comment se passe la première fois ?</summary>
-        <p>On commence par un bilan offert : examen de la peau et du poil, réponses à vos questions, définition du protocole. Les lunettes de protection sont portées pendant toute la séance.</p>
+        <p>On commence par un bilan, offert pour tout achat de séance ou de cure : examen de la peau et du poil, réponses à vos questions, définition du protocole. Les lunettes de protection sont portées pendant toute la séance.</p>
       </details>
     </div>
+  </div>
+</div>
 
+<article class="article-body">
+  <div class="container">
     <h2>Épilation laser dans tout le territoire de Manosque</h2>
     <p>L'institut accueille aussi les clientes et clients des communes voisines. Découvrez nos pages dédiées à l'épilation laser à <a href="epilation-laser-sainte-tulle.html">Sainte-Tulle</a>, <a href="epilation-laser-pierrevert.html">Pierrevert</a>, <a href="epilation-laser-volx.html">Volx</a>, <a href="epilation-laser-villeneuve.html">Villeneuve</a>, <a href="epilation-laser-forcalquier.html">Forcalquier</a>, <a href="epilation-laser-greoux-les-bains.html">Gréoux-les-Bains</a>, <a href="epilation-laser-oraison.html">Oraison</a>, <a href="epilation-laser-valensole.html">Valensole</a> et <a href="epilation-laser-sisteron.html">Sisteron</a>. Pour faire connaissance avec la praticienne, rendez-vous sur la page <a href="a-propos.html">à propos</a>.</p>
 
@@ -677,10 +700,11 @@ epilation_laser_manosque_head = r'''<script type="application/ld+json">
   "@type": "Service",
   "serviceType": "Épilation laser",
   "name": "Épilation laser définitive à Manosque",
-  "description": "Épilation laser définitive à Manosque réalisée par une infirmière diplômée d'État. Laser diode adapté à de nombreux phototypes, sur le visage et le corps, femmes et hommes. Bilan personnalisé obligatoire avant la première séance, offert pour tout achat.",
+  "description": "Épilation laser définitive à Manosque réalisée par une infirmière diplômée d'État et esthéticienne. Laser diode adapté à de nombreux phototypes, sur le visage et le corps, femmes et hommes. Bilan personnalisé obligatoire avant la première séance, offert pour tout achat.",
   "url": "https://lumia-salon.fr/epilation-laser-manosque.html",
   "provider": {
     "@type": "BeautySalon",
+    "@id": "https://lumia-salon.fr/#institut",
     "name": "LUMIA",
     "url": "https://lumia-salon.fr",
     "telephone": "+33492876372",
@@ -714,7 +738,7 @@ epilation_laser_manosque_head = r'''<script type="application/ld+json">
     { "@type": "Question", "name": "Quel espacement entre les séances ?", "acceptedAnswer": { "@type": "Answer", "text": "En général 6 à 8 semaines au début, puis on espace au fil de la repousse. L'intervalle est ajusté à chaque séance." } },
     { "@type": "Question", "name": "L'épilation est-elle vraiment définitive ?", "acceptedAnswer": { "@type": "Answer", "text": "On parle d'épilation durable : la grande majorité des poils traités ne repoussent plus. Quelques poils peuvent réapparaître plus fins ; une séance d'entretien suffit souvent." } },
     { "@type": "Question", "name": "Y a-t-il des contre-indications ?", "acceptedAnswer": { "@type": "Answer", "text": "Grossesse, certaines affections de la peau, prise de médicaments photosensibilisants ou bronzage récent peuvent reporter ou écarter une séance. Le bilan préalable fait le point." } },
-    { "@type": "Question", "name": "Comment se passe la première fois ?", "acceptedAnswer": { "@type": "Answer", "text": "On commence par un bilan offert : examen de la peau et du poil, réponses à vos questions, définition du protocole. Les lunettes de protection sont portées pendant toute la séance." } }
+    { "@type": "Question", "name": "Comment se passe la première fois ?", "acceptedAnswer": { "@type": "Answer", "text": "On commence par un bilan, offert pour tout achat de séance ou de cure : examen de la peau et du poil, réponses à vos questions, définition du protocole. Les lunettes de protection sont portées pendant toute la séance." } }
   ]
 }
 </script>
@@ -729,7 +753,7 @@ epilation_laser_manosque_head = r'''<script type="application/ld+json">
 }
 </script>
 '''
-page("epilation-laser-manosque.html", r"""Épilation laser définitive à Manosque | LUMIA""", r"""Épilation laser définitive à Manosque par une infirmière D.E. Laser diode adapté à tous types de peau. Bilan personnalisé offert. RDV en ligne.""", "https://lumia-salon.fr/epilation-laser-manosque.html", epilation_laser_manosque_body, schema=epilation_laser_manosque_head)
+page("epilation-laser-manosque.html", r"""Épilation laser définitive à Manosque | LUMIA""", r"""Épilation laser définitive à Manosque par une infirmière D.E. et esthéticienne. Laser diode adapté à de nombreux types de peau. Bilan offert pour tout achat.""", "https://lumia-salon.fr/epilation-laser-manosque.html", epilation_laser_manosque_body, schema=epilation_laser_manosque_head)
 
 # ============================ MENTIONS-LEGALES.HTML ============================
 mentions_legales_body = r'''
@@ -778,7 +802,7 @@ mentions_legales_body = r'''
     <p>Les informations transmises via le formulaire de contact sont utilisées uniquement pour répondre à votre demande. Pour en savoir plus sur le traitement de vos données et exercer vos droits, consultez notre <a href="politique-confidentialite.html">politique de confidentialité</a>.</p>
 
     <h2>Médiation de la consommation</h2>
-    <p>Conformément aux articles L.611-1 et suivants du Code de la consommation, le client peut recourir gratuitement à un médiateur de la consommation en vue de la résolution amiable d’un litige. La désignation du médiateur compétent est en cours : ses coordonnées seront publiées sur cette page dès l’adhésion effective. La plateforme européenne de règlement en ligne des litiges est accessible à l'adresse https://ec.europa.eu/consumers/odr.</p>
+    <p>Conformément aux articles L.611-1 et suivants du Code de la consommation, le client peut recourir gratuitement à un médiateur de la consommation en vue de la résolution amiable d’un litige. La désignation du médiateur compétent est en cours : ses coordonnées seront publiées sur cette page dès l’adhésion effective.</p>
 
   </div>
 </article>

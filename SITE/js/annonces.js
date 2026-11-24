@@ -8,6 +8,20 @@
   var A = window.ANNONCES || {};
   var d = document;
 
+  /* Les chemins relatifs des annonces (image, lien) sont écrits depuis la racine
+     du site : on les résout depuis l'emplacement de annonces.js, pour qu'ils
+     marchent aussi dans les sous-dossiers comme /blog/. */
+  var racine = '';
+  var scripts = d.getElementsByTagName('script');
+  for (var i = 0; i < scripts.length; i++) {
+    var s = scripts[i].src || '';
+    if (/\/annonces\.js(\?|$)/.test(s) && !/\/js\/annonces\.js/.test(s)) { racine = s.replace(/annonces\.js.*$/, ''); break; }
+  }
+  function resoudre(u) {
+    if (!u || /^([a-z][a-z0-9+.-]*:|\/|#)/i.test(u)) return u;
+    return racine + u;
+  }
+
   /* Une annonce est en cours si elle est active et dans sa fenêtre de dates. */
   function enCours(o) {
     if (!o || !o.active) return false;
@@ -33,7 +47,10 @@
   function ecrire(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 
   function lienExterne(a, url) {
-    if (/^https?:/i.test(url)) { a.target = '_blank'; a.rel = 'noopener'; }
+    if (/^https?:/i.test(url)) {
+      a.target = '_blank'; a.rel = 'noopener';
+      var s = d.createElement('span'); s.className = 'sr-only'; s.textContent = ' (nouvel onglet)'; a.appendChild(s);
+    }
   }
 
   /* ----------------------------------------------------------- Bannière */
@@ -58,7 +75,7 @@
     if (b.lien && b.libelle) {
       var a = d.createElement('a');
       a.className = 'banniere__lien';
-      a.href = b.lien;
+      a.href = resoudre(b.lien);
       a.textContent = b.libelle;
       lienExterne(a, b.lien);
       inner.appendChild(a);
@@ -77,7 +94,8 @@
     inner.appendChild(fermer);
 
     el.appendChild(inner);
-    d.body.insertBefore(el, d.body.firstChild);
+    var saut = d.querySelector('.skip-link');
+    d.body.insertBefore(el, saut ? saut.nextSibling : d.body.firstChild);
   }
 
   /* -------------------------------------------------------------- Popup */
@@ -109,7 +127,7 @@
     if (p.image) {
       var img = d.createElement('img');
       img.className = 'popup__img';
-      img.src = p.image;
+      img.setAttribute('data-src', resoudre(p.image)); /* chargée à l'ouverture seulement */
       img.alt = p.imageAlt || '';
       img.loading = 'lazy';
       dlg.appendChild(img);
@@ -137,7 +155,7 @@
     if (p.lien && p.bouton) {
       var cta = d.createElement('a');
       cta.className = 'btn btn-primary popup__cta';
-      cta.href = p.lien;
+      cta.href = resoudre(p.lien);
       cta.textContent = p.bouton;
       lienExterne(cta, p.lien);
       corps.appendChild(cta);
@@ -180,6 +198,8 @@
       clearTimeout(minuteur);
       window.removeEventListener('scroll', auScroll);
       ecrire(k, String(Date.now()));
+      var im = dlg.querySelector('img[data-src]');
+      if (im) im.src = im.getAttribute('data-src');
       dlg.showModal();
     }
   }
