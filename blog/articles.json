@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "coffrets-cartes-cadeaux-quel-soin-offrir.html",
+    "title": "Coffrets et cartes cadeaux : quel soin offrir ?",
+    "desc": "Carte cadeau ou coffret à Manosque : choisir le soin à offrir selon la personne, avec prix et durées, et s'en procurer un à l'institut LUMIA.",
+    "tag": "Conseils",
+    "date": "Novembre 2026",
+    "readTime": "5 min",
+    "image": "../assets/illustrations/coffrets-cartes-cadeaux-quel-soin-offrir.svg"
+  },
+  {
+    "slug": "microneedling-exosomes-pdrn-soin-025-mm.html",
+    "title": "Microneedling, exosomes et PDRN : le soin à 0,25 mm",
+    "desc": "Microneedling à Manosque : stylo médical à 0,25 mm, sans injection, actifs aux exosomes et au PDRN, cure de 6 séances. On vous explique le soin pas à pas.",
+    "tag": "Soins du visage",
+    "date": "Octobre 2026",
+    "readTime": "5 min",
+    "image": "../assets/illustrations/microneedling-exosomes-pdrn-soin-025-mm.svg"
+  },
+  {
+    "slug": "cellulite-ce-qui-marche-ce-qui-ne-marche-pas.html",
+    "title": "Cellulite : ce qui marche, ce qui ne marche pas",
+    "desc": "Crèmes, sport, alimentation, LPG : que peut-on vraiment attendre contre la cellulite ? Un point honnête sur ce qui aide, ce qui ne suffit pas, sans promesse.",
+    "tag": "Corps et silhouette",
+    "date": "Septembre 2026",
+    "readTime": "5 min",
+    "image": "../assets/illustrations/cellulite-ce-qui-marche-ce-qui-ne-marche-pas.svg"
+  },
+  {
+    "slug": "drainage-lymphatique-lpg-cure-silhouette.html",
+    "title": "Drainage lymphatique et LPG : la cure silhouette",
+    "desc": "La Cure Expertise Silhouette associe drainage lymphatique et LPG sur 6 séances, avec Emana by Sophie et LUMIA à Manosque. On vous explique son déroulement.",
+    "tag": "Corps et silhouette",
+    "date": "Août 2026",
+    "readTime": "5 min",
+    "image": "../assets/illustrations/drainage-lymphatique-lpg-cure-silhouette.svg"
+  },
+  {
+    "slug": "quel-soin-du-visage-choisir-selon-sa-peau.html",
+    "title": "Quel soin du visage choisir selon sa peau ?",
+    "desc": "Teint terne, taches, rides ou relâchement : quel soin du visage choisir ? LUMINEA, LED, microneedling, COSMELAN ou LPG, notre guide d'orientation à Manosque.",
+    "tag": "Soins du visage",
+    "date": "Juillet 2026",
+    "readTime": "5 min",
+    "image": "../assets/illustrations/quel-soin-du-visage-choisir-selon-sa-peau.svg"
+  },
+  {
+    "slug": "taches-visage-comprendre-attenuer.html",
+    "title": "Taches sur le visage : comprendre et atténuer",
+    "desc": "Mélasma, taches solaires, taches de l'âge : d'où viennent les taches du visage et comment les atténuer durablement, notamment avec le protocole COSMELAN.",
+    "tag": "Soins du visage",
+    "date": "Juin 2026",
+    "readTime": "8 min",
+    "image": "../assets/illustrations/taches-visage-comprendre-attenuer.svg"
+  },
+  {
+    "slug": "preparer-premiere-seance-epilation-laser.html",
+    "title": "Préparer sa première séance d'épilation laser",
+    "desc": "Bilan, rasage, soleil, médicaments : tout ce qu'il faut faire (et éviter) avant votre première séance d'épilation laser pour qu'elle se passe au mieux.",
+    "tag": "Conseils",
+    "date": "Mai 2026",
+    "readTime": "6 min",
+    "image": "../assets/illustrations/preparer-premiere-seance-epilation-laser.svg"
+  },
+  {
+    "slug": "epilation-laser-homme.html",
+    "title": "Épilation laser homme : torse, dos, barbe",
+    "desc": "L'épilation laser n'est pas réservée aux femmes. Torse, dos, épaules, nuque ou contour de barbe : ce que les hommes peuvent traiter et comment ça se passe.",
+    "tag": "Épilation laser",
+    "date": "Avril 2026",
+    "readTime": "6 min",
+    "image": "../assets/illustrations/epilation-laser-homme.svg"
+  },
+  {
+    "slug": "epilation-laser-ou-lumiere-pulsee.html",
+    "title": "Épilation laser ou lumière pulsée : quelles différences ?",
+    "desc": "Laser et lumière pulsée (IPL) reposent sur des principes proches mais ne se valent pas. On compare efficacité, précision et usage en institut pour bien choisir.",
+    "tag": "Épilation laser",
+    "date": "Mars 2026",
+    "readTime": "7 min",
+    "image": "../assets/illustrations/epilation-laser-ou-lumiere-pulsee.svg"
+  },
+  {
+    "slug": "epilation-laser-peau-bronzee.html",
+    "title": "Épilation laser et peau bronzée : ce qu'il faut savoir avant l'été",
+    "desc": "Bronzage et laser ne font pas bon ménage. On explique pourquoi, combien de temps attendre (10 jours avant et après) et organiser ses séances avant l'été.",
+    "tag": "Épilation laser",
+    "date": "Février 2026",
+    "readTime": "6 min",
+    "image": "../assets/illustrations/epilation-laser-peau-bronzee.svg"
+  },
+  {
+    "slug": "epilation-laser-combien-de-seances.html",
+    "title": "Épilation laser : combien de séances faut-il vraiment ?",
+    "desc": "Le nombre de séances d'épilation laser dépend de la zone, du poil et de la peau. On vous explique ce qui fait varier ce chiffre et à quoi vous attendre.",
+    "tag": "Épilation laser",
+    "date": "Janvier 2026",
+    "readTime": "7 min",
+    "image": "../assets/illustrations/epilation-laser-combien-de-seances.svg"
+  }
+]

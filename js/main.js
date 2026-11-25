@@ -1,0 +1,128 @@
+/* ============================================
+   LUMIA — Scripts principaux (vanilla, defer)
+   ============================================ */
+
+// --- Nav : ombre au scroll ---
+(function () {
+  var nav = document.getElementById('nav');
+  if (!nav) return;
+  var onScroll = function () { nav.classList.toggle('scrolled', window.scrollY > 40); };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
+// --- Menu mobile (hamburger) ---
+(function () {
+  var toggle = document.getElementById('nav-toggle');
+  var menu = document.getElementById('nav-menu');
+  if (!toggle || !menu) return;
+  toggle.addEventListener('click', function () {
+    var open = menu.classList.toggle('active');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+  });
+  function fermer(rendreFocus) {
+    menu.classList.remove('active');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Ouvrir le menu');
+    if (rendreFocus) toggle.focus();
+  }
+  menu.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () { fermer(false); });
+  });
+  // R11 (23/11/2026) : Échap ferme le menu et rend le focus au bouton
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && menu.classList.contains('active')) fermer(true);
+  });
+})();
+
+// --- Articles connexes (blog) ---
+// « À lire aussi » : cartes calculées à la génération (gen_blog.py), plus de tirage au hasard.
+
+// --- CSRF token (cookie + hidden input) ---
+(function () {
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+  var token = document.cookie.replace(/(?:(?:^|.*;\s*)csrf_token\s*=\s*([^;]*).*$)|^.*$/, '$1');
+  if (!token) {
+    var arr = new Uint8Array(16);
+    (window.crypto || window.msCrypto).getRandomValues(arr);
+    token = Array.from(arr, function (b) { return b.toString(16).padStart(2, '0'); }).join('');
+    document.cookie = 'csrf_token=' + token + ';path=/;SameSite=Strict;Secure';
+  }
+  var input = document.createElement('input');
+  input.type = 'hidden';
+  input.name = 'csrf_token';
+  input.value = token;
+  form.appendChild(input);
+  // horodatage anti-bot (time-check côté serveur)
+  var ft = document.createElement('input');
+  ft.type = 'hidden';
+  ft.name = 'form_time';
+  ft.value = Math.floor(Date.now() / 1000);
+  form.appendChild(ft);
+})();
+
+// --- Formulaire contact : feedback bouton + statut après redirection ---
+(function () {
+  var form = document.getElementById('contactForm');
+  // Hors production (ex. démo GitHub Pages : pas de PHP), on dégrade proprement.
+  var isProd = /(^|\.)lumia-salon\.fr$/.test(location.hostname);
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      if (!isProd) {
+        e.preventDefault();
+        var s = document.getElementById('formStatus');
+        if (s) {
+          s.textContent = 'Démonstration : le formulaire sera actif à la mise en ligne du site. En attendant, réservez sur Planity ou appelez le 04 92 87 63 72.';
+          s.className = 'form__message form__message--success';
+          s.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        return;
+      }
+      var btn = form.querySelector('button[type="submit"]');
+      if (btn) { btn.textContent = 'Envoi en cours…'; btn.disabled = true; }
+    });
+  }
+  var params = new URLSearchParams(window.location.search);
+  var statut = params.get('statut');
+  var status = document.getElementById('formStatus');
+  if (statut && status) {
+    if (statut === 'ok') {
+      status.textContent = 'Merci, votre message a bien été envoyé. Nous vous répondrons rapidement.';
+      status.className = 'form__message form__message--success';
+      if (form) form.reset();
+    } else if (statut === 'erreur') {
+      var messagesErreur = {
+        nom: 'Indiquez votre nom pour que nous sachions à qui répondre.',
+        email: 'Cette adresse e-mail semble incomplète. Exemple : prenom@exemple.fr',
+        message: 'Votre message est un peu court. Quelques mots de plus nous aideront à vous répondre (10 caractères minimum).',
+        consentement: 'Cochez la case de confidentialité pour envoyer votre message.',
+        expire: 'Le formulaire est resté ouvert trop longtemps. Actualisez la page et renvoyez votre message.',
+        limite: 'Plusieurs envois ont déjà été faits depuis votre connexion. Réessayez dans un moment ou appelez-nous au 04 92 87 63 72.',
+        envoi: 'Votre message n\'est pas parti. Réessayez ou appelez-nous au 04 92 87 63 72.'
+      };
+      var codeErreur = params.get('code');
+      status.textContent = (codeErreur && Object.prototype.hasOwnProperty.call(messagesErreur, codeErreur))
+        ? messagesErreur[codeErreur]
+        : 'Une erreur est survenue. Réessayez ou appelez-nous au 04 92 87 63 72.';
+      status.className = 'form__message form__message--error';
+    }
+    var anchor = document.getElementById('formulaire');
+    if (anchor) anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    window.history.replaceState({}, '', window.location.pathname);
+  }
+})();
+
+/* Impression : les accordéons (tarifs, FAQ) s'ouvrent le temps de l'impression, puis reviennent à leur état. */
+(function () {
+  var ouverts = [];
+  window.addEventListener('beforeprint', function () {
+    ouverts = [];
+    document.querySelectorAll('details:not([open])').forEach(function (d) { d.setAttribute('open', ''); ouverts.push(d); });
+  });
+  window.addEventListener('afterprint', function () {
+    ouverts.forEach(function (d) { d.removeAttribute('open'); });
+    ouverts = [];
+  });
+})();

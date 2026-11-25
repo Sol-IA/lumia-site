@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /php/
+
+Sitemap: https://lumia-salon.fr/sitemap.xml
