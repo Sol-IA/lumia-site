@@ -12,7 +12,7 @@ def schema_article(title, desc, img, iso, url, maj=None):
     return ('<script type="application/ld+json">\n'
     '{ "@context":"https://schema.org","@type":"Article","headline":"%s","description":"%s",'
     '"image":"https://lumia-salon.fr/assets/%s","datePublished":"%s","dateModified":"%s",'
-    '"author":{"@type":"Person","name":"Margaux","url":"https://lumia-salon.fr/a-propos.html"},'
+    '"author":{"@type":"Person","@id":"https://lumia-salon.fr/a-propos.html#margaux","name":"Margaux Paniz","url":"https://lumia-salon.fr/a-propos.html"},'
     '"publisher":{"@type":"Organization","@id":"https://lumia-salon.fr/#institut","name":"LUMIA","url":"https://lumia-salon.fr","logo":{"@type":"ImageObject","url":"https://lumia-salon.fr/assets/logo.png"}},'
     '"mainEntityOfPage":"%s" }\n</script>\n' % (title, desc, img, iso, max(iso, maj or iso), url))
 
@@ -208,7 +208,7 @@ ARTICLES = [
    ("Le microneedling à 0,25 mm : l'essentiel",[
     "Chez LUMIA, le microneedling est un soin sans aucune injection, réalisé avec un stylo médical à une profondeur de 0,25 mm, en cure de 6 séances espacées de 15 jours. La séance dure 1 heure pour le visage et le cou et coûte 145 €, après un diagnostic visage préalable de 30 minutes à 20 €.",
     "Le principe est simple. Le stylo crée de minuscules micro-perforations contrôlées à la surface de la peau. Ces canaux ne sont pas un but en soi : ils déclenchent la réponse naturelle de régénération de la peau, qui stimule sa production de collagène et d'élastine. C'est pourquoi on parle aussi de micro-stimulation.",
-    "Le soin est réalisé par Margaux, infirmière diplômée d'État et esthéticienne. Il est adapté à tous les phototypes, des peaux claires aux peaux foncées, sous réserve des vérifications faites lors du diagnostic."]),
+    "Le soin est réalisé par Margaux, esthéticienne formée au microneedling par Mesoestetic. Il est adapté à tous les phototypes, des peaux claires aux peaux foncées, sous réserve des vérifications faites lors du diagnostic."]),
    ("Exosomes et PDRN : de quoi parle-t-on ?",[
     "Les actifs appliqués pendant la séance sont de la marque Mesoestetic et contiennent des exosomes et du PDRN. Ces deux mots n'ont rien de magique, mais ils méritent une explication claire.",
     "Le PDRN, pour polydésoxyribonucléotide, est constitué de fragments d'ADN. Les exosomes sont de toutes petites vésicules qui transportent des signaux d'une cellule à l'autre. Ce sont des actifs étudiés pour leur rôle dans la communication entre cellules et dans les mécanismes de régénération de la peau.",
@@ -346,6 +346,46 @@ ARTICLES = [
    ("Qui réalise le drainage et qui réalise le LPG ?","Le drainage lymphatique est réalisé par Sophie, d'Emana by Sophie, activité indépendante installée dans nos locaux. Le LPG est réalisé par l'institut LUMIA."),
   ],
  },
+{
+  "illu_alt":"Illustration : un coffret cadeau au ruban noué, une carte cadeau posée contre lui et trois pictogrammes de soin, goutte, feuille et pinceau, reliés par une ligne pointillée",
+  "slug":"coffrets-cartes-cadeaux-quel-soin-offrir.html","tag":"Conseils","date":"Novembre 2026","iso":"2026-11-25","read":"5 min",
+  "img":"produits.webp",
+  "title":"Coffrets et cartes cadeaux : quel soin offrir ?",
+  "seo_title":"Cartes et coffrets cadeaux à Manosque | LUMIA",
+  "cta_label":"Réserver un soin",
+  "cta_txt":"Pour une carte cadeau ou un coffret, passez à l'institut ou appelez le 04 92 87 63 72. Pour réserver un soin ou un diagnostic visage, la réservation se fait en ligne.",
+  "lien_sec":3,
+  "lien":"Pour comparer les soins avant de choisir, consultez nos pages <a href=\"../soins-visage-manosque.html\">soins du visage à Manosque</a>, <a href=\"../lpg-cellu-m6-manosque.html\">LPG endermologie à Manosque</a> et <a href=\"../cosmetiques-manosque.html\">cosmétiques, cartes et coffrets cadeaux</a>.",
+  "desc":"Carte cadeau ou coffret à Manosque : choisir le soin à offrir selon la personne, avec prix et durées, et s'en procurer un à l'institut LUMIA.",
+  "lead":"Offrir un soin, c'est offrir du temps. Encore faut-il choisir le bon : détente, peau à soigner, silhouette, ou simple hésitation. Voici comment s'orienter, avec les vrais prix, et comment se procurer une carte cadeau ou un coffret à l'institut.",
+  "sections":[
+   ("Carte cadeau ou coffret : ce que propose l'institut",[
+    "Des cartes cadeaux et des coffrets sont disponibles à l'institut, d'un montant libre ou pour une prestation précise. Les coffrets associent des produits et des soins. Cartes et coffrets sont préparés sur place et remis en main propre.",
+    "L'institut propose par ailleurs deux gammes de cosmétiques professionnelles : Mesoestetic pour le visage, LPG pour le corps. Le conseil est personnalisé, jamais imposé.",
+    "Une carte cadeau est valable 6 mois. Celle d'un montant libre s'utilise en une ou plusieurs fois, jusqu'à épuisement du montant. Pour le contenu d'un coffret, le mieux est de nous poser la question, par téléphone ou sur place."]),
+   ("Pour offrir une vraie pause",[
+    "Si la personne rêve avant tout d'une pause, pensez aux soins courts et doux. Le modelage du visage, du buste et des épaules dure 30 minutes et coûte 39 €. La séance de LED visage, une lumière froide sans chaleur ni douleur, dure elle aussi 30 minutes, à 35 €. Côté corps, la séance LPG relaxation de 30 minutes est à 60 €.",
+    "Ce sont des formats faciles à glisser dans une semaine chargée, et ils conviennent bien à une première visite à l'institut."]),
+   ("Pour prendre soin de sa peau",[
+    "Teint fatigué, peau qui manque d'éclat ou de confort : les soins du visage LUMINEA sont un bon point de départ. Le LUMINEA Express nettoyage dure 30 minutes, à 45 €. Le LUMINEA Découverte (1h15, 95 €) est un soin complet pour faire connaissance avec sa peau. Le LUMINEA Prestige (1h30, 135 €) y ajoute le LPG visage ou la LED.",
+    "Chaque soin du visage commence par un diagnostic de peau. Certaines situations, comme la grossesse, font reporter ou adapter un soin : tout se vérifie lors de ce rendez-vous."]),
+   ("Pour un objectif silhouette",[
+    "Le LPG corps propose plusieurs protocoles : anti-cellulite (30 minutes, 60 €), jeune maman (30 minutes, 60 €), relaxation (30 minutes, 60 €) ou détox drainant (40 minutes, 70 €). Le LPG n'est pas un traitement amaigrissant : il agit sur l'aspect de la peau, la fermeté et le drainage.",
+    "Offrir un soin silhouette demande un peu de tact. Mieux vaut être sûr que la personne en a envie, ou lui laisser le choix avec une carte d'un montant libre."]),
+   ("Vous hésitez ? La carte à montant libre",[
+    "Quand on connaît mal les envies de la personne, la carte d'un montant libre est la solution la plus sûre : elle choisit elle-même sa prestation.",
+    "Si elle ne sait pas par où commencer, le diagnostic visage est un bon premier rendez-vous. Il dure 30 minutes et coûte 20 € : on y fait le point sur la peau, puis on choisit le soin adapté.",
+    "Le plus simple pour décider est d'en parler avec nous. Dites-nous pour qui vous offrez et ce que la personne aime, et nous vous aiderons à choisir entre un montant libre et une prestation précise."]),
+   ("Comment se procurer une carte ou un coffret",[
+    "Passez à l'institut, au 10 Bis avenue Jean Giono à Manosque, à côté de l'opticien ATOL, du lundi au vendredi de 10h à 19h. Vous pouvez aussi appeler le 04 92 87 63 72 pour poser vos questions avant de vous déplacer.",
+    "La carte est valable 6 mois à compter de l'achat ; la date limite y figure."]),
+  ],
+  "faq":[
+   ("Quelle différence entre une carte cadeau et un coffret ?","La carte porte sur un montant libre ou sur une prestation précise. Les coffrets associent des produits et des soins et sont préparés sur place. Les deux sont disponibles à l'institut."),
+   ("Comment se procurer une carte cadeau à Manosque ?","Passez à l'institut LUMIA, au 10 Bis avenue Jean Giono, du lundi au vendredi de 10h à 19h, ou appelez le 04 92 87 63 72. La carte est préparée sur place et remise en main propre. Elle est valable 6 mois, et une carte à montant libre s'utilise en une ou plusieurs fois."),
+   ("Quel soin offrir à quelqu'un dont je connais mal les goûts ?","Une carte d'un montant libre laisse la personne choisir sa prestation. Si elle hésite ensuite, le diagnostic visage de 30 minutes, à 20 €, permet de choisir le soin adapté à sa peau."),
+  ],
+},
 ]
 
 # ---------------------------------------------------------------------------
