@@ -32,7 +32,7 @@ index_body = r'''
         </div>
       </div>
       <div class="hero__media">
-        <img src="assets/soinvisage.webp" alt="Soin du visage à l'institut LUMIA à Manosque" width="470" height="1020" loading="eager">
+        <img src="assets/soin-visage-masque.webp" alt="Application d'un masque au pinceau pendant un soin du visage à l'institut LUMIA, à Manosque" width="853" height="1280" loading="eager" fetchpriority="high">
       </div>
     </div>
   </div>
